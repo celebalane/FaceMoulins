@@ -1,7 +1,10 @@
+
+/*///////////////////////////////HEADER/////////////////////////////////////////*/
+
 img {
-	width: 100%;
+	width: 100%; /*Taille de l'image (largeur)*/
 }
 
 nav {
-	margin-top: 5%;
+	margin-top: 5%; /*Marge en haut de la barre de navigation, décolle du haut de la page*/
 }
