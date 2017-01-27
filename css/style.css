@@ -22,10 +22,33 @@ nav {
 	font-size: 1.8em;          /*Taille de la typo*/
 }
 
+.navbar-nav li:hover{            /*Quand on survol un lien de la barre de navigation*/
+	background-color: #1693a5;
+}
+
+.navbar-default .navbar-nav li:hover a{     /*Quand le lien est survolé, la typo devient blanche*/
+	color: white;
+}
+
+.navbar-default .navbar-nav > .open > a,           /*Quand l'un des liens de la barre de navigation est selectionné*/
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: white;
+  background-color: #1693a5;
+}
+
+.dropdown-menu {                                 /*Menu déroulant*/
+	background-color: rgba(0,0,0,0.8);           /*Arrière plan avec un peu de transparence*/
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a { /*Pour que la couleur des liens ne change pas lorsque la souris n'est plus sur le menu séléctionné*/
+    color: white;
+  }
+
 /*//////////////////////////////SECTION FIL ACTU////////////////////////////////*/
 
 #filActu {
-	background-color: white;
-	padding: 5%;
-	box-shadow: 1px 2px 4px black;
+	background-color: white; /*Fond de la section Fil d'actu*/
+	padding: 5%;             /*Marge intérieur*/
+	box-shadow: 1px 2px 4px black; /*Ombre portée de la section, se détache du fond*/
 }
