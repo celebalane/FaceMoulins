@@ -1,7 +1,7 @@
 /*////////////////////////////////BODY//////////////////////////////////////////*/
 
 body {
-	background-color: #d1d1d1;
+	background-color: #d1d1d1; /*Couleur de fond de la page*/
 }
 
 /*///////////////////////////////HEADER/////////////////////////////////////////*/
@@ -10,6 +10,22 @@ img {
 	width: 100%; /*Taille de l'image (largeur)*/
 }
 
+/*////////////Barre de navigation//////////////*/
+
 nav {
 	margin-top: 5%; /*Marge en haut de la barre de navigation, décolle du haut de la page*/
+}
+
+.navbar {
+	background-color: #d1d1d1; /*La barre de navigation prend la couleur du background*/
+	border:none;               /*Pas de bordure*/
+	font-size: 1.8em;          /*Taille de la typo*/
+}
+
+/*//////////////////////////////SECTION FIL ACTU////////////////////////////////*/
+
+#filActu {
+	background-color: white;
+	padding: 5%;
+	box-shadow: 1px 2px 4px black;
 }
