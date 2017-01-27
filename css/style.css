@@ -47,18 +47,32 @@ nav {
     padding-top: 5%;
     padding-bottom: 5%;
     color: white;
-  }
+}
 
- .navbar-default .navbar-nav .open .dropdown-menu li:hover a{ /*Quand on survol un lien d'un sous menu*/
+.navbar-default .navbar-nav .open .dropdown-menu li:hover a{ /*Quand on survol un lien d'un sous menu*/
  	background-color: #1693a5;
- }
+}
 
 /*//////////////////////////////SECTION FIL ACTU////////////////////////////////*/
 
 #filActu {
 	background-color: white; /*Fond de la section Fil d'actu*/
-	padding: 5%;             /*Marge intérieur*/
+	padding: 3%;             /*Marge intérieur*/
 	box-shadow: 1px 2px 4px black; /*Ombre portée de la section, se détache du fond*/
+}
+
+/*/////////////////////////////SECTION PRESSE///////////////////////////////*/
+
+#presse {                      /*Arrière plan de la section presse*/        
+	padding: 3%;
+	background-color: white;
+	box-shadow: 1px 2px 4px black;
+}
+
+#presse img {                  /*Images appartenant à la section presse*/
+	width: 50%;
+	margin-top:2%;
+	margin-bottom: 2%;
 }
 
 /*/////////////////////////////ASIDE AGENDA+RESEAUX///////////////////////////////*/
@@ -68,7 +82,7 @@ aside {
 	padding-left: 10%;     /*Placement de la section contenant l'agenda et réseaux sociaux*/
 }
 
-aside h2 {
+aside h2 {                 /*H2 de l'aside*/
 	color:#1693a5;
 }
 
@@ -97,10 +111,18 @@ td{                             /*Cellules du corps de l'agenda*/
                    
 /*/////////////////////////////FOOTER///////////////////////////////*/
 
-footer {
-	padding-top: 5%;
+footer {                 
+	padding-top: 5%;     /*Marge intérieure haute du footer*/
 }
 
-footer a {
+footer a {               /*Lien contenu dans le footer*/
 	color:#5d5d5d;
+}
+
+/*/////////////////////////////MENTIONS LEGALES///////////////////////////////*/
+
+#mention {                       /*Arrière plan de la section comportant les mentions légales*/
+	padding: 3%;
+	background-color: white;
+	box-shadow: 1px 2px 4px black;
 }
