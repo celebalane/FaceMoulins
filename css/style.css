@@ -1,6 +1,8 @@
 /*////////////////////////////////BODY//////////////////////////////////////////*/
 
 body {
+	padding: 0%;                /*Mise à zéro marges intérieures*/
+	margin: 0%;                 /*Mise à zéro marges extérieures*/
 	background-color: #d1d1d1; /*Couleur de fond de la page*/
 }
 
@@ -42,8 +44,14 @@ nav {
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a { /*Pour que la couleur des liens ne change pas lorsque la souris n'est plus sur le menu séléctionné*/
+    padding-top: 5%;
+    padding-bottom: 5%;
     color: white;
   }
+
+ .navbar-default .navbar-nav .open .dropdown-menu li:hover a{ /*Quand on survol un lien d'un sous menu*/
+ 	background-color: #1693a5;
+ }
 
 /*//////////////////////////////SECTION FIL ACTU////////////////////////////////*/
 
@@ -56,30 +64,43 @@ nav {
 /*/////////////////////////////ASIDE AGENDA+RESEAUX///////////////////////////////*/
 
 aside {
-	padding-left: 10%;
+	margin-top: -2%;                   
+	padding-left: 10%;     /*Placement de la section contenant l'agenda et réseaux sociaux*/
 }
 
-
-thead{                       /**/
-    background-color: #d4e6f1;
-} 
-
-td{
-    font-size: 17px;
-    background-color: #FEF9E7;
+aside h2 {
+	color:#1693a5;
 }
-                    
-aside p{
+
+aside p{                        /*Texte contenu dans l'aside*/
     border: 2px outset;
 }
 
-#reunion{
+thead{                       
+    background-color: #d4e6f1;  /*Couleur de fond de l'entête du tableau composant l'agenda*/
+} 
+
+td{                             /*Cellules du corps de l'agenda*/
+    font-size: 17px;            
+    background-color: #FEF9E7;
+}
+                    
+#reunion{                       /*Case de l'agenda mis en avant*/
     background-color: lightblue;
 }
                      
- aside img{
+ aside img{                     /*images dans l'aside*/
    	border-radius: 20px;
     width: 20px;
     height: 20px;
 }
                    
+/*/////////////////////////////FOOTER///////////////////////////////*/
+
+footer {
+	padding-top: 5%;
+}
+
+footer a {
+	color:#5d5d5d;
+}
