@@ -135,6 +135,10 @@ footer a {               /*Lien contenu dans le footer*/
 	box-shadow: 1px 2px 4px black;
 }
 
+#presentation img {
+	width: 10%;
+}
+
 #contact {
 	padding-left: 2%;            /*Décolle la partie contact de la présentation*/
 }
