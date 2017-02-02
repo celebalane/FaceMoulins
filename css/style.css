@@ -77,6 +77,9 @@ nav {
 
 /*/////////////////////////////ASIDE AGENDA+RESEAUX///////////////////////////////*/
 
+#Agenda{
+	visibility: hidden;
+}
 aside {
 	margin-top: -2%;                   
 	padding-left: 10%;     /*Placement de la section contenant l'agenda et réseaux sociaux*/
