@@ -199,24 +199,97 @@ footer a {               /*Lien contenu dans le footer*/
 	width: 10%;
 }
 
-#contact {
-	padding-left: 2%;            /*Décolle la partie contact de la présentation*/
+.btn-group {
+	margin-top: 2%;
+	margin-left: 27%; 
 }
 
-#contact p {                     /*Texte de l'aside contact*/
-    color: blue;
+.btn-default{
+	font-weight: 600;
+	background-color: #1693a5;
+	border-color: #1693a5;
+}
+/*/////Bricolage couleur typo bouton (à changer)////*/
+#btn1993 {
+	color: white;
 }
 
-#contact table{                  /*Tableau composant l'aside contact*/
-    background-color: #FEF9E7;
-    font-size: 15px;
-    border: 2px outset;
+#btn1994 {
+	color: white;
 }
 
-#contact img{                   /*Image de l'aside contact*/
-    border-radius: 20px;
-    width: 20px;
-    height: 20px;
+#btn1997 {
+	color: white;
+}
+
+#btn2002 {
+	color: white;
+}
+
+#btn2007 {
+	color: white;
+}
+
+#btn2008 {
+	color: white;
+}
+
+#btn2010 {
+	color: white;
+}
+
+#btn2013 {
+	color: white;
+}
+
+#btn2015 {
+	color: white;
+}
+/*////Pour l'affichage des textes de la chronologie////*/
+
+#date1993 {
+	display: none;
+	margin-top: 2%;
+}
+
+#date1994{
+	display: none;
+	margin-top: 2%;
+}
+
+#date1997{
+	display: none;
+	margin-top: 2%;
+}
+
+#date2002{
+	display: none;
+	margin-top: 2%;
+}
+
+#date2007{
+	display: none;
+	margin-top: 2%;
+}
+
+#date2008{
+	display: none;
+	margin-top: 2%;
+}
+
+#date2010{
+	display: none;
+	margin-top: 2%;
+}
+
+#date2013{
+	display: none;
+	margin-top: 2%;
+}
+
+#date2015{
+	display: none;
+	margin-top: 2%;
 }
 
 /*/////////////////////////////CONTACT///////////////////////////////*/
