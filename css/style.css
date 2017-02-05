@@ -218,3 +218,53 @@ footer a {               /*Lien contenu dans le footer*/
     width: 20px;
     height: 20px;
 }
+
+/*/////////////////////////////CONTACT///////////////////////////////*/
+
+form {
+	background-color: #1693a5;
+	padding:2%;
+	border-radius: 10px;
+	color: white;
+}
+
+form h2 {
+	padding-left: 4%;
+	font-weight: 600;
+}
+
+form p {
+	padding-left: 4%;
+	margin-bottom: 2%;
+}
+
+label {
+	margin-left: -5%;
+}
+
+.form-control {                             /*Champs du formulaire*/
+	width: 50%;
+	margin-bottom: 3%;
+}
+.form-control:focus {                      /*Lorsque l'on clique sur les champs du formulaire*/
+  border-color: #5d5d5d;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px #5d5d5d, 0 0 8px #5d5d5d;
+          box-shadow: inset 0 1px 1px #5d5d5d, 0 0 8px #5d5d5d;
+}
+
+#blocMail {
+	margin-left: 13.3%;
+}
+
+#mail {
+	width: 60%;
+}
+
+button {
+	margin-left: 20%;
+}
+
+.btn-default {
+	color: #5d5d5d;
+}
