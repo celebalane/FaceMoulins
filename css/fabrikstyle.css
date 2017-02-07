@@ -73,8 +73,7 @@ section {
 
 #assemblée{
 	margin-top: 2%;
-	width: 300px;
-	height: 400px;
+	
 }
 
 #carroussel{
@@ -83,8 +82,7 @@ section {
 }
 
 .projet{
-	width: 500px;
-	height: 300px;
+	width: 100%
 }
 
 
@@ -136,3 +134,53 @@ footer {
 footer a {               /*Lien contenu dans le footer*/
 	color:#5d5d5d;
 }
+
+/*/////////////////////////////FORMAT TEL///////////////////////////////*/
+
+@media screen and (max-width: 640px){
+	
+/*/////////////////////Navigation//////////////////*/
+	img{
+		margin-top: -15%;
+	}
+
+	nav{
+		margin-top: -20%;
+		margin-left:20%;
+	}
+
+/*/////////////////////La fabrik///////////////////////*/
+	
+	section{
+		box-shadow: none;
+	}
+
+	section img{
+		margin-top: 0;
+	}
+	
+	h1{
+		padding: 4%;
+	}
+
+	article{
+		padding: 4%;
+	}
+
+	#assemblée{
+		width: 70%;
+	}
+
+/*/////////////////////Facebook///////////////////////*/
+	
+	aside{
+		padding:5%;
+	}
+
+/*/////////////////////Carroussel photo///////////////*/
+
+	#carroussel{
+		margin-left: 0%;
+		padding-bottom: 5%;
+	}
+

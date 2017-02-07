@@ -101,3 +101,42 @@ footer {
 footer a {               /*Lien contenu dans le footer*/
 	color:#5d5d5d;
 }
+
+/*/////////////////////////////FORMAT TEL///////////////////////////////*/
+
+@media screen and (max-width: 640px){
+	
+/*/////////////////////Navigation//////////////////*/
+	img{
+		margin-top: -15%;
+	}
+
+	nav{
+		margin-top: -20%;
+		margin-left:20%;
+	}
+
+	section{
+		box-shadow: none;
+	}
+	
+	.institution{
+		padding: 4%;
+	}
+	
+	#entete{
+		font-size: 1.2em;
+	}
+
+	.photo{
+		margin-top: 3%;
+		width: 20%;
+	}
+
+	.logo{
+		width: 40%;
+	}
+
+	.logoInstitution{
+		margin-top: 0;
+	}

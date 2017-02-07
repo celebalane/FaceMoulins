@@ -199,7 +199,7 @@ footer a {               /*Lien contenu dans le footer*/
 	width: 10%;
 }
 
-.btn-group {
+.btn-group {          /*Bouton chronologie*/
 	margin-top: 2%;
 	margin-left: 27%; 
 }
@@ -342,7 +342,7 @@ button {
 	color: #5d5d5d;
 }
 
-/*/////////////////////////////FORMAT TEL/TABLETTE///////////////////////////////*/
+/*/////////////////////////////FORMAT TEL///////////////////////////////*/
 
 @media screen and (max-width: 640px){
 	
@@ -388,16 +388,77 @@ button {
 		padding-bottom: 0;
 	}
 
+/*/////////////////////Facebook///////////////////////*/
+	
+	aside{
+		padding:5%;
+	}
+
 /*/////////////////////Présentation//////////////////*/
 	
 	#presentation{
+		padding: 5%;
 		box-shadow: none;
 	}
 
 	.btn-group {
-	margin-top: 2%; 
-	margin-left: 10%;
-	margin-bottom: 5%;
+		margin: 2% 0% 10% 12%;
+		padding:0;
 	}
 
+	.articleChrono{
+		margin-bottom: 10%;
+	}
+
+/*/////////////////////Contact//////////////////*/
+	label{
+		margin-left: 0;
+	}
+
+	.form-control{
+		width: 100%;
+	}
+
+	#blocMail{                /*Bloc contenant le @ et le champ mail*/
+		margin-left: 5%;
+	}
+
+	#mail {
+		width: 94%;
+		font-size: 1em;
+	}
+
+	.form-group-lg{          /*Bouton envoyer*/
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+}
+
+/*/////////////////////////////FORMAT TABLETTE///////////////////////////////*/
+
+@media (min-width: 640px) and (max-width: 800px){
+
+	img{
+		margin-top: -20%;
+	}
+
+	nav{
+		margin-top: -25%;
+		margin-left:3%;
+	}
+
+	#presentation{
+		margin-left: 0%;
+	}
+
+	.btn-group {          /*Bouton chronologie*/
+	margin-top: 2%;
+	margin-left: 15%;
+	margin-bottom: 15%; 
+	}
+
+	.articleChrono{
+		margin-bottom: 15%;
+	}
 }

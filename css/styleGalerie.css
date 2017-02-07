@@ -53,7 +53,7 @@ nav {
     background-color: #1693a5;
 }
 
-/*/////////////////////////////G///////////////////////////////*/
+/*/////////////////////////////GALERIE///////////////////////////////*/
 
 section {
     background-color: white; /*Fond de la section Fil d'actu*/
@@ -68,8 +68,8 @@ h1{
     background-color: #008080 ;
     font-size:60px;
     color: white;
-
 }
+
 h2{
     text-align: center;
     background-color: #008080 ;
@@ -88,8 +88,8 @@ img {
 }
 
 video {
-    margin-left: 4%;
-    margin-top: -10%;
+    width: 100%;
+    margin-left: 0%;
     margin-bottom: 10%;
 }
 
@@ -102,3 +102,29 @@ footer {
 footer a {               /*Lien contenu dans le footer*/
     color:#5d5d5d;
 }
+
+/*/////////////////////////////FORMAT TEL///////////////////////////////*/
+
+@media screen and (max-width: 640px){
+    
+/*/////////////////////Navigation//////////////////*/
+    img{
+        margin-top: -15%;
+    }
+
+    nav{
+        margin-top: -20%;
+        margin-left:20%;
+    }
+/*/////////////////////Galerie//////////////////*/
+    section{
+        box-shadow: none;
+    }
+
+    h3{
+        margin-bottom: 10%;
+    }
+/*/////////////////////Footer//////////////////*/
+    footer a{
+       margin-top: 10%;
+    }
