@@ -341,3 +341,63 @@ button {
 .btn-default {
 	color: #5d5d5d;
 }
+
+/*/////////////////////////////FORMAT TEL/TABLETTE///////////////////////////////*/
+
+@media screen and (max-width: 640px){
+	
+/*/////////////////////Navigation//////////////////*/
+	img{
+		margin-top: -15%;
+	}
+
+	nav{
+		margin-top: -20%;
+		margin-left:20%;
+	}
+
+/*/////////////////////Actu///////////////////////*/
+	
+	#filActu{
+		box-shadow: none;
+	}
+
+	#filActu article {
+		margin-top: 0%;
+	}
+
+	#filActu img {
+		display: none;
+	}
+
+	#filActu nav {
+		margin-top: 5%;
+	}
+
+/*/////////////////////Presse///////////////////////*/
+	
+	#presse{
+		box-shadow: none;
+	}
+
+	#presse article {
+		margin-bottom: 10%;
+	}
+
+	#lien2 {
+		padding-bottom: 0;
+	}
+
+/*/////////////////////Présentation//////////////////*/
+	
+	#presentation{
+		box-shadow: none;
+	}
+
+	.btn-group {
+	margin-top: 2%; 
+	margin-left: 10%;
+	margin-bottom: 5%;
+	}
+
+}
