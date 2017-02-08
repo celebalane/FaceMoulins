@@ -210,15 +210,15 @@ footer a {               /*Lien contenu dans le footer*/
 	border-color: #1693a5;
 }
 /*/////Bricolage couleur typo bouton (à changer)////*/
-#btn1993 {
+#btn93 {
 	color: white;
 }
 
-#btn1994 {
+#btn94 {
 	color: white;
 }
 
-#btn1997 {
+#btn97 {
 	color: white;
 }
 
@@ -247,47 +247,47 @@ footer a {               /*Lien contenu dans le footer*/
 }
 /*////Pour l'affichage des textes de la chronologie////*/
 
-#date1993 {
+#date1{
 	display: none;
 	margin-top: 2%;
 }
 
-#date1994{
+#date2{
 	display: none;
 	margin-top: 2%;
 }
 
-#date1997{
+#date3{
 	display: none;
 	margin-top: 2%;
 }
 
-#date2002{
+#date4{
 	display: none;
 	margin-top: 2%;
 }
 
-#date2007{
+#date5{
 	display: none;
 	margin-top: 2%;
 }
 
-#date2008{
+#date6{
 	display: none;
 	margin-top: 2%;
 }
 
-#date2010{
+#date7{
 	display: none;
 	margin-top: 2%;
 }
 
-#date2013{
+#date8{
 	display: none;
 	margin-top: 2%;
 }
 
-#date2015{
+#date9{
 	display: none;
 	margin-top: 2%;
 }
