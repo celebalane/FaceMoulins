@@ -97,7 +97,7 @@ nav {
 
 /*/////////////////////////////SECTION PRESSE///////////////////////////////*/
 
-#presse {                      /*Arrière plan de la section presse*/        
+#presse {                      /*Arrière plan de la section presse*/       
 	padding-left: 3%;
 	padding-top: 1%;
 	padding-bottom: 3%;
@@ -110,6 +110,7 @@ nav {
 	margin-bottom: 2%;
 	height: 100px;
 }
+
 #presse h4 {
 	margin-bottom: 10%;
 }
@@ -137,9 +138,10 @@ nav {
 #Agenda{
 	visibility: hidden;
 }
-aside {
-	margin-top: -2%;                   
-	padding-left: 10%;     /*Placement de la section contenant l'agenda et réseaux sociaux*/
+
+aside {                   /*Placement de la section contenant l'agenda et réseaux sociaux*/ 
+	margin-left: 5%;                  
+	padding-left: 1%;     
 }
 
 aside h2 {                 /*H2 de l'aside*/
@@ -162,9 +164,11 @@ td{                             /*Cellules du corps de l'agenda*/
 #reunion{                       /*Case de l'agenda mis en avant*/
     background-color: lightblue;
 }
+
 #page{
 	color: #2980B9;
-}                  
+} 
+
 /*/////////////////////////////FOOTER///////////////////////////////*/
 
 footer {                 
