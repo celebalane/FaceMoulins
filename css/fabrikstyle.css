@@ -66,7 +66,6 @@ section {
 	box-shadow: 1px 2px 4px black; /*Ombre portée de la section, se détache du fond*/
 	margin-bottom: 2%;
 }
-
 .col-md-9 {
 	padding-left: 3%;
 }
@@ -106,8 +105,7 @@ span {
 
 /*/////////////////////////////ASIDE AGENDA+RESEAUX///////////////////////////////*/
 
-aside {
-	margin-top: -2%;                   
+aside {                   
 	padding-left: 10%;     /*Placement de la section contenant l'agenda et réseaux sociaux*/
 }
 
@@ -118,13 +116,6 @@ aside h2 {                 /*H2 de l'aside*/
 aside p{                        /*Texte contenu dans l'aside*/
     border: 2px outset;
 }
-                   
- aside img{                     /*images dans l'aside*/
-   	border-radius: 20px;
-    width: 20px;
-    height: 20px;
-}
-
 /*/////////////////////////////FOOTER///////////////////////////////*/
 
 footer {                 
@@ -170,13 +161,6 @@ footer a {               /*Lien contenu dans le footer*/
 	#assemblée{
 		width: 70%;
 	}
-
-/*/////////////////////Facebook///////////////////////*/
-	
-	aside{
-		padding:5%;
-	}
-
 /*/////////////////////Carroussel photo///////////////*/
 
 	#carroussel{
