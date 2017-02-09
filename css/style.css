@@ -437,9 +437,15 @@ button {
 
 }
 
-/*/////////////////////////////FORMAT TABLETTE///////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+						/*/////////////////////////////FORMAT TABLETTE///////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 @media (min-width: 640px) and (max-width: 800px){
+
+	header{
+		margin-bottom: -15%;
+	}
 
 	img{
 		margin-top: -20%;
@@ -467,4 +473,29 @@ button {
 	#facebookMobile{
 		display: none;
 	}
+
+	#facebookMobile{
+		display: block;
+		background-color:  #1693a5;
+		padding: 4%;
+		margin-left: 2%;
+	}
+
+	#facebookOrdi{
+		display: none;
+	}
+
+	.lien{
+		margin-left: 50%;
+	}
+
+	#filActu article{
+		margin-top: 0;
+	}
+
+	#filActu img{
+		margin: 0;
+		margin-top: 5%;
+	}
+
 }
