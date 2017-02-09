@@ -133,28 +133,17 @@ nav {
 	padding-bottom: 8%;
 }
 
-/*/////////////////////////////ASIDE AGENDA+RESEAUX///////////////////////////////*/
-
-aside {                   /*Placement de la section contenant l'agenda et réseaux sociaux*/ 
-	margin-left: 5%;                  
-	padding-left: 1%;
-}
-
-aside h2 {                 /*H2 de l'aside*/
-	color:#1693a5;
-}
-
-aside p{                        /*Texte contenu dans l'aside*/
-    border: 2px outset;
-}
+/*/////////////////////////////FACEBOOK///////////////////////////////*/
 
 #facebookMobile{
 	display: none;
 }
 
-iframe{
-	width: 340px;
-	height: 500px;	
+aside {                   /*Placement de la section contenant l'agenda et réseaux sociaux*/ 
+	margin-left: 5%;                  
+	padding-left: 1%;
+	margin-top: 10%;     
+	background-color: #1693a5;
 }
 
 /*/////////////////////////////FOOTER///////////////////////////////*/
