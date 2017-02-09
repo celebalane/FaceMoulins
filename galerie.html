@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/styleGalerie.css">
+        <link rel="stylesheet" href="Responsive-Lightbox/jquery.lightbox.css" />
         <title>Galerie | FACE</title>
     </head>
     <body class="container">
@@ -69,30 +70,30 @@
             <h1 class="col-xs-12"><strong>Galerie</strong></h1>
             <h3 class="col-xs-12"><strong>Photos</strong></h3>
             <div class="col-md-3 col-xs-6">
-                <img src="img/galerie/galerie1.jpg" alt="reunion" />
+                <a href="img/galerie/galerie1.jpg" rel="lightbox"><img src="img/galerie/galerie1.jpg" alt="reunion" /></a>
             </div>
             <div class="col-md-3 col-xs-6">
-                <img src="img/galerie/galerie2.jpg" alt="inauguration" />
+                <a href="img/galerie/galerie2.jpg" rel="lightbox"><img src="img/galerie/galerie2.jpg" alt="inauguration" /></a>
             </div>
             <div class="col-md-3 col-xs-6">
-                <img src="img/galerie/galerie3.jpg" alt="exposition" />
+                <a href="img/galerie/galerie3.jpg" rel="lightbox"><img src="img/galerie/galerie3.jpg" alt="exposition" /></a>
             </div>
             <div class="col-md-3 col-xs-6">
-                <img src="img/galerie/galerie4.jpg" alt="christine et xavier" />
+                <a href="img/galerie/galerie4.jpg" rel="lightbox"><img src="img/galerie/galerie4.jpg" alt="christine et xavier" /></a>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3 col-xs-6">
-                <img src="img/galerie/galerie5.jpg" alt="xavier de soultrait" />
+                <a href="img/galerie/galerie5.jpg" rel="lightbox"><img src="img/galerie/galerie5.jpg" alt="xavier de soultrait" /></a>
             </div>
             <div class="col-md-3 col-xs-6">
-                <img src="img/galerie/galerie6.jpg" alt="reunion fabrique du numerique" />
+                <a href="img/galerie/galerie6.jpg" rel="lightbox"><img src="img/galerie/galerie6.jpg" alt="reunion fabrique du numerique" /></a>
             </div>
             <div class="col-md-3 col-xs-6">
-                <img src="img/galerie/galerie7.jpg" alt="journee recrutement formation" />
+                <a href="img/galerie/galerie7.jpg" rel="lightbox"><img src="img/galerie/galerie7.jpg" alt="journee recrutement formation" /></a>
             </div>
             <div class="col-md-3 col-xs-6">            
-                <img src="img/galerie/galerie8.jpg" alt="cafe d'enface" />
+                <a href="img/galerie/galerie8.jpg" rel="lightbox"><img src="img/galerie/galerie8.jpg" alt="cafe d'enface" /></a>
             </div>
         </div>
         <!--video-->
@@ -115,5 +116,12 @@
         <!--Liens javascript-->
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js "></script>
+        <script src="Responsive-Lightbox/jquery.lightbox.min.js"></script>
+        <script>
+        $(function()
+        {
+            $('[rel="lightbox"]').lightbox();
+        });
+    </script>
     </body>
 </html>
