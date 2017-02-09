@@ -29,7 +29,6 @@
           						<ul class="dropdown-menu">
             						<li><a href="presentation.html">Histoire</a></li>
             						<li><a href="presentation.html#pagePalmares">Palmarès</a></li>
-                        			<li><a href="contact.html">Contact</a></li>
           						</ul>
         					</li>
         					<!--Bouton-->
@@ -61,6 +60,10 @@
             						<li><a href="#pagePhoto">Photos</a></li>
             						<li><a href="#pageProjet">Projets</a></li>
           						</ul>
+        					</li>
+        					<!--Bouton-->
+        					<li class="dropdown">
+          						<a href="contact.html" role="button">Contact</a>
         					</li>
       					</ul>
       				</div>
@@ -121,18 +124,41 @@
 			</div>
 			<div class="row">
 				<!--Photos-->
-				<section class="col-md-10 col-md-offset-1 col-xs-12" id="carroussel">
-					<article id="pagePhoto">
-						<h2 id="h2photo">Photos</h2>
-						<span class="glyphicon glyphicon-chevron-left col-md-1 col-xs-1" aria-hidden="true"></span>
-						<img src="img/fabrik/img4.jpg" class="photos col-md-2 col-xs-2" />
-						<img src="img/fabrik/img5.jpg" class="photos col-md-2 col-xs-2" />
-						<img src="img/fabrik/img6.jpg" class="photos col-md-2 col-xs-2" />
-						<img src="img/fabrik/img7.jpg" class="photos col-md-2 col-xs-2" />
-						<img src="img/fabrik/img8.jpg" class="photos col-md-2 col-xs-2" />
-						<span class="glyphicon glyphicon-chevron-right col-md-1 col-xs-1" aria-hidden="true"></span>
-					</article>
-				</section>
+				<div id="my_carousel" class="carousel slide" data-ride="carousel">
+				<!-- Bulles -->
+					<ol class="carousel-indicators">
+						<li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#my_carousel" data-slide-to="1"></li>
+					</ol>
+					<!-- Slides -->
+					<div class="carousel-inner">
+						<!-- Page 1 -->
+						<div class="item active">  
+							<div class="carousel-page">
+								<img src="img/fabrik/img4.jpg" class="img-responsive" />
+								<img src="img/fabrik/img5.jpg" class="img-responsive" />
+								<img src="img/fabrik/img6.jpg" class="img-responsive" />
+								</div>
+							<div class="carousel-caption">Photos de la Fabrik</div>
+						</div>   
+						<!-- Page 2 -->
+						<div class="item"> 
+							<div class="carousel-page">
+								<img src="img/fabrik/img7.jpg" class="img-responsive" />
+								<img src="img/fabrik/img8.jpg" class="img-responsive" />
+								<img src="img/fabrik/img0.jpg" class="img-responsive" />
+							</div> 
+							<div class="carousel-caption"></div>
+						</div>  
+					</div>
+					<!-- Contrôles -->
+					<a class="left carousel-control" href="#my_carousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#my_carousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
 			</div>
 			<!--Pied de page-->
 			<footer class="row">

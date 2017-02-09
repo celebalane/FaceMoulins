@@ -84,23 +84,50 @@ section {
 	width: 100%
 }
 
-
-
 /*/////////////////////////////PHOTOS///////////////////////////////*/
 
 #h2photo {
 	margin-left: 2%;
 }
 
-.photos{
-	margin-top: 5%;
-	transform: rotate(90deg);
+.carousel-page{
+	margin-left: 10%;
+	display: flex;
+}
+
+.img-responsive{
+	width: 20%;
+	height: 20%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-left: 7%;
 }
 
 span {
 	padding-top: 6%;
 	font-size: 2em;
 	color: #1693a5;
+}
+
+.carousel-indicators li{
+	border:1px solid #fbb829;
+}
+
+.carousel-indicators .active {
+	background-color: #fbb829;
+}
+
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(22,147,165, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image:      -o-linear-gradient(left, rgba(22,147,165, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image:         linear-gradient(to right, rgba(22,147,165, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+}
+
+.carousel-control.right {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(22,147,165, .5) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(22,147,165, .5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(22,147,165, .5) 100%);
 }
 
 /*/////////////////////////////ASIDE AGENDA+RESEAUX///////////////////////////////*/
@@ -131,6 +158,7 @@ footer a {               /*Lien contenu dans le footer*/
 @media screen and (max-width: 640px){
 	
 /*/////////////////////Navigation//////////////////*/
+	
 	img{
 		margin-top: -15%;
 	}
@@ -161,6 +189,7 @@ footer a {               /*Lien contenu dans le footer*/
 	#assemblée{
 		width: 70%;
 	}
+
 /*/////////////////////Carroussel photo///////////////*/
 
 	#carroussel{
