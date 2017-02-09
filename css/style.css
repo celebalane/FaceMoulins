@@ -134,40 +134,12 @@ nav {
 }
 
 /*/////////////////////////////ASIDE AGENDA+RESEAUX///////////////////////////////*/
-
-#Agenda{
-	visibility: hidden;
-}
-
 aside {                   /*Placement de la section contenant l'agenda et réseaux sociaux*/ 
 	margin-left: 5%;                  
-	padding-left: 1%;     
+	padding-left: 1%;
+	margin-top: 10%;     
+	background-color: #1693a5;
 }
-
-aside h2 {                 /*H2 de l'aside*/
-	color:#1693a5;
-}
-
-aside p{                        /*Texte contenu dans l'aside*/
-    border: 2px outset;
-}
-
-thead{                       
-    background-color: #d4e6f1;  /*Couleur de fond de l'entête du tableau composant l'agenda*/
-} 
-
-td{                             /*Cellules du corps de l'agenda*/
-    font-size: 17px;            
-    background-color: #FEF9E7;
-}
-                    
-#reunion{                       /*Case de l'agenda mis en avant*/
-    background-color: lightblue;
-}
-
-#page{
-	color: #2980B9;
-} 
 
 /*/////////////////////////////FOOTER///////////////////////////////*/
 
