@@ -81,10 +81,10 @@ section {
 }
 
 .projet{
-	width: 100%
+	width: 70%
 }
 
-/*/////////////////////////////PHOTOS///////////////////////////////*/
+/*/////////////////////////////CARROUSSEL///////////////////////////////*/
 
 #h2photo {
 	margin-left: 2%;
@@ -106,7 +106,7 @@ section {
 span {
 	padding-top: 6%;
 	font-size: 2em;
-	color: #1693a5;
+	color: white;
 }
 
 .carousel-indicators li{
