@@ -67,13 +67,9 @@ nav {
 	margin-bottom: 2%;
 }
 
-#filActu article {
-	margin-top: -5%;
-}
-
 #filActu img {
 	width: 15%;
-	padding-top: 3%;
+	padding-top: 0%;
 }
 
 .pager {
@@ -108,7 +104,6 @@ nav {
 #presse img {                  /*Images appartenant à la section presse*/
 	margin-top:2%;
 	margin-bottom: 2%;
-	height: 100px;
 }
 
 #presse h4 {
@@ -349,6 +344,7 @@ button {
 
 	#filActu article {
 		margin-top: 0%;
+		margin-left: 2%;
 	}
 
 	#filActu img {
@@ -499,7 +495,8 @@ button {
 
 	#filActu img{
 		margin: 0;
-		margin-top: 5%;
+		margin-top: 0%;
+		width: 40%;
 	}
 
 }

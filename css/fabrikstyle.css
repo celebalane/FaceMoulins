@@ -84,7 +84,7 @@ section {
 	width: 70%
 }
 
-/*/////////////////////////////CARROUSSEL///////////////////////////////*/
+/*/////////////////////////////CARROUSSEL PHOTO///////////////////////////////*/
 
 #h2photo {
 	margin-left: 2%;
@@ -103,7 +103,11 @@ section {
 	margin-left: 7%;
 }
 
-span {
+.formatPaysage{
+	padding-top: 10%;
+}
+
+span {                 /*Flèches*/
 	padding-top: 6%;
 	font-size: 2em;
 	color: #1693a5;
@@ -148,7 +152,9 @@ footer a {               /*Lien contenu dans le footer*/
 	color:#5d5d5d;
 }
 
-/*/////////////////////////////FORMAT TEL///////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+						/*/////////////////////////////FORMAT TELEPHONE///////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 @media screen and (max-width: 640px){
 	
@@ -189,7 +195,18 @@ footer a {               /*Lien contenu dans le footer*/
 
 	#carroussel{
 		margin-left: 0%;
-		padding-bottom: 5%;
+	}
+
+	.carousel-indicators{
+		display: none;
+	}
+
+	.carousel-caption{
+		visibility: hidden;
+	}
+
+	.formatPaysage{
+		margin-top: 4%;
 	}
 }
 

@@ -6,6 +6,8 @@
 		<title>La Fabrik | FACE</title>
 		<!--Lien bootstrap-->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<!--Lien zoom photo-->
+		<link rel="stylesheet" href="lightbox/jquery.lightbox.css" >
 		<!--lien fichier style.css-->
 		<link rel="stylesheet" type="text/css" href="css/fabrikstyle.css">
 	</head>
@@ -121,8 +123,8 @@
                 	</div>
 				</aside>
 			</div>
+			<!--Photos-->
 			<div class="row"  id="pagePhoto">
-				<!--Photos-->
 				<div id="my_carousel" class="carousel slide" data-ride="carousel">
 				<!-- Bulles -->
 					<ol class="carousel-indicators">
@@ -134,18 +136,18 @@
 						<!-- Page 1 -->
 						<div class="item active">  
 							<div class="carousel-page">
-								<img src="img/fabrik/img4.jpg" class="img-responsive" />
-								<img src="img/fabrik/img5.jpg" class="img-responsive" />
-								<img src="img/fabrik/img6.jpg" class="img-responsive" />
+								<a href="img/fabrik/img4.jpg" rel="lightbox" class="img-responsive"><img src="img/fabrik/img4.jpg"/></a>
+								<a href="img/fabrik/img5.jpg" rel="lightbox" class="img-responsive"><img src="img/fabrik/img5.jpg" /></a>
+								<a href="img/fabrik/img6.jpg" rel="lightbox" class="img-responsive"><img src="img/fabrik/img6.jpg" /></a>
 								</div>
 							<div class="carousel-caption">Photos de la Fabrik</div>
 						</div>   
 						<!-- Page 2 -->
 						<div class="item"> 
 							<div class="carousel-page">
-								<img src="img/fabrik/img7.jpg" class="img-responsive" />
-								<img src="img/fabrik/img8.jpg" class="img-responsive" />
-								<img src="img/fabrik/img0.jpg" class="img-responsive" />
+								<a href="img/fabrik/img7.jpg" rel="lightbox" class="img-responsive"><img src="img/fabrik/img7.jpg"/></a>
+								<a href="img/fabrik/img8.jpg" rel="lightbox" class="img-responsive"><img src="img/fabrik/img8.jpg"/></a>
+								<a href="img/fabrik/img0.jpg" rel="lightbox" class="img-responsive formatPaysage"><img src="img/fabrik/img0.jpg"/></a>
 							</div> 
 							<div class="carousel-caption"></div>
 						</div>  
@@ -167,5 +169,12 @@
 		<!--Liens javascript-->
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js "></script>
+		<script src="lightbox/jquery.lightbox.min.js"></script>
+        <script>
+        $(function()
+        {
+            $('[rel="lightbox"]').lightbox();
+        });
+    </script>
 	</body>
 </html>
