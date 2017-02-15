@@ -1,9 +1,13 @@
+
 /*////////////////////////////////BODY//////////////////////////////////////////*/
 
 body {
 	padding: 0%;                /*Mise à zéro marges intérieures*/
 	margin: 0%;                 /*Mise à zéro marges extérieures*/
-	background-color: #d1d1d1; /*Couleur de fond de la page*/
+	padding:0;
+    background: url(https://s-media-cache-ak0.pinimg.com/736x/82/a6/6c/82a66c6b69a61564494a682e4fb0d704.jpg) no-repeat center fixed; 
+    background-size: cover; /*Couleur de fond de la page*/
+    
 }
 
 h1 {
@@ -22,15 +26,20 @@ img {
 nav {
 	margin-top: 5%; /*Marge en haut de la barre de navigation, décolle du haut de la page*/
 }
-
+#barre{
+	height: 25px;
+	background-color: #1D4B58;
+	border-bottom: 3px solid #E0A377;
+}
 .navbar {
-	background-color: #d1d1d1; /*La barre de navigation prend la couleur du background*/
+	background-color: transparent; /*La barre de navigation prend la couleur du background*/
 	border:none;               /*Pas de bordure*/
 	font-size: 1.8em;          /*Taille de la typo*/
 }
 
 .navbar-nav li:hover{            /*Quand on survol un lien de la barre de navigation*/
 	background-color: #1693a5;
+	border-bottom: 5px solid #CF844D;
 }
 
 .navbar-default .navbar-nav li:hover a{     /*Quand le lien est survolé, la typo devient blanche*/
@@ -61,17 +70,28 @@ nav {
 /*//////////////////////////////SECTION FIL ACTU////////////////////////////////*/
 
 #filActu {
-	background-color: white; /*Fond de la section Fil d'actu*/
+	background-color: #F2F2F2; /*Fond de la section Fil d'actu*/
 	padding:1% 3% 1% 3%;             
-	box-shadow: 1px 2px 4px black; /*Ombre portée de la section, se détache du fond*/
+	box-shadow: 6px 10px 18px 4px rgba(0,0,0,0.3); /*Ombre portée de la section, se détache du fond*/
 	margin-bottom: 2%;
+}
+#filActu h1{
+	margin-bottom: 70px
+}
+#actu{
+	
+	margin-bottom: -50px;
+	margin-top: 25px;
 }
 
 #filActu img {
-	width: 15%;
+	width: 25%;
 	padding-top: 0%;
+	border-right: 1px solid orange;
 }
-
+.articles {
+	border-bottom: 2px solid #1693a5;
+}
 .pager {
 	margin-top: -3%;
 	text-align: right;
@@ -97,8 +117,8 @@ nav {
 	padding-left: 3%;
 	padding-top: 1%;
 	padding-bottom: 3%;
-	background-color: white;
-	box-shadow: 1px 2px 4px black;
+	background-color: #F2F2F2;
+	box-shadow: 6px 10px 18px 4px rgba(0,0,0,0.3);
 }
 
 #presse img {                  /*Images appartenant à la section presse*/
@@ -161,19 +181,27 @@ footer a {               /*Lien contenu dans le footer*/
 
 #presentation {                  /*Arrière plan de de la section contenant l'histoire et le palmarès*/
 	padding: 3%;
-	background-color: white;
-	box-shadow: 1px 2px 4px black;
+	background-color: #F2F2F2;
+	box-shadow: 6px 10px 18px 4px rgba(0,0,0,0.3);
+}
+
+#presentation h2{
+	text-align: center;
 }
 
 #presentation img {
 	width: 10%;
 }
-
+#Palmares h3{
+	margin-top: 40px;
+}
 .btn-group {          /*Bouton chronologie*/
 	margin-top: 2%;
 	margin-left: 27%; 
 }
-
+span{
+	color: #D65F09;
+}
 .btn-default{
 	font-weight: 600;
 	background-color: #1693a5;
