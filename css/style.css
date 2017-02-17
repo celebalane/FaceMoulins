@@ -146,8 +146,8 @@ footer a {               /*Lien contenu dans le footer*/
 }
 
 #presse img {                  /*Images appartenant à la section presse*/
-	margin-top:2%;
-	margin-bottom: 2%;
+	margin:2% 0% 2% 0%;
+	width: 100%;
 }
 
 #presse h4 {
@@ -212,21 +212,31 @@ aside {                   /*Placement de la section contenant l'agenda et résea
 #presentation img {
 	width: 10%;
 }
+
 #Palmares h3{
 	margin-top: 40px;
 }
+
 .btn-group {          /*Bouton chronologie*/
 	margin-top: 2%;
 	margin-left: 27%; 
 }
+
 span{
 	color: #D65F09;
 }
+
 .btn-default{
 	font-weight: 600;
 	background-color: #1693a5;
 	border-color: #1693a5;
 }
+
+#Grdf{
+	color: white;
+	margin-right: 2%;
+}
+
 /*/////Bricolage couleur typo bouton (à changer)////*/
 #btn93 {
 	color: white;
