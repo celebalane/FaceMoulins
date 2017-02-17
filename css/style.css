@@ -366,6 +366,15 @@ button {
 	font-size: 0.8em;
 }
 
+#zoneTexte{
+	margin:3% 0% 3% 2%;
+	border-radius: 8px;
+}
+
+#labelZone{
+	margin-top: 2%;
+}
+
 #contactFace{
 	background-color: #1693a5;
 	padding:10%;

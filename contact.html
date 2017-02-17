@@ -79,13 +79,13 @@
           <div class="form-group-lg">
             <label for="nom" class="col-sm-2 control-label">Nom</label>
             <div class="col-sm-10">
-              <input type="text" name="nom" placeholder="Ex : Dupond" maxlength="30" class="form-control input-lg">
+              <input type="text" name="nom" placeholder="Ex : Dupond" maxlength="30" class="form-control input-lg" required>
             </div>
           </div>
           <div class="form-group-lg">
             <label for="prenom" class="col-sm-2 control-label">Prénom</label>
             <div class="col-sm-10">
-              <input type="text" name="prenom" placeholder="Ex : Nicolas" maxlength="30" class="form-control input-lg">
+              <input type="text" name="prenom" placeholder="Ex : Nicolas" maxlength="30" class="form-control input-lg" required>
             </div>
           </div>
           <div class="form-group-lg">
@@ -98,7 +98,13 @@
             <label for="mail" class="col-sm-2 control-label">Mail</label>
             <div class="col-sm-10 input-group" id="blocMail">
               <span class="input-group-addon">@</span>
-              <input type="email" name="mail" placeholder="Ex : dupond@gmail.com" class="form-control input-lg" id="mail">
+              <input type="email" name="mail" placeholder="Ex : dupond@gmail.com" class="form-control input-lg" id="mail" required>
+            </div>
+          </div>
+           <div class="form-group-lg">
+            <label for="message" class="col-sm-2 control-label" id="labelZone">Message</label>
+            <div class="col-sm-10 input-group">
+              <textarea name="message" placeholder="Votre message" maxlength="500" rows="9" class="form-control input-lg" id="zoneTexte" required></textarea>
             </div>
           </div>
           <!--Bouton envoi-->
