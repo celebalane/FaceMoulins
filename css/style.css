@@ -217,6 +217,10 @@ blockquote footer {
 	display: none;
 }
 
+#facebookTab{
+	display: none;
+}
+
 aside {                   /*Placement de la section contenant l'agenda et réseaux sociaux*/ 
 	margin-left: 5%;                  
 	padding-left: 1%;
@@ -624,11 +628,13 @@ span {                 /*Flèches*/
 	
 	#citation{
 		margin: 0;
+		margin-bottom: 2%;
 	}
 
 /*/////////////////////Actu///////////////////////*/
 	
 	#filActu{
+		margin: 0;
 		box-shadow: none;
 		padding: 4%;
 	}
@@ -687,6 +693,10 @@ span {                 /*Flèches*/
 	}
 
 	#facebookOrdi{
+		display: none;
+	}
+
+	#facebookTab{
 		display: none;
 	}
 
@@ -867,6 +877,11 @@ span {                 /*Flèches*/
 		margin: 2% -2% 0%;
 	}
 
+	#citation{
+		margin: 0% -2% 2% -2%;
+		padding: 1%;
+	}
+
 	#presentation{
 		margin-left: 0%;
 	}
@@ -885,11 +900,10 @@ span {                 /*Flèches*/
 		display: none;
 	}
 
-	#facebookMobile{
+	#facebookTab{
 		display: block;
 		background-color:  #1693a5;
-		padding: 4%;
-		margin-left: 2%;
+		padding: 3%;
 	}
 
 	#facebookOrdi{
@@ -898,6 +912,11 @@ span {                 /*Flèches*/
 
 	.lien{
 		margin-left: 50%;
+	}
+
+	#filActu{
+		box-shadow: none;
+		margin-right: 1%;
 	}
 
 	#filActu article{
