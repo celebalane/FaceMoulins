@@ -854,10 +854,6 @@ span {                 /*Flèches*/
 		margin-bottom: -15%;
 	}
 
-	img{
-		margin-top: -20%;
-	}
-
 	nav{
 		margin-top: -25%;
 	}
@@ -929,9 +925,4 @@ span {                 /*Flèches*/
 	#galerie h1{
 		margin:-4.3% -4.5% 0% -4.5%;
 	}
-
-	#galerie img{
-		margin: 0;
-	}
-
 }
