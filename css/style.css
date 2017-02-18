@@ -15,6 +15,10 @@ h1 {
 	margin-bottom: 5%;
 }
 
+.container{
+	padding: 0;
+}
+
 /*//////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////HEADER/////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////////////////////////*/
@@ -28,11 +32,13 @@ img {
 nav {
 	margin-top: 5%; /*Marge en haut de la barre de navigation, décolle du haut de la page*/
 }
+
 #barre{
 	height: 25px;
 	background-color: #1D4B58;
 	border-bottom: 3px solid #E0A377;
 }
+
 .navbar {
 	background-color: transparent; /*La barre de navigation prend la couleur du background*/
 	border:none;               /*Pas de bordure*/
@@ -74,17 +80,46 @@ nav {
 /*//////////////////////////////////////////////////////////////////*/
 
 footer {                 
-	padding-top: 5%;     /*Marge intérieure haute du footer*/
+	padding:2% 2% 2% 6%;
+	background-color: rgba(51,93,104,1);
+	margin: 2% -7.5% 0 -7.5%;
+	color: white;
 }
 
 footer a {               /*Lien contenu dans le footer*/
-	color:#5d5d5d;
+	color:white;
+}
+
+footer a:hover{
+	color: #aaa9a9;
+	text-decoration: none;
+}
+
+#lienMentions{
+	padding-top: 2%;
 }
 
 /*///////////////////////////////Citation////////////////////////////////////////*/
 
+blockquote {
+	border-left:none;
+	margin-bottom: 0;
+}
+
+blockquote footer {
+	margin-top: -4%;
+	margin-right: 0;
+	color: white;
+	background-color: unset;
+}
+
 #citation{
+	margin: -2% -7.5% 2% -8%;
+	padding: 1.5%;
+	background-color: rgba(18,110,122,0.7);
 	font-size: 20px;
+	color: white;
+	font-weight: 400;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////*/
