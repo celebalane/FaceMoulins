@@ -4,7 +4,6 @@
 body {
 	padding: 0%;                /*Mise à zéro marges intérieures*/
 	margin: 0%;                 /*Mise à zéro marges extérieures*/
-	padding:0;
     background: url(https://s-media-cache-ak0.pinimg.com/736x/82/a6/6c/82a66c6b69a61564494a682e4fb0d704.jpg) no-repeat center fixed; 
     background-size: cover; /*Couleur de fond de la page*/
     
@@ -132,11 +131,12 @@ blockquote footer {
 	box-shadow: 6px 10px 18px 4px rgba(0,0,0,0.3); /*Ombre portée de la section, se détache du fond*/
 	margin-bottom: 2%;
 }
+
 #filActu h1{
 	margin-bottom: 70px
 }
+
 #actu{
-	
 	margin-bottom: -50px;
 	margin-top: 25px;
 }
@@ -146,9 +146,11 @@ blockquote footer {
 	padding-top: 0%;
 	border-right: 1px solid orange;
 }
+
 .articles {
 	border-bottom: 2px solid #1693a5;
 }
+
 .pager {
 	margin-top: -3%;
 	text-align: right;
@@ -427,6 +429,10 @@ button {
 	color: white;
 }
 
+.glyphicon-home{
+	color: white;
+}
+
 /*/////////////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////PARTENARIATS/////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////////////*/
@@ -603,6 +609,23 @@ span {                 /*Flèches*/
 		margin-left:20%;
 	}
 
+	.container{
+		padding-right: 15px;
+  		padding-left: 15px; 
+	}
+
+/*/////////////////////Navigation//////////////////*/
+
+	footer{
+		text-align: center;
+	}
+
+/*/////////////////////Citation//////////////////*/
+	
+	#citation{
+		margin: 0;
+	}
+
 /*/////////////////////Actu///////////////////////*/
 	
 	#filActu{
@@ -610,9 +633,13 @@ span {                 /*Flèches*/
 		padding: 4%;
 	}
 
+	#filActu h1 {
+		padding-left: 4%;
+	}
+
 	#filActu article {
 		margin-top: 0%;
-		margin-left: 2%;
+		padding-left: 4%;
 	}
 
 	#filActu img {
@@ -629,8 +656,13 @@ span {                 /*Flèches*/
 		box-shadow: none;
 	}
 
+	#presse h1{
+		padding-left: 4%;
+	}
+
 	#presse article {
 		margin-bottom: 10%;
+		padding-left: 8%;
 	}
 
 	#lien2 {
@@ -703,8 +735,16 @@ span {                 /*Flèches*/
 		margin-bottom: 5%;
 	}
 
+	#zoneTexte{
+		margin-left: 6%;
+	}
+
 	#contactFace{
 		margin-top: 3%;
+	}
+
+	.glyphicon-home {
+		color: white;
 	}
 
 /*/////////////////////Partenariat//////////////////*/
@@ -730,22 +770,36 @@ span {                 /*Flèches*/
 		margin-top: 0;
 	}
 
-	section{
+	#sectionPartenariat{
         box-shadow: none;
+        margin: 0;
     }
 
-    h3{
+    #sectionPartenariat h3{
         margin-bottom: 10%;
+    }
+
+    #particuliers{
+    	margin: 0;
     }
 
 /*/////////////////////Galerie//////////////////*/
 
  	#galerie{
         box-shadow: none;
+        padding: 0;
     }
 
     #galerie h3{
         margin-bottom: 10%;
+    }
+
+    #galerie img{
+    	margin-left: 2%;
+    }
+
+    #galerie video {
+    	padding: 3%;
     }
 
 /*/////////////////////La fabrik///////////////////////*/
@@ -806,7 +860,15 @@ span {                 /*Flèches*/
 
 	nav{
 		margin-top: -25%;
-		margin-left:3%;
+	}
+
+	.navbar{
+		font-size: 1.5em;
+	}
+
+	footer{
+		padding: 4%;
+		margin: 2% -2%;
 	}
 
 	#presentation{
@@ -858,6 +920,18 @@ span {                 /*Flèches*/
 
 	#logo{
 		margin-top: -20%;
+	}
+
+	#galerie{
+		padding: 4%;
+	}
+
+	#galerie h1{
+		margin:-4.3% -4.5% 0% -4.5%;
+	}
+
+	#galerie img{
+		margin: 0;
 	}
 
 }
