@@ -231,7 +231,7 @@ blockquote footer {
 }
 
 aside {                   /*Placement de la section contenant réseaux sociaux*/
-	margin-left: 5%;                  
+	margin-left: 5%;                 
 	padding-left: 1%;
 }
 
@@ -712,6 +712,7 @@ span {                 /*Flèches*/
 	
 	.presentation{
 		padding: 5%;
+		padding-bottom: 30%;
 		box-shadow: none;
 	}
 
@@ -726,7 +727,7 @@ span {                 /*Flèches*/
 	}
 
 	.articleChrono{
-		margin-bottom: 10%;
+		padding: 0;
 	}
 
 /*/////////////////////Contact//////////////////*/
@@ -904,8 +905,8 @@ span {                 /*Flèches*/
 		padding: 1%;
 	}
 
-	#presentation{
-		margin-left: 0%;
+	.presentation{
+		padding-bottom: 10%;
 	}
 
 	.btn-group {          /*Bouton chronologie*/
