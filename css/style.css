@@ -1,4 +1,3 @@
-
 /*////////////////////////////////BODY//////////////////////////////////////////*/
 
 body {
@@ -111,7 +110,7 @@ blockquote footer {
 	background-color: unset;
 }
 
-#citation{
+#citation {
 	margin: -2% -7.5% 2% -8%;
 	padding: 1.5%;
 	background-color: rgba(18,110,122,0.7);
@@ -158,7 +157,7 @@ blockquote footer {
 	border:none;
 }
 
-.pager {
+.pager {                    /*Bouton voir la suite*/
 	text-align: right;
 	font-size: 0.7em;
 }
@@ -191,6 +190,10 @@ blockquote footer {
 #presse img {                  /*Images appartenant à la section presse*/
 	margin:2% 0% 2% 0%;
 	width: 100%;
+}
+
+#presse h1{
+	margin-bottom: 0;
 }
 
 #presse h4 {
@@ -550,6 +553,10 @@ button {
 #carroussel{
 	margin-left: 7.5%;
 	padding-bottom: 5%;
+}
+
+.imageCarousel{
+	width: 100%;
 }
 
 .projet{
