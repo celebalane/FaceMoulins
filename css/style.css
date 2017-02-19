@@ -230,7 +230,7 @@ blockquote footer {
 	display: none;
 }
 
-aside {                   /*Placement de la section contenant l'agenda et réseaux sociaux*/ 
+aside {                   /*Placement de la section contenant réseaux sociaux*/ 
 	margin-left: 5%;                  
 	padding-left: 1%;
 }
@@ -287,42 +287,10 @@ span{
 	margin-right: 2%;
 }
 
-/*/////Bricolage couleur typo bouton (à changer)////*/
-#btn93 {
+.btnChrono {
 	color: white;
 }
 
-#btn94 {
-	color: white;
-}
-
-#btn97 {
-	color: white;
-}
-
-#btn2002 {
-	color: white;
-}
-
-#btn2007 {
-	color: white;
-}
-
-#btn2008 {
-	color: white;
-}
-
-#btn2010 {
-	color: white;
-}
-
-#btn2013 {
-	color: white;
-}
-
-#btn2015 {
-	color: white;
-}
 /*////Pour l'affichage des textes de la chronologie////*/
 
 #date1{
@@ -399,6 +367,7 @@ label {
 	width: 50%;
 	margin-bottom: 3%;
 }
+
 .form-control:focus {                      /*Lorsque l'on clique sur les champs du formulaire*/
   border-color: #5d5d5d;
   outline: 0;
@@ -418,7 +387,7 @@ button {
 	margin-left: 20%;
 }
 
-.btn-default {
+.form-group-lg .btn-default {
 	color: #5d5d5d;
 }
 
