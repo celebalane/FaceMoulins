@@ -35,13 +35,17 @@ nav {
 	background-color: #1D4B58;
 	border-bottom: 5px solid #E0A377;
 }
-#Grdf{
-	margin-top: 12px;
-	color: black;
+#Don{
+	margin-top: 10px;
+	margin-right: 20px;
+	color: white;
 	background-color: #F2F2F2;
 	background-color: transparent;
 }
-
+#don{
+	color: #E0A377;
+	font-size: 17px;
+}
 .navbar {
 	background-color: transparent; /*La barre de navigation prend la couleur du background*/
 	border:none;               /*Pas de bordure*/
