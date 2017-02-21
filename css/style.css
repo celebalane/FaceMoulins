@@ -497,6 +497,10 @@ button {
     color: white;
 }
 
+.texteImage{
+
+}
+
 #galerie img {
 	margin-left:10%;
     width: 80%;
@@ -506,6 +510,18 @@ button {
     width: 100%;
     margin-left: 0%;
     margin-bottom: 10%;
+}
+
+.lightbox__caption p {
+    margin: 0 auto;
+    max-width: 70%;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 /*/////////////////////////////////////////////////////////////////////*/
@@ -842,6 +858,18 @@ span {                 /*Flèches*/
     #galerie video {
     	padding: 3%;
     }
+
+    .lightbox__caption p {
+    margin: 0 auto;
+    max-width: 70%;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 10px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+}
 
 /*/////////////////////La fabrik///////////////////////*/
 	
