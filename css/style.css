@@ -302,6 +302,9 @@ aside {                   /*Placement de la section contenant réseaux sociaux*/
 
 #Palmares h3{
 	margin-top: 40px;
+	background-color: rgba(255, 160, 148, 0.1);
+	border-bottom: 2px solid orange; 
+	padding: 10px;
 }
 
 .btn-group {          /*Bouton chronologie*/
