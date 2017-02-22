@@ -525,7 +525,7 @@ button {
 	display: flex;
 }
 
-.img-responsive{
+.carousel-page .img-responsive{
 	width: 20%;
 	height: 20%;
 	padding-top: 2%;
@@ -580,6 +580,14 @@ span {                 /*Flèches*/
 .lienApprenant:hover{
 	color: #aaa9a9;
 	text-decoration: none;
+}
+/*/////////////////////CV de la page Apprenants//////////////////////////////////////*/
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -859,7 +867,7 @@ span {                 /*Flèches*/
 	}
 
 
-/*/////////////////////Carroussel photo///////////////*/
+/*/////////////////////Carroussel photo - MobilFirst///////////////*/
 
 	#carroussel{
 		margin-left: 0%;
