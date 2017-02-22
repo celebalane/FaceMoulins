@@ -301,10 +301,12 @@ aside {                   /*Placement de la section contenant réseaux sociaux*/
 }
 
 #Palmares h3{
+	padding: 10px;
 	margin-top: 40px;
 	background-color: rgba(255, 160, 148, 0.1);
 	border-bottom: 2px solid orange; 
-	padding: 10px;
+	font-family: 'Abel', sans-serif;
+	color: #794300;
 }
 
 .btn-group {          /*Bouton chronologie*/
@@ -386,6 +388,7 @@ form {
 	background-color: rgba(18,110,122,0.6);
 	padding:2%;
 	border-radius: 10px;
+	border: 2px solid orange;
 	color: white;
 }
 
@@ -448,6 +451,7 @@ button {
 	background-color: rgba(18,110,122,0.7);
 	padding:10%;
 	border-radius: 10px;
+	border: 2px solid orange;
 	color: white;
 }
 
@@ -483,13 +487,19 @@ button {
 
 #sectionPartenariat h1{
 	text-align: center;
-	color: #1693a5;
 	font-weight: 600;
 	margin-bottom: 5%;
+	background-color: rgba(255, 160, 148, 0.13);
+	border-bottom: 2px solid orange; 
+	font-family: 'Abel', sans-serif;
+	color: #794300;
+	padding: 10px 30px 10px 30px;
 }
 
 #sectionPartenariat h2{
 	font-size: 25px;
+	margin-bottom: 50px;
+	padding: 13px;
 }
 
 #entete{
@@ -526,6 +536,13 @@ button {
     background-color: #008080 ;
     font-size: 30px;
     color: white;
+    padding: 15px;
+    background-color: rgba(255, 160, 148, 0.2);
+	border-bottom: 3px solid orange; 
+	font-family: 'Abel', sans-serif;
+	color: #794300;
+	margin-bottom: 40px;
+	font-size: 40px;
 }
 
 .texteImage{
