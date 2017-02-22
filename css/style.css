@@ -744,13 +744,6 @@ small {
 	
 	#fabrik{
 		box-shadow: none;
-	}
-
-	#fabrik img{
-		margin-top: 0;
-	}
-	
-	#fabrik h1{
 		padding: 4%;
 	}
 
@@ -758,19 +751,7 @@ small {
 		padding: 4%;
 	}
 
-	#assemblée{
-		width: 70%;
-	}
-
-	#facebookMobileFabrik{
-		display: none;
-	}
-
 /*/////////////////////Carroussel photo - MobilFirst///////////////*/
-
-	#carroussel{
-		margin-left: 0%;
-	}
 
 	.carousel-indicators{
 		display: none;
@@ -782,10 +763,6 @@ small {
 
 	.formatPaysage{
 		margin-top: 4%;
-	}
-
-	.imageCarousel{
-		width: 100%;
 	}
 
 /*/////////////////////Mentions///////////////*/
