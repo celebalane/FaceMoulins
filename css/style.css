@@ -484,6 +484,38 @@ label {
 	padding: 4%;
 }
 
+.fabrikArticle{
+	border: 1px solid #F4F4F5;
+	margin-left: 5%;
+	padding: 10px;
+	background-color: #F4F4F5;
+	border-radius: 5px;
+}
+
+.fabrikArticle h3{
+	color: #E0A377;
+}
+
+.fabrikArticle img{
+	border: 1px solid #5C949B;
+}
+
+.containerFabrik{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.containerFabrik img{
+	width: 300px;
+	height: 200px;
+	margin: 5px;
+}
+
+.fabrikTitre{
+	color:  #5C949B;
+}
+
 #titreProjet{
 	background-color: rgba(18,110,122,0.7); 
 	padding: 4%;
