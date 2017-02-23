@@ -783,11 +783,10 @@ small {
 	#mention{
 		box-shadow: none;
 	}
-
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-						/*/////////////////////////////FORMAT TABLETTE///////////////////////////////*/
+/*//////////////////////////////////FORMAT TABLETTE///////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 @media (min-width: 640px) and (max-width: 800px){
@@ -822,7 +821,7 @@ small {
 		font-size: 1.1em;
 	}
 
-/*///Fil Actu///*/
+/*///Accueil///*/
 
 	#filActu{
 		box-shadow: none;
@@ -835,18 +834,16 @@ small {
 		width: 100%;
 	}
 
-	.presentation{
-		padding-bottom: 10%;
+	#avantDernierArticle{
+		border:none;
 	}
 
-	.btn-group {          /*Bouton chronologie*/
-	margin-top: 2%;
-	margin-left: 15%;
-	margin-bottom: 15%; 
+	#dernierArticle{
+		display: none;
 	}
 
-	.articleChrono{
-		margin-bottom: 15%;
+	.lien{
+		margin-left: 50%;
 	}
 
 	#facebookMobile{
@@ -855,7 +852,7 @@ small {
 
 	#facebookTab{
 		display: block;
-		background-color:  #1693a5;
+		background-color: #1693a5;
 		padding: 3%;
 	}
 
@@ -863,21 +860,18 @@ small {
 		display: none;
 	}
 
-	.lien{
-		margin-left: 50%;
+/*///Présentation///*/
+
+	.presentation{
+		padding-bottom: 10%;
+		box-shadow: none;
 	}
 
-	.pager{
-		margin-top: 55%;
+	.btn-group {          /*Bouton chronologie*/
+		margin: 2% 0 2% 0;
 	}
 
-	#avantDernierArticle{
-		border:none;
-	}
 
-	#dernierArticle{
-		display: none;
-	}
 
 	#contactFace{
 		margin-top: 3%;
