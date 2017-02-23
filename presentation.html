@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 		<title>Présentation | FACE</title>
 	</head>
-	<body onload="affichage('date1');affichage('date2');affichage('date3');affichage('date4');affichage('date5');affichage('date6');affichage('date7');affichage('date8')">
+	<body onload="affichage('date1');affichage('date2');affichage('date3');affichage('date4');affichage('date5');affichage('date6');affichage('date7');affichage('date8');affichageFooter('planSite');">
     <!--Haut de la page contenant le bouton don-->
     <div class="row-fluid" id="barre">
       <div id="placementDon">
@@ -158,8 +158,10 @@
         </section>
     </div>
     <footer id="footer">
-      <div class="container col-md-12 col-xs-12">
+      <h4 class="text-center col-xs-12 col-md-12" onclick="affichageFooter('planSite');" id="titrePlanSite">Plan du site</h4>
+      <div class="container col-md-12 col-xs-12" id="planSite">
         <div class="row-fluid">
+        
           <div class="col-md-2 col-sm-2">
             <h4><a href="index.html">Accueil</a></h4>
           </div>

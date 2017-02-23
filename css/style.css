@@ -277,7 +277,7 @@ aside {                   /*Placement de la section contenant réseaux sociaux*/
 }
 
 .btn-group {          /*Bouton chronologie*/
-	margin:2% 0 0 27%;
+	margin:2% 0 2% 0%;
 }
 
 .btn-default{
@@ -535,6 +535,7 @@ span {                 /*Flèches*/
 .carousel-control.right {
   background-image: none;
 }
+
 /*/////////////////////CV de la page Apprenants//////////////////////////////////////*/
 
 #apprenants{    
@@ -596,6 +597,9 @@ small {
 		text-align: center;
 	}
 
+	#planSite{
+		display: none;
+	}
 	#lienMentions{
 		margin: 0;
 		text-align: center;
