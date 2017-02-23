@@ -801,10 +801,6 @@ small {
 
 /*///Navigation///*/
 
-	#logo{
-		padding-top: 20%;
-	}
-
 	.navbar{
 		font-size: 1.1em;
 		margin: 3% 0 3% 0;
@@ -871,14 +867,16 @@ small {
 		margin: 2% 0 2% 0;
 	}
 
-
+/*///Contact///*/
 
 	#contactFace{
 		margin-top: 3%;
+		padding: 0;
 	}
 
-	#logo{
-		margin-top: -20%;
+	.glyphicon-home{
+		margin: 0;
+		padding: 0;
 	}
 
 	#galerie{
@@ -887,9 +885,5 @@ small {
 
 	#galerie h1{
 		margin:-4.3% -4.5% 0% -4.5%;
-	}
-
-	#sectionPartenariat{
-
 	}
 }
