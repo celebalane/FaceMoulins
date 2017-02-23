@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Les apprenants | FACE</title>
     <!--Lien bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -15,218 +15,211 @@
   <body>
     <!--Haut de la page contenant le bouton don-->
     <div class="row-fluid" id="barre">
-      <div class="text-right">
-        <a href="#" class="btn btn-default" role="button" id="Don"> Soutenez-nous : Faire un <span id="don">don</span></a>
+      <div id="placementDon">
+        <a href="#" class="btn btn-default" role="button" id="boutonDon"> Soutenez-nous : Faire un <span>don</span></a>
       </div>
     </div>
     <div class="container">
       <!--Haut de la page que l'on trouvera partout-->
-      <header class="row">
+      <header class="row" style="margin-left: auto;  margin-right: auto;">
         <!--Logo Face-->
-        <div class="col-md-2">
+        <div class="col-md-2 col-xs-12">
           <a href="index.html"><img src="img/logo.svg" alt="logo Face territoire bourbonnais" id="logo" /></a>
         </div>
         <!--Barre de navigation-->
-        <nav class="navbar navbar-default col-md-10 col-sm-12">
+        <nav class="navbar navbar-default col-md-10 col-sm-12 col-xs-12">
           <div class="container-fluid">
             <ul class="nav navbar-nav">
             <!--Bouton-->
-                        <li class="dropdown">
-                            <a href="index.html" role="button">Accueil</a>
-                        </li>
-                  <!--Bouton-->
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Présentation
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a href="presentation.html">Histoire</a></li>
-                        <li><a href="presentation.html#pagePalmares">Action</a></li>
-                      </ul>
-                  </li>
-                  <!--Bouton-->
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galerie</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="galerie.html">Photos</a></li>
-                        <li><a href="galerie.html#pageVideo">Médias</a></li>
-                      </ul>
-                  </li>
-                  <!--Bouton-->
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partenariat
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a href="partenariat.html">Les entreprises</a></li>
-                        <li><a href="partenariat.html#pageAsso">Les associations</a></li>
-                        <li><a href="partenariat.html#pageInstitution">Les institutions</a></li>
-                        <li><a href="partenariat.html#pageParticulier">Les particuliers</a></li>
-                      </ul>
-                  </li>
-                  <!--Bouton-->
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">La Fabrik</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="laFabrik.html">Présentation</a></li>
-                        <li><a href="laFabrik.html#pageActu">Les actualités</a></li>
-                        <li><a href="laFabrik.html#pageProjet">Projets</a></li>
-                        <li><a href="laFabrik.html#pagePhoto">Photos</a></li>
-                        <li><a href="apprenants.html"> Apprenants </a></li>
-                      </ul>
-                  </li>
-                  <!--Bouton-->
-                  <li class="dropdown">
-                      <a href="contact.html" role="button">Contact</a>
-                  </li>
+              <li class="dropdown">
+                <a href="index.html" role="button">Accueil</a>
+              </li>
+            <!--Bouton-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Présentation</a>
+                <ul class="dropdown-menu">
+                  <li><a href="presentation.html">Histoire</a></li>
+                  <li><a href="presentation.html#pagePalmares">Action</a></li>
                 </ul>
-              </div>
+              </li>
+              <!--Bouton-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galerie</a>
+                <ul class="dropdown-menu">
+                  <li><a href="galerie.html">Photos</a></li>
+                  <li><a href="galerie.html#pageVideo">Médias</a></li>
+                </ul>
+              </li>
+              <!--Bouton-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partenariat</a>
+                <ul class="dropdown-menu">
+                  <li><a href="partenariat.html">Les entreprises</a></li>
+                  <li><a href="partenariat.html#pageAsso">Les associations</a></li>
+                  <li><a href="partenariat.html#pageInstitution">Les institutions</a></li>
+                  <li><a href="partenariat.html#pageParticulier">Les particuliers</a></li>
+                </ul>
+              </li>
+              <!--Bouton-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">La Fabrik</a>
+                <ul class="dropdown-menu">
+                  <li><a href="laFabrik.html">Présentation</a></li>
+                  <li><a href="laFabrik.html#pageActu">Les actualités</a></li>
+                  <li><a href="laFabrik.html#pageProjet">Projets</a></li>
+                  <li><a href="laFabrik.html#pagePhoto">Photos</a></li>
+                  <li><a href="apprenants.html"> Apprenants </a></li>
+                </ul>
+              </li>
+              <!--Bouton-->
+              <li class="dropdown">
+                <a href="contact.html" role="button">Contact</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
-      <section class="col-xs-12" id="apprenants">
-        <div class="row">
-            <h1 class="col-xs-12 titreSection"><strong>Curriculum vitae des apprenants</strong></h1>
-        </div>
-      </section>
-      
       <section class="col-xs-12" id="sectionApprenant">
+      <h1 class="col-xs-12 titreSection"><strong>Curriculum vitae des apprenants</strong></h1>
       <div class="row">
          <!--Profil de Andréa Lopez-->
         <div class="col-xs-6 col-sm-4 col-md-4">
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="Andréa" class="img-rounded img-responsive" />
-                    </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>Andréa LOPEZ</h4>
-                          <small>
-                            <cite title="Moulins, france">Moulins, France
-                              <i class="glyphicon glyphicon-map-marker"></i>
-                            </cite>
-                          </small>
-                          <p>
-                            <i class="glyphicon glyphicon-envelope"></i> email@example.com <br /> 
-                            <i class="glyphicon glyphicon-globe"></i>
-                              <a href="https://github.com/Andrealpz">https://github.com/Andrealpz</a><br />
-                          </p>
-                    </div>
-                </div>
+          <div class="well well-sm">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <img src="http://placehold.it/380x500" alt="Andréa" class="img-rounded img-responsive" />
+              </div>
+              <div class="col-sm-6 col-md-8">
+                <h4>Andréa LOPEZ</h4>
+                <small>
+                  <cite title="Moulins, france">Moulins, France
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                  </cite>
+                </small>
+                <p>
+                  <i class="glyphicon glyphicon-envelope"></i> email@example.com <br /> 
+                  <i class="glyphicon glyphicon-globe"></i>
+                  <a href="https://github.com/Andrealpz">https://github.com/Andrealpz</a><br />
+                </p>
+              </div>
             </div>
+          </div>
         </div>
         <!--Profil de Anthony Favier-->
         <div class="col-xs-6 col-sm-4 col-md-4">
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="Anthony" class="img-rounded img-responsive" />
-                    </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>Anthony FAVIER</h4>
-                        <small>
-                          <cite title="Moulins, France">Vichy, France
-                            <i class="glyphicon glyphicon-map-marker"></i>
-                          </cite>
-                        </small>
-                        <p>
-                            <i class="glyphicon glyphicon-envelope"></i>email@example.com<br />
-                            <i class="glyphicon glyphicon-globe"></i>
-                            <a href="https://github.com/aFAVIER">https://github.com/aFAVIER</a>
-                            <br />
-                        </p>
-                    </div>
-                </div>
+          <div class="well well-sm">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <img src="http://placehold.it/380x500" alt="Anthony" class="img-rounded img-responsive" />
+              </div>
+              <div class="col-sm-6 col-md-8">
+                <h4>Anthony FAVIER</h4>
+                <small>
+                  <cite title="Moulins, France">Vichy, France
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                  </cite>
+                </small>
+                <p>
+                  <i class="glyphicon glyphicon-envelope"></i>email@example.com<br />
+                  <i class="glyphicon glyphicon-globe"></i>
+                  <a href="https://github.com/aFAVIER">https://github.com/aFAVIER</a>
+                  <br />
+                </p>
+              </div>
             </div>
+          </div>
         </div>
         <!--Profil de Aude ECCHER-->
         <div class="col-xs-6 col-sm-4 col-md-4">
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="Aude" class="img-rounded img-responsive" />
-                    </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>Aude ECCHER</h4>
-                        <small>
-                          <cite title="Moulins, france">Moulins, France
-                            <i class="glyphicon glyphicon-map-marker"></i>
-                          </cite>
-                        </small>
-                        <p>
-                          <i class="glyphicon glyphicon-envelope"></i> email@example.com<br />
-                          <i class="glyphicon glyphicon-globe"></i>
-                          <a href="https://github.com/Andrealpz"> https://github.com/Tsukihub</a><br />
-                    </div>
-                </div>
+          <div class="well well-sm">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <img src="http://placehold.it/380x500" alt="Aude" class="img-rounded img-responsive" />
+              </div>
+              <div class="col-sm-6 col-md-8">
+                <h4>Aude ECCHER</h4>
+                <small>
+                  <cite title="Moulins, france">Moulins, France
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                  </cite>
+                </small>
+                <p>
+                  <i class="glyphicon glyphicon-envelope"></i> email@example.com<br />
+                  <i class="glyphicon glyphicon-globe"></i>
+                  <a href="https://github.com/Andrealpz"> https://github.com/Tsukihub</a><br />
+              </div>
             </div>
+          </div>
         </div>
         <!--Profil de Aymeric Lacoste-->
         <div class="col-xs-6 col-sm-4 col-md-4">
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="Aymeric" class="img-rounded img-responsive" />
-                    </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>Aymeric LACOSTE</h4>
-                          <small>
-                            <cite title="San Francisco, USA">Moulins, France
-                              <i class="glyphicon glyphicon-map-marker"></i>
-                            </cite>
-                          </small>
-                        <p>
-                            <i class="glyphicon glyphicon-envelope"></i>email@example.com
-                            <br />
-                            <i class="glyphicon glyphicon-globe"></i>
-                            <a href="https://github.com/aymeric-l">https://github.com/aymeric-l</a><br />
-                        </p>
-                    </div>
-                </div>
+          <div class="well well-sm">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <img src="http://placehold.it/380x500" alt="Aymeric" class="img-rounded img-responsive" />
+              </div>
+              <div class="col-sm-6 col-md-8">
+                <h4>Aymeric LACOSTE</h4>
+                <small>
+                  <cite title="San Francisco, USA">Moulins, France
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                  </cite>
+                </small>
+                <p>
+                  <i class="glyphicon glyphicon-envelope"></i>email@example.com
+                  <br />
+                  <i class="glyphicon glyphicon-globe"></i>
+                  <a href="https://github.com/aymeric-l">https://github.com/aymeric-l</a><br />
+                </p>
+              </div>
             </div>
+          </div>
         </div>
         <!--Profil de Alexandre LEROUX-->
         <div class="col-xs-6 col-sm-4 col-md-4">
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="Alexandre" class="img-rounded img-responsive" />
-                    </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>Alexandre LEROUX</h4>
-                        <small>
-                          <cite title="Moulins, france">Moulins, France
-                            <i class="glyphicon glyphicon-map-marker"></i>
-                          </cite>
-                        </small>
-                        <p>
-                            <i class="glyphicon glyphicon-envelope"></i> email@example.com<br />
-                            <i class="glyphicon glyphicon-globe"></i>
-                            <a href="https://github.com/Darell82">https://github.com/Darell82 </a><br/>
-                        </p>
-                    </div>
-                </div>
+          <div class="well well-sm">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <img src="http://placehold.it/380x500" alt="Alexandre" class="img-rounded img-responsive" />
+              </div>
+              <div class="col-sm-6 col-md-8">
+                <h4>Alexandre LEROUX</h4>
+                <small>
+                  <cite title="Moulins, france">Moulins, France
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                  </cite>
+                </small>
+                <p>
+                  <i class="glyphicon glyphicon-envelope"></i> email@example.com<br />
+                  <i class="glyphicon glyphicon-globe"></i>
+                  <a href="https://github.com/Darell82">https://github.com/Darell82 </a><br/>
+                </p>
+              </div>
             </div>
+          </div>
         </div>
         <!--Profil de Eddy Huleu-->
         <div class="col-xs-6 col-sm-4 col-md-4">
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="http://placehold.it/380x500" alt="Eddy" class="img-rounded img-responsive" />
-                    </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4>Eddy HULEU</h4>
-                          <small>
-                            <cite title="Moulins, France"> Moulins, France
-                              <i class="glyphicon glyphicon-map-marker"></i>
-                            </cite>
-                          </small>
-                        <p>
-                            <i class="glyphicon glyphicon-envelope"></i>email@example.com<br />
-                            <i class="glyphicon glyphicon-globe"></i>
-                            <a href="https://github.com/EddyHuleu">https://github.com/EddyHuleu</a><br />
-                        </p>
-                    </div>
-                </div>
+          <div class="well well-sm">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <img src="http://placehold.it/380x500" alt="Eddy" class="img-rounded img-responsive" />
+              </div>
+              <div class="col-sm-6 col-md-8">
+                <h4>Eddy HULEU</h4>
+                <small>
+                <cite title="Moulins, France"> Moulins, France
+                  <i class="glyphicon glyphicon-map-marker"></i>
+                </cite>
+              </small>
+              <p>
+                <i class="glyphicon glyphicon-envelope"></i>email@example.com<br />
+                <i class="glyphicon glyphicon-globe"></i>
+                <a href="https://github.com/EddyHuleu">https://github.com/EddyHuleu</a><br />
+              </p>
             </div>
+          </div>
+        </div>
         </div>
         <!--Profil de Emilie Leterme-->
         <div class="col-xs-6 col-sm-4 col-md-4">
@@ -603,41 +596,50 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        
-
-
-
-
-
-
-
-
-
-
-    </div><!--fin row-->
-    </section>
-
-
-
-
-
-
-
-
-    </div>
+      </div><!--fin row-->
+      </section>
+      <!--Pied de page-->
+      <footer id="footer">
+        <div class="container col-md-12 col-xs-12">
+          <div class="row-fluid">
+            <div class="col-md-2 col-sm-2">
+              <h4><a href="index.html">Accueil</a></h4>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <h4><a href="presentation.html">Présentation</a></h4>
+              <h6><a href="presentation.html">Histoire</a></h6>
+              <h6><a href="presentation.html#pagePalmares">Action</a></h6>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <h4><a href="galerie.html">Galerie</a></h4>
+              <h6><a href="galerie.html">Photos</a></h6>
+              <h6><a href="galerie.html#pageVideo">Médias</a></h6>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <h4><a href="partenariat.html">Partenariat</a></h4>
+              <h6><a href="partenariat.html">Les entreprises</a></h6>
+              <h6><a href="partenariat.html#pageAsso">Les associations</a></h6>
+              <h6><a href="partenariat.html#pageInstitution">Les institutions</a></h6>
+              <h6><a href="partenariat.html#pageParticulier">Les particuliers</a></h6>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <h4><a href="laFabrik.html">La Fabrik</a></h4>
+              <h6><a href="laFabrik.html">Présentation</a></h6>
+              <h6><a href="laFabrik.html#pageActu">Les actualités</a></h6>
+              <h6><a href="laFabrik.html#pageProjet">Projets</a></h6>
+              <h6><a href="laFabrik.html#pagePhoto">Photos</a></h6>
+              <h6><a href="apprenants.html">Les apprenants</a></h6>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <h4><a href="contact.html">Contact</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="lienMentions">
+          <p class="text-center"><a href="mentions.html">Mentions légales</a></p>
+        </div>
+      </footer>
+    <!--Liens javascript-->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js "></script>
   </body>

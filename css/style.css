@@ -544,7 +544,7 @@ span {                 /*Flèches*/
 
 #sectionApprenant{
 	margin-top: 5%;
-}
+} 
 
 .lienApprenant{
 	color:rgba(18,110,122,1);
@@ -751,6 +751,19 @@ small {
 		padding: 4%;
 	}
 
+	.row #sectionApprenant{
+		margin: 0;
+		padding: 0;
+	}
+
+	#sectionApprenant {
+		padding: 0;
+	}
+
+	#sectionApprenant a{
+		word-wrap: break-word;
+	}
+
 /*/////////////////////Carroussel photo - MobilFirst///////////////*/
 
 	.carousel-indicators{
@@ -779,26 +792,47 @@ small {
 
 @media (min-width: 640px) and (max-width: 800px){
 
-	header{
-		margin-bottom: -15%;
+	.container{
+		width: 100%;
 	}
 
-	nav{
-		margin-top: -25%;
+	.titreSection{
+		box-shadow: none;
+	}
+
+/*///Navigation///*/
+
+	#logo{
+		padding-top: 20%;
 	}
 
 	.navbar{
-		font-size: 1.5em;
+		font-size: 1.1em;
+		margin: 3% 0 3% 0;
+		padding: 0;
 	}
 
-	footer{
-		padding: 4%;
-		margin: 2% -2% 0%;
+/*///Citation///*/
+
+	blockquote {
+		margin-bottom: 0;
 	}
 
-	#citation{
-		margin: 0% -2% 2% -2%;
-		padding: 1%;
+	blockquote h3 {
+		font-size: 1.1em;
+	}
+
+/*///Fil Actu///*/
+
+	#filActu{
+		box-shadow: none;
+		margin-right: 1%;
+	}
+
+	#filActu img{
+		margin: 0 0 2% 0;
+		border:none;
+		width: 100%;
 	}
 
 	.presentation{
@@ -831,21 +865,6 @@ small {
 
 	.lien{
 		margin-left: 50%;
-	}
-
-	#filActu{
-		box-shadow: none;
-		margin-right: 1%;
-	}
-
-	#filActu article{
-		margin-top: 0;
-	}
-
-	#filActu img{
-		margin: 0;
-		margin-top: 0%;
-		width: 40%;
 	}
 
 	.pager{
