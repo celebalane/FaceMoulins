@@ -879,11 +879,16 @@ small {
 		padding: 0;
 	}
 
+/*///Galerie///*/
+
 	#galerie{
-		padding: 4%;
+		box-shadow: none;
 	}
 
-	#galerie h1{
-		margin:-4.3% -4.5% 0% -4.5%;
-	}
+	#galerie video{
+		margin: 0 0 2% 10%;
+		width: 80%;
+	}	
+
+	
 }
