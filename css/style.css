@@ -525,6 +525,10 @@ aside {                   /*Placement de la section contenant réseaux sociaux*/
 .fabrikTitre{
 	color:  #5C949B;
 }
+.description{
+	text-align: center;
+	margin-top: 10px;
+}
 
 #titreProjet{
 	background-color: rgba(18,110,122,0.7); 
@@ -793,6 +797,10 @@ small {
 		padding: 4%;
 	}
 
+	#sectionFabrik{
+		margin: 0;
+	}
+
 	#fabrik article{
 		padding: 4%;
 	}
@@ -825,6 +833,9 @@ small {
 		margin-top: 4%;
 	}
 
+	#pagePhoto{
+		margin: 0;
+	}
 /*/////////////////////Mentions///////////////*/
 
 	#mention{
@@ -912,6 +923,12 @@ small {
 
 	.btn-group {          /*Bouton chronologie*/
 		margin: 2% 0 2% 0;
+	}
+
+/*///Partenariat///*/
+
+	#sectionPartenariat{
+		box-shadow: none;
 	}
 
 /*///Contact///*/
