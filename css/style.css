@@ -558,10 +558,15 @@ span {                 /*Flèches*/
 
 .glyphicon {  margin-bottom: 10px;margin-right: 10px;}
 
+
 small {
 	display: block;
 	line-height: 1.428571429;
 	color: #999;
+}
+.well{
+	border: 1px solid #BEBFBF;
+	box-shadow: 6px 10px 18px 4px rgba(0,0,0,0.1); 
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
