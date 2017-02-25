@@ -888,12 +888,8 @@ small {
 		width: 100%;
 	}
 
-	#avantDernierArticle{
-		border:none;
-	}
-
 	#dernierArticle{
-		display: none;
+		border:none;
 	}
 
 	.lien{
