@@ -962,7 +962,24 @@ small {
 	#galerie video{
 		margin: 0 0 2% 10%;
 		width: 80%;
-	}	
+	}
 
-	
+/*///Les Apprenants///*/
+
+	#sectionApprenant h4{
+		font-size : 1.1em;
+	}
+	.boutonMobile{
+		display: block;
+		color: white;
+		border-radius: 5%;
+	}
+
+	.mobileApprenant{
+		display: none;
+	}
+
+	#nomLong{
+		margin-left: -10%;
+	}		
 }
