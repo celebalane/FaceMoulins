@@ -197,7 +197,7 @@ blockquote footer {
 /*//////////////////////////////////////////////////////////////////////////*/
 
 #presse {                      /*Arrière plan de la section presse*/
-	padding: 1% 0 3% 3%;       
+	padding: 1% 2% 4% 2%;       
 	background-color: #F2F2F2;
 	box-shadow: 6px 10px 18px 4px rgba(0,0,0,0.3);
 }
@@ -212,7 +212,9 @@ blockquote footer {
 }
 
 .lien {
-	margin-left: 60%;
+	position: absolute;
+	top: 250px;
+	right:	16px;
 	text-decoration: none;
 	background-color: #1693a5;
 	color: white;
@@ -604,13 +606,23 @@ small {
 	line-height: 1.428571429;
 	color: #999;
 }
+
 .well{
 	border: 1px solid #BEBFBF;
 	box-shadow: 6px 10px 18px 4px rgba(0,0,0,0.1); 
 }
 
 .boutonMobile{
-	display: none;
+	width: 40%;
+	display: inline-block;
+	color: white;
+	border-radius: 5%;
+	margin-top: 7%;
+	margin-right: 7%;
+}
+
+#cadre img {
+	height:130px;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -682,6 +694,10 @@ small {
 
 	#presse article {
 		margin-bottom: 10%;
+	}
+
+	.lien{
+		position: initial;
 	}
 
 /*/////////////////////Facebook///////////////////////*/
@@ -824,6 +840,7 @@ small {
 
 	.boutonMobile{
 		display: block;
+		width: 100%;
 		color: white;
 		border-radius: 5%;
 	}
