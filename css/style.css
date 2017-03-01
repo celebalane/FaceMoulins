@@ -88,8 +88,8 @@ body {
  	color: #6D6D6D;
  }
 
-.dropdown-menu li:hover .sub-menu {                  /*Pour que le menu passe en hover*/
-    visibility: visible;
+/*.dropdown-menu li:hover .sub-menu {                  /*Pour que le menu passe en hover*/
+   /* visibility: visible;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -102,7 +102,7 @@ body {
 
 .sousMenu{
 	min-width: 120px;
-}
+}*/
 
 /*//////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////FOOTER///////////////////////////////*/
@@ -667,6 +667,7 @@ small {
 	.navbar{
 		margin-top: -20%;
 	}
+
 
 /*/////////////////////Footer//////////////////*/
 	
