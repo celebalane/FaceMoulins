@@ -82,10 +82,27 @@ body {
     padding-bottom: 5%;
     color: white;
 }
-
-.navbar-default .navbar-nav .open .dropdown-menu li:hover a{ /*Quand on survol un lien d'un sous menu*/
- 	background-color: rgba(18,110,122,0.4);
+ .caret{
+ 	margin-top: 5%;
+ 	margin-left: 4px;
+ 	color: #6D6D6D;
  }
+
+.dropdown-menu li:hover .sub-menu {                  /*Pour que le menu passe en hover*/
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#menuGalerie{
+	min-width: 110px;
+}
+
+.sousMenu{
+	min-width: 120px;
+}
 
 /*//////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////FOOTER///////////////////////////////*/
