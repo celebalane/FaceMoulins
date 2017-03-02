@@ -1,0 +1,63 @@
+#sectionContact{
+	form {
+		background-color: rgba(18,110,122,0.6);
+		padding:2%;
+		border-radius: 10px;
+		border: 2px solid orange;
+		color: white;
+
+		h2 {
+			padding-left: 4%;
+			font-weight: 600;
+		}
+
+		p{
+			padding-left: 4%;
+			margin-bottom: 2%;
+		}
+	}
+	label {
+		margin-left: -5%;
+	}
+	.form-control{
+		&:focus{                      /*Lorsque l'on clique sur les champs du formulaire*/
+  			border-color: #5d5d5d;
+  			outline: 0;
+  			box-shadow: inset 0 1px 1px #5d5d5d, 0 0 8px #5d5d5d;
+		}
+	}
+	.form-horizontal .form-group{
+		margin: 0;
+	}
+	.form-group-lg .btn-default {
+		color: #5d5d5d;
+	}
+}
+.form-control {                             /*Champs du formulaire*/
+	width: 50%;
+	margin-bottom: 3%;
+}
+#blocMail {
+	margin-left: 13.3%;
+	width: 60%;
+}
+#zoneTexte{
+	margin:3% 0% 3% 2%;
+	border-radius: 8px;
+}
+#labelZone{
+	margin-top: 2%;
+}
+#contactFace{
+	background-color: rgba(18,110,122,0.7);
+	padding:10%;
+	border-radius: 10px;
+	border: 2px solid orange;
+	color: white;
+	p{
+		font-size: 0.8em;
+	}
+}
+.glyphicon-home{
+	color: white;
+}

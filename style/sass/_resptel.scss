@@ -1,0 +1,238 @@
+@media screen and (max-width: 640px){
+	
+/*/////////////////////Navigation//////////////////*/
+	
+	#boutonDon{
+		margin-right: 0;
+	}
+
+	#placementDon{
+		text-align: center;
+	}
+
+	#logo{
+		margin:-15% 0 0 0;
+	}
+
+	.navbar{
+		margin-top: -20%;
+	}
+
+
+/*/////////////////////Footer//////////////////*/
+	
+	footer {
+		padding: 2% 0 2% 0;
+		text-align: center;
+	}
+
+	#planSite{
+		display: none;
+	}
+	#lienMentions{
+		margin: 0;
+		text-align: center;
+	}	
+	
+/*/////////////////////Actu///////////////////////*/
+	
+	#filActu{
+		box-shadow: none;
+		padding: 4% 0% 4% 8%;
+		img {
+			display: none;
+		}
+	}
+
+	.titreSection{
+		box-shadow: none;
+		text-align: center;
+	}
+
+/*/////////////////////Presse///////////////////////*/
+	
+	#presse{
+		box-shadow: none;
+	}
+
+	.articles .row {
+		margin: 0;
+	}
+
+	#presse article {
+		margin-bottom: 10%;
+	}
+
+	.lien{
+		position: initial;
+	}
+
+/*/////////////////////Facebook///////////////////////*/
+	
+	aside{
+		margin-left: 0;
+	}
+
+	#facebookMobile{
+		display: block;
+		background-color: #1693a5;
+		padding: 4%;
+	}
+
+	#facebookOrdi{
+		display: none;
+	}
+
+	#facebookTab{
+		display: none;
+	}
+
+/*/////////////////////Présentation//////////////////*/
+	
+	.presentation{
+		padding: 5% 5% 30% 5%;
+		box-shadow: none;
+	}
+
+	.btn-group {
+		margin: 2% 0% 10% 9%;
+		padding:0;
+	}
+
+	.btn-default{
+		border-radius: 0;
+		margin:0 2% 2% 0;
+	}
+
+/*/////////////////////Contact//////////////////*/
+	
+	#sectionContact label{
+		margin-left: 0;
+	}
+
+	#sectionContact .form-control{
+		width: 100%;
+	}
+
+	#blocMail{                /*Bloc contenant le @ et le champ mail*/
+		margin-left: 5%;
+		width: 94%;
+		input{
+			font-size: 1em;
+		}
+	}
+
+	#sectionContact .form-group-lg{          /*Bouton envoyer*/
+		margin-bottom: 5%;
+	}
+
+	#zoneTexte{
+		margin-left: 6%;
+	}
+
+	#contactFace{
+		margin:3% 0 3% 0;
+	}
+
+/*/////////////////////Partenariat//////////////////*/
+
+	#sectionPartenariat{
+        box-shadow: none;
+        margin: 0;
+        padding: 4%;
+        h3{ 
+       		font-size: 1.5em;
+    	}
+    }
+
+     #sectionPartenariat .row {
+    	margin: 0;
+    }
+
+	.photo{
+		margin-top: 3%;
+		width: 20%;
+	}
+
+	.logo{
+		width: 40%;
+	}
+
+/*/////////////////////Galerie//////////////////*/
+
+ 	#galerie{
+        box-shadow: none;
+        padding: 0;
+    }
+
+    #galerie .row {
+    	margin: 0;
+    }
+
+    .lightbox__caption p {
+    	font-size: 12px;
+    	line-height: 18px;
+	}
+
+/*/////////////////////La fabrik///////////////////////*/
+	
+	#fabrik{
+		box-shadow: none;
+		padding: 4%;
+		article{
+			padding: 4%;
+		}
+
+	}
+
+	#sectionFabrik{
+		margin: 0;
+	}
+
+	.row #sectionApprenant{
+		margin: 0;
+		padding: 0;
+	}
+
+	#sectionApprenant {
+		padding-left: 0;
+		padding-right: 0;
+		a{
+			word-wrap: break-word;
+		}
+	}
+
+	.boutonMobile{
+		display: block;
+		width: 100%;
+		color: white;
+		border-radius: 5%;
+	}
+
+	.mobileApprenant{
+		display: none;
+	}
+
+/*/////////////////////Carroussel photo - MobilFirst///////////////*/
+
+	.carousel-indicators{
+		display: none;
+	}
+
+	.carousel-caption{
+		visibility: hidden;
+	}
+
+	.formatPaysage{
+		margin-top: 4%;
+	}
+
+	#pagePhoto{
+		margin: 0;
+	}
+/*/////////////////////Mentions///////////////*/
+
+	#mention{
+		box-shadow: none;
+	}
+}

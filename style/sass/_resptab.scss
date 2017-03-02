@@ -1,0 +1,114 @@
+@media (min-width: 640px) and (max-width: 900px){
+
+	.container{
+		width: 100%;
+	}
+
+	.titreSection{
+		box-shadow: none;
+	}
+
+/*///Navigation///*/
+
+	.navbar{
+		font-size: 1.1em;
+		margin: 3% 0 3% 0;
+		padding: 0;
+	}
+
+/*///Citation///*/
+
+	blockquote {
+		margin-bottom: 0;
+	}
+
+	blockquote h3 {
+		font-size: 1.1em;
+	}
+
+/*///Accueil///*/
+
+	#filActu{
+		box-shadow: none;
+		margin-right: 1%;
+		img{
+			margin: 0 0 2% 0;
+			border:none;
+			width: 100%;
+		}
+	}
+	#dernierArticle{
+		border:none;
+	}
+	.lien{
+		margin-left: 50%;
+	}
+	#facebookMobile{
+		display: none;
+	}
+	#facebookTab{
+		display: block;
+		background-color: #1693a5;
+		padding: 3%;
+	}
+	#facebookOrdi{
+		display: none;
+	}
+
+/*///Présentation///*/
+
+	.presentation{
+		padding-bottom: 10%;
+		box-shadow: none;
+	}
+	.btn-group {          /*Bouton chronologie*/
+		margin: 2% 0 2% 0;
+	}
+
+/*///Partenariat///*/
+
+	#sectionPartenariat{
+		box-shadow: none;
+	}
+
+/*///Contact///*/
+
+	#contactFace{
+		margin-top: 3%;
+		padding: 0;
+	}
+
+	.glyphicon-home{
+		margin: 0;
+		padding: 0;
+	}
+
+/*///Galerie///*/
+
+	#galerie{
+		box-shadow: none;
+		video{
+			margin: 0 0 2% 10%;
+			width: 80%;
+		}
+	}
+
+/*///Les Apprenants///*/
+
+	#sectionApprenant h4{
+		font-size : 1.1em;
+	}
+	.boutonMobile{
+		display: block;
+		color: white;
+		border-radius: 5%;
+	}
+
+	.mobileApprenant{
+		display: none;
+	}
+
+	#nomLong{
+		margin-left: -10%;
+	}		
+}

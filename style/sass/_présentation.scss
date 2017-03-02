@@ -1,0 +1,44 @@
+
+.presentation {                  /*Arrière plan de de la section contenant l'histoire et le palmarès*/
+	padding: 3%;
+	background-color: #F2F2F2;
+	box-shadow: 6px 10px 18px 4px rgba(0,0,0,0.3);
+	h2{
+		padding: 10px;
+		margin-bottom: 40px;
+		background-color: rgba(255, 160, 148, 0.1);
+		border-bottom: 2px solid orange; 
+		font-family: 'Abel', sans-serif;
+		color: #794300;
+	}
+}
+#presentation img {
+	width: 10%;
+}
+#Palmares h3{
+	padding: 10px;
+	margin-top: 40px;
+	background-color: rgba(255, 160, 148, 0.1);
+	border-bottom: 2px solid orange; 
+	font-family: 'Abel', sans-serif;
+	color: #794300;
+}
+.btn-group {          /*Bouton chronologie*/
+	margin:2% 0 2% 0%;
+}
+.btn-default{
+	font-weight: 600;
+	background-color: #1693a5;
+	border-color: #1693a5;
+}
+.btnChrono {
+	color: white;
+}
+.articleChrono{
+	display: none;
+	margin-top: 2%;
+}
+.boutonPrésentation {
+	color: white;
+	margin-right: 2%;
+}
