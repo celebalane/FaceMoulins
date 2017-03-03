@@ -1,0 +1,54 @@
+/*////////////Barre de navigation/////////////*/
+
+.navbar {
+	margin-top: 5%;
+	background-color: transparent; /*La barre de navigation prend la couleur du background*/
+	border:none;               /*Pas de bordure*/
+	font-size: 1.5em;          /*Taille de la typo*/
+}
+
+.navbar-nav li:hover{            /*Quand on survol un lien de la barre de navigation*/
+	background-color: rgba(18,110,122,0.4);
+	border-bottom: 3px solid #CF844D;
+}
+
+.navbar-default .navbar-nav li:hover a{     /*Quand le lien est survolé, la typo devient blanche*/
+	color: white;
+}
+
+.navbar-default .navbar-nav > .open > a,           /*Quand l'un des liens de la barre de navigation est selectionné*/
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: white;
+  background-color: rgba(18,110,122,0.4);
+}
+
+.dropdown-menu {                                 /*Menu déroulant*/
+	background-color: rgba(0,0,0,0.8);           /*Arrière plan avec un peu de transparence*/
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a { /*Pour que la couleur des liens ne change pas lorsque la souris n'est plus sur le menu séléctionné*/
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+}
+ .caret{
+ 	margin-top: 5%;
+ 	margin-left: 4px;
+ 	color: #6D6D6D;
+ }
+
+// /*.dropdown-menu li:hover .sub-menu {                  /*Pour que le menu passe en hover*/
+//    /* visibility: visible;
+// }
+
+// .dropdown:hover .dropdown-menu {
+//     display: block;
+// }
+
+// #menuGalerie{
+// 	min-width: 110px;
+// }
+
+// .sousMenu{
+// 	min-width: 120px;

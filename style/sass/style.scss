@@ -1,0 +1,27 @@
+
+body {
+	padding: 0%;                /*Mise à zéro marges intérieures*/
+	margin: 0%;                 /*Mise à zéro marges extérieures*/
+    background: url(https://s-media-cache-ak0.pinimg.com/736x/82/a6/6c/82a66c6b69a61564494a682e4fb0d704.jpg) no-repeat center fixed; 
+    background-size: cover; /*Couleur de fond de la page*/
+}
+
+.container{                   /*Mise à zéro du padding du container de bootstrap*/
+	padding: 0;
+}
+#logo {
+	width: 100%; /*Taille*/
+}
+
+@import '_don.scss';
+@import '_nav.scss';
+@import '_citation.scss';
+@import '_footer.scss';
+@import '_accueil.scss';
+@import '_présentation.scss';
+@import '_contacts.scss';
+@import '_partenariat.scss';
+@import '_galerie.scss';
+@import '_fabrik.scss';
+@import '_resptel.scss';
+@import '_resptab.scss';
