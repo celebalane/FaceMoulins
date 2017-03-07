@@ -1,0 +1,24 @@
+footer {                 
+	background-color: rgba(51,93,104,1);
+	margin-top: 5%;
+	padding: 20px 0 0 50px;
+	width: 100%;
+	border-top: 5px solid #E0A377;
+	color: white;
+	a {               /*Lien contenu dans le footer*/
+		color:white;
+		&:hover{
+			color: #aaa9a9;
+			text-decoration: none;
+		}
+	}
+}
+#lienMentions{
+	padding-top: 10%;
+	font-size: 10px;
+}
+#mention {                       /*Arrière plan de la section comportant les mentions légales*/
+	padding: 3%;
+	background-color: white;
+	box-shadow: 1px 2px 4px black;
+}

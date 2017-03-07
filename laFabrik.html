@@ -1,86 +1,5 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--Petite icone dans l'onglet-->
-    	<link rel="icon" type="image/png" href="img/favicon.png" />
-		<title>La Fabrik | FACE</title>
-		<!--Lien bootstrap-->
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<!--Lien zoom photo-->
-		<link rel="stylesheet" href="lightbox/jquery.lightbox.css" >
-		<!--lien fichier style.css-->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	<!--Contenu du site-->
-	<body onload="affichageFooter('planSite');">
-		<!--Haut de la page contenant le bouton don-->
-		<div class="row-fluid" id="barre">
-      		<div id="placementDon">
-        		<a href="#" class="btn btn-default" role="button" id="boutonDon"> Soutenez-nous : Faire un <span>don</span></a>
-      		</div>
-    	</div>
-		<div class="container">
-			<!--Haut de la page que l'on trouvera partout-->
-			<header class="row" style="margin-left: auto;  margin-right: auto;">
-				<!--Logo Face-->
-				<div class="col-md-2 col-sm-2 col-xs-12">
-					<a href="index.html"><img src="img/logo.svg" alt="logo Face territoire bourbonnais" id="logo" /></a>
-				</div>
-				<!--Barre de navigation-->
-				<nav class="navbar navbar-default col-md-10 col-sm-10 col-xs-12">
-					<div class="container-fluid">
-						<ul class="nav navbar-nav">
-						<!--Bouton-->
-                  			<li class="dropdown">
-                      			<a href="index.html" role="button">Accueil</a>
-                  			</li>
-        					<!--Bouton-->
-        					<li class="dropdown">
-          						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Présentation<span class="caret"></span>
-          						</a>
-          						<ul class="dropdown-menu">
-            						<li><a href="presentation.html">Histoire</a></li>
-            						<li><a href="presentation.html#pagePalmares">Action</a></li>
-          						</ul>
-        					</li>
-        					<!--Bouton-->
-        					<li class="dropdown">
-          						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galerie<span class="caret"></span></a>
-          						<ul class="dropdown-menu" id="menuGalerie" sousMenu>
-            						<li><a href="galerie.html">Photos</a></li>
-            						<li><a href="galerie.html#pageVideo">Médias</a></li>
-            						<li><a href="galerie.html#CV video">CV Video</a></li>
-          						</ul>
-        					</li>
-        					<!--Bouton-->
-        					<li class="dropdown">
-          						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partenariat<span class="caret"></span></a>
-          						<ul class="dropdown-menu sousMenu">
-            						<li><a href="partenariat.html">Les entreprises</a></li>
-            						<li><a href="partenariat.html#pageAsso">Les associations</a></li>
-            						<li><a href="partenariat.html#pageInstitution">Les institutions</a></li>
-            						<li><a href="partenariat.html#pageParticulier">Les particuliers</a></li>
-          						</ul>
-        					</li>
-        					<!--Bouton-->
-        					<li class="dropdown">
-          						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">La Fabrik<span class="caret"></span></a>
-          						<ul class="dropdown-menu sousMenu">
-            						<li><a href="#">Présentation</a></li>
-            						<li><a href="#pageProjet">Projets</a></li>
-            						<li><a href="apprenants.html">Les apprenants</a></li>
-            					</ul>
-        					</li>
-        					<!--Bouton-->
-        					<li class="dropdown">
-          						<a href="contact.html" role="button">Contact</a>
-        					</li>
-      					</ul>
-      				</div>
-				</nav>
-			</header>
+<?php include("include/header.php");?>
+
 			<h1 class="titreSection col-md-9 col-xs-12">La Fabrik</h1>
 			<div id="sectionFabrik">
 				<section class="col-md-9 col-sm-12 col-xs-12" id="fabrik">
@@ -166,6 +85,7 @@
 					<ol class="carousel-indicators">
 						<li data-target="#my_carousel" data-slide-to="0" class="active"></li>
 						<li data-target="#my_carousel" data-slide-to="1"></li>
+						<li data-target="#my_carousel" data-slide-to="2"></li>
 					</ol>
 					<!-- Slides -->
 					<div class="carousel-inner">
@@ -184,10 +104,19 @@
 							<div class="carousel-page">
 								<a href="img/fabrik/img7.jpg" rel="lightbox" class="img-responsive"><img src="img/fabrik/img7.jpg" class="imageCarousel" /></a>
 								<a href="img/fabrik/img8.jpg" rel="lightbox" class="img-responsive"><img src="img/fabrik/img8.jpg" class="imageCarousel" /></a>
-								<a href="img/fabrik/img0.jpg" rel="lightbox" class="img-responsive formatPaysage"><img src="img/fabrik/img0.jpg" class="imageCarousel" /></a>
+								<a href="img/fabrik/img0.jpg" rel="lightbox" class="img-responsive"><img src="img/fabrik/img9.jpg" class="imageCarousel" /></a>
 							</div> 
 							<div class="carousel-caption"></div>
-						</div>  
+						</div>
+						<!-- Page 3 -->
+ 						<div class="item"> 
+ 							<div class="carousel-page">
+ 								<a href="img/fabrik/img10.jpg" rel="lightbox" class="img-responsive"><img src="img/fabrik/img10.jpg" class="imageCarousel" /></a>
+ 								<a href="img/fabrik/img11.jpg" rel="lightbox" class="img-responsive"><img src="img/fabrik/img11.jpg" class="imageCarousel" /></a>
+ 								<a href="img/fabrik/img12.jpg" rel="lightbox" class="img-responsive"><img src="img/fabrik/img12.jpg" class="imageCarousel" /></a>
+  							</div> 
+  							<div class="carousel-caption"></div>
+  						</div>    
 					</div>
 					<!-- Contrôles -->
 					<a class="left carousel-control" href="#my_carousel" data-slide="prev">
@@ -200,58 +129,6 @@
 			</div>
 			</div>
 
-			<!--Pied de page-->
-			<footer id="footer">
-        <h4 class="text-center col-xs-12 col-md-12" onclick="affichageFooter('planSite');" id="titrePlanSite">Plan du site</h4>
-		    <div class="container col-md-12 col-xs-12" id="planSite">
-          <div class="row-fluid">
-            <div class="col-md-2 col-sm-2">
-              <h4><a href="index.html">Accueil</a></h4>
-            </div>
-            <div class="col-md-2 col-sm-2">
-              <h4><a href="presentation.html">Présentation</a></h4>
-              <h6><a href="presentation.html">Histoire</a></h6>
-              <h6><a href="presentation.html#pagePalmares">Action</a></h6>
-            </div>
-            <div class="col-md-2 col-sm-2">
-              <h4><a href="galerie.html">Galerie</a></h4>
-              <h6><a href="galerie.html">Photos</a></h6>
-              <h6><a href="galerie.html#pageVideo">Médias</a></h6>
-            </div>
-            <div class="col-md-2 col-sm-2">
-              <h4><a href="partenariat.html">Partenariat</a></h4>
-              <h6><a href="partenariat.html">Les entreprises</a></h6>
-              <h6><a href="partenariat.html#pageAsso">Les associations</a></h6>
-              <h6><a href="partenariat.html#pageInstitution">Les institutions</a></h6>
-              <h6><a href="partenariat.html#pageParticulier">Les particuliers</a></h6>
-            </div>
-            <div class="col-md-2 col-sm-2">
-              <h4><a href="laFabrik.html">La Fabrik</a></h4>
-              <h6><a href="laFabrik.html">Présentation</a></h6>
-              <h6><a href="laFabrik.html#pageActu">Les actualités</a></h6>
-              <h6><a href="laFabrik.html#pageProjet">Projets</a></h6>
-              <h6><a href="laFabrik.html#pagePhoto">Photos</a></h6>
-              <h6><a href="apprenants.html">Les apprenants</a></h6>
-            </div>
-            <div class="col-md-2 col-sm-2">
-              <h4><a href="contact.html">Contact</a></h4>
-            </div>
-          </div>
-        </div>
-        <div class="row" id="lienMentions">
-  				<p class="text-center"><a href="mentions.html">Mentions légales</a></p>
-        </div>
-			</footer>
-		<!--Liens javascript-->
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.js "></script>
-		<script src="lightbox/jquery.lightbox.min.js"></script>
-        <script>
-            $(function()
-            {
-                $('[rel="lightbox"]').lightbox();
-            });
-        </script>
-    	<script type="text/javascript" src="js/script.js"></script>
-	</body>
-</html>
+<!--Pied de page-->
+<?php include("include/footer.php"); ?>
+			
