@@ -452,6 +452,7 @@
       </div><!--fin row-->
     </section>
   </div>
-  <!--Pied de page-->
-  <?php include("include/footer.php"); ?>
-  
+<!--Pied de page-->
+<?php include("include/footer.php"); ?>
+
+     
