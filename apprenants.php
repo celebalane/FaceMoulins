@@ -37,7 +37,7 @@
                 <i class="glyphicon glyphicon-map-marker"></i>
               </cite>
             </small>
-            <a href="#"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
+            <a href="mailto:anthony.favier03@gmail.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
             <a href="https://github.com/aFAVIER"><button type="button" class="btn btn-default boutonMobile">GITHUB</button></a>
           </div>
         </div>
@@ -57,7 +57,7 @@
                 <i class="glyphicon glyphicon-map-marker"></i>
               </cite>
             </small>
-            <a href="#"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
+            <a href="mailto:audeeccher@gmail.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
             <a href="https://github.com/Tsukihub"><button type="button" class="btn btn-default boutonMobile">GITHUB</button></a>
           </div>
         </div>
@@ -77,7 +77,7 @@
                 <i class="glyphicon glyphicon-map-marker"></i>
               </cite>
             </small>
-            <a href="#"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
+            <a href="mailto:aymeric-lacoste@hotmail.fr"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
             <a href="https://github.com/aymeric-l"><button type="button" class="btn btn-default  boutonMobile">GITHUB</button></a>
           </div>
         </div>
@@ -97,7 +97,7 @@
                 <i class="glyphicon glyphicon-map-marker"></i>
               </cite>
             </small>
-            <a href="#"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
+            <a href="mailto:alex03000@live.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
             <a href="https://github.com/Darell82"><button type="button" class="btn btn-default boutonMobile">GITHUB</button></a>
           </div>
         </div>
@@ -117,7 +117,7 @@
                 <i class="glyphicon glyphicon-map-marker"></i>
               </cite>
             </small>
-            <a href="#"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
+            <a href="mailto:eddy.huleu@live.fr"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
             <a href="https://github.com/EddyHuleu"><button type="button" class="btn btn-default boutonMobile">GITHUB</button></a>
           </div>
         </div>
@@ -157,7 +157,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
+                <a href="mailto:Hasnachad@gmail.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
                 <a href="https://github.com/hasnachad"><button type="button" class="btn btn-default boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -178,7 +178,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
+                <a href="mailto:msi03@laposte.net"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
                 <a href="https://github.com/BobGizzmo"><button type="button" class="btn btn-default boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -198,7 +198,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
+                <a href="mailto:martindcontact@gmail.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
                 <a href="https://github.com/Extreeeme"><button type="button" class="btn btn-default boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -219,7 +219,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
+                <a href="mailto:micka_8@hotmail.fr"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
                 <a href="https://github.com/Sethisfir"><button type="button" class="btn btn-default boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -239,7 +239,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
+                <a href="mailto:q.grau00@gmail.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
                 <a href="https://github.com/Quentin777"><button type="button" class="btn btn-default boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -259,7 +259,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
+                <a href="mailto:ansion.quentin@outlook.fr"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
                 <a href="https://github.com/Seizuko"><button type="button" class="btn btn-default boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -279,7 +279,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
+                <a href="mailto:registech@laposte.net"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
                 <a href="https://github.com/Registech"><button type="button" class="btn btn-default btn-block boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -299,7 +299,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="mailt><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
+                <a href="mailto:seb032@live.fr><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
                 <a href="https://github.com/Sebastien03"><button type="button" class="btn btn-default btn-block boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -320,7 +320,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
+                <a href="mailto:sophie.seb@live.fr"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
                 <a href="https://github.com/SophieElodie"><button type="button" class="btn btn-default btn-block boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -341,7 +341,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
+                <a href="mailto:stephane.b03@mrsnakie.fr"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
                 <a href="https://github.com/MrSnakie"><button type="button" class="btn btn-default btn-block boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -362,7 +362,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
+                <a href="mailto:thomas.face03@gmail.com"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
                 <a href="https://github.com/ThomasMR03"><button type="button" class="btn btn-default btn-block boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -383,7 +383,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                     </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
+                <a href="mailto:vincent-du03@hotmail.fr"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
                 <a href="https://github.com/Vincent03"><button type="button" class="btn btn-default btn-block boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -403,7 +403,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
+                <a href="mailto:vlad03@gmail.com"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
                 <a href="https://github.com/Abbatchi"><button type="button" class="btn btn-default btn-block boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -423,7 +423,7 @@
                       <i class="glyphicon glyphicon-map-marker"></i>
                     </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
+                <a href="mailto:william.legal03@gmail.com"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
                 <a href="https://github.com/will03000"><button type="button" class="btn btn-default btn-block boutonMobile">GITHUB</button></a>
               </div>
             </div>
@@ -443,7 +443,7 @@
                     <i class="glyphicon glyphicon-map-marker"></i>
                   </cite>
                 </small>
-                <a href="#"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
+                <a href="mailto:charvisyves@gmail.com"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
                 <a href="https://github.com/YvesCharvis"><button type="button" class="btn btn-default btn-block boutonMobile">GITHUB</button></a>
               </div>
             </div>
