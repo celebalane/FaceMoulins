@@ -1,5 +1,30 @@
 <?php
   session_start();
+
+  $captcha="";
+  $captchaString ="abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  $captchaString = str_split($captchaString);
+  shuffle($captchaString);
+  for($i=0; $i<5; $i++){
+    $captcha .= $captchaString[$i];
+  }
+  if(!isset($_POST["code"])){
+    $_SESSION["code"] = $captcha;
+  }
+  else if($_POST["code"] != $_SESSION["code"] OR $_POST["code"] == ""){
+      $_SESSION["code"] = $captcha;
+    }
+  if(isset($_POST["code"])){
+    if(htmlspecialchars($_POST["code"]) == $_SESSION["code"]){
+      include('formulaire.php');
+      //session_destroy();
+      $_POST["code"] = "";
+      header("location:contact.php");      
+    }else if (htmlspecialchars($_POST["code"]) != "" AND htmlspecialchars($_POST["code"]) != $_SESSION["code"]){
+      $connec = "Erreur";
+    }
+  } 
+
   include("include/header.php");
 ?>
 
@@ -20,39 +45,61 @@
       </div>
 
       <section id="sectionContact">
-        <form class="form-horizontal col-md-9 col-md-offset-1 col-xs-12" method="post" action="formulaire.php">
+        <form class="form-horizontal col-md-9 col-md-offset-1 col-xs-12" method="post" target="contact.php">
           <h2>Contact</h2>
           <p>Pour une demande d'adhésion ou toute autres questions, veuillez remplir le formulaire. Nous vous recontacterons dans les plus brefs délais.</p>
           <div class="form-group-lg">
-            <label for="nom" class="col-sm-2 control-label">Nom</label>
+            <label for="nom" class="col-sm-2 control-label">Nom *</label>
             <div class="col-sm-10">
               <input type="text" name="nom" value="<?php echo isset($_SESSION['inputs']['nom'])? $_SESSION['inputs']['nom'] : ''; ?>" placeholder="Ex : Dupond" maxlength="30" class="form-control input-lg" required>
             </div>
           </div>
           <div class="form-group-lg">
-            <label for="prenom" class="col-sm-2 control-label">Prénom</label>
+            <label for="prenom" class="col-sm-2 control-label">Prénom *</label>
             <div class="col-sm-10">
               <input type="text" name="prenom" value="<?php echo isset($_SESSION['inputs']['prenom'])? $_SESSION['inputs']['prenom'] : ''; ?>"  placeholder="Ex : Nicolas" maxlength="30" class="form-control input-lg" required>
             </div>
           </div>
           <div class="form-group-lg">
-            <label for="mail" class="col-sm-2 control-label">Mail</label>
+            <label for="telephone" class="col-sm-2 control-label">Téléphone *</label>
+            <div class="col-sm-10">
+             <input class="form-control input-lg" type="telephone" name="telephone" placeholder="Téléphone"/>
+            </div>
+          </div>
+          <div class="form-group-lg">
+            <label for="mail" class="col-sm-2 control-label">Mail *</label>
             <div class="col-sm-10 input-group" id="blocMail">
               <span class="input-group-addon">@</span>
               <input type="email" name="mail" value="<?php echo isset($_SESSION['inputs']['mail'])? $_SESSION['inputs']['mail'] : ''; ?>" placeholder="Ex : dupond@gmail.com" class="form-control input-lg" required>
             </div>
           </div>
           <div class="form-group-lg">
-            <label for="sujet" class="col-sm-2 control-label">Sujet</label>
+            <label for="sujet" class="col-sm-2 control-label">Sujet *</label>
             <div class="col-sm-10">
               <input type="text" name="sujet" value="<?php echo isset($_SESSION['inputs']['sujet'])? $_SESSION['inputs']['sujet'] : ''; ?>" placeholder="ex: Renseignements" maxlength="40" class="form-control input-lg" id="sujet" required>
             </div>
           </div>
           <div class="form-group-lg">
-            <label for="message" class="col-sm-2 control-label" id="labelZone">Message</label>
+            <label for="message" class="col-sm-2 control-label" id="labelZone">Message *</label>
             <div class="col-sm-10 input-group">
               <textarea name="message" placeholder="Votre message" value="<?php echo isset($_SESSION['inputs']['message'])? $_SESSION['inputs']['message'] : ''; ?>" maxlength="500" rows="9" class="form-control input-lg" id="zoneTexte" required></textarea>
             </div>
+          </div>
+          <div class="form-group">
+            <?php 
+              if(!isset($_POST["code"]) OR $_POST["code"] != $_SESSION["code"]){
+            ?>
+              <label for="code">Code de sécurité *</label>
+              <div class="onglet"><span class="prenom glyphicon   glyphicon-ok"></span><input class="prenom1"  type="code" name="code" placeholder="Recopiez le code ci-dessous" required/>
+              </div>
+              <p id="code"><img src="include/captcha.php" alt="captcha"/></p>
+              <p id="champ">*Champs obligatoire</p>
+            <?php 
+              }
+              if(isset($connec)){
+                echo $connec;
+              }
+            ?>
           </div>
           <!--Bouton envoi-->
           <div class="form-group-lg">
