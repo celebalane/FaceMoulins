@@ -1,3 +1,4 @@
+
 function escapeHtml(text) {
   return text
       .replace(/&/g, "&amp;")

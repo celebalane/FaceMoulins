@@ -1,171 +1,173 @@
 <?php include("include/header.php");?>
-
-<!--Partenariats-->
-<h1 class="titreSection col-md-12 col-sm-12">Partenariats</h1>
-<section class="col-md-12 col-sm-12" id="sectionPartenariat">
-	<!--Entreprise-->
-	<div class="col-md-12">
-		<h1>Nos entreprises adhérentes</h1>
-		<p>La Fondation FACE s'est engagée dès sa création dans un dialogue nourri et une démarche de co construction systématique avec l'ensemble des parties prenantes : c'est cet « ADN » qui préside depuis 1994 à la création des Clubs FACE et de ses autres structures de médiation et d'insertion, toujours nées d'une volonté commune des entreprises, des collectivités et de l'ensemble des acteurs territoriaux.
-		Cette volonté de maillage avec nos partenaires institutionnels, entreprises ou associations, est la clé de la conception et de la réalisation de nos projets, tant les politiques de lutte contre l'exclusion, les discriminations et la pauvreté nécessitent au-delà d'une association systématique des bénéficiaires (salariés, habitants, jeunes en contrats d'alternance, services civiques...etc...) l'implication de tous les acteurs.</p>
-		<center><h2><strong>Les entreprises adhérentes au Club FACE</strong></h2></center>
+<div class="container decalage">
+<div class="row">
+	<!--Partenariats-->
+	<h1 class="titreSection col-md-12 col-sm-12">Partenariats</h1>
+	<section class="col-md-12 col-sm-12" id="sectionPartenariat">
+		<!--Entreprise-->
+		<div class="col-md-12">
+			<h1>Nos entreprises adhérentes</h1>
+			<p>La Fondation FACE s'est engagée dès sa création dans un dialogue nourri et une démarche de co construction systématique avec l'ensemble des parties prenantes : c'est cet « ADN » qui préside depuis 1994 à la création des Clubs FACE et de ses autres structures de médiation et d'insertion, toujours nées d'une volonté commune des entreprises, des collectivités et de l'ensemble des acteurs territoriaux.
+			Cette volonté de maillage avec nos partenaires institutionnels, entreprises ou associations, est la clé de la conception et de la réalisation de nos projets, tant les politiques de lutte contre l'exclusion, les discriminations et la pauvreté nécessitent au-delà d'une association systématique des bénéficiaires (salariés, habitants, jeunes en contrats d'alternance, services civiques...etc...) l'implication de tous les acteurs.</p>
+			<center><h2><strong>Les entreprises adhérentes au Club FACE</strong></h2></center>
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<a href="http://www.carrefour.com/fr">	
+					<img src="img/partenariat/part_image1.jpg" class="center-block logo" alt="carrefour market" />
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<a href="http://www.laposte.fr/particulier">
+					<img src="img/partenariat/part_image2.png" class="center-block logo" alt="la poste" />
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<a href="http://www.ntn-snr.com/group/site/fr-fr/index.cfm">
+					<img src="img/partenariat/part_image3.jpg" class="center-block logo" alt="ndn" />
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<a href="http://www.ag2rlamondiale.fr/">	
+					<img src="img/partenariat/AG2R.png" class="center-block logo" alt="AG2R" />
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<a href="http://www.bouygues-construction.com/">
+					<img src="img/partenariat/bouygue-construction.jpg" class="center-block logo" alt="bouygue-construction" />
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<a href="http://www.cetelem.fr/">
+					<img src="img/partenariat/cetelem.png" class="center-block logo" alt="cetelem" />
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<a href="http://www.dell.fr/">	
+					<img src="img/partenariat/Dell.png" class="center-block logo" alt="Dell" />
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<a href="https://particuliers.engie.fr/login-page.html">
+					<img src="img/partenariat/engie.jpg" class="center-block logo" alt="engie" />
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<a href="http://www.ratp.fr/">
+					<img src="img/partenariat/RATP.png" class="center-block logo" alt="RATP" />
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<a href="http://www.total.fr/home.html">
+					<img src="img/partenariat/total.jpeg" class="center-block logo" alt="Total" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--Associations-->
 		<div class="row">
-			<div class="col-md-4 col-sm-4">
-				<a href="http://www.carrefour.com/fr">	
-				<img src="img/partenariat/part_image1.jpg" class="center-block logo" alt="carrefour market" />
-				</a>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<a href="http://www.laposte.fr/particulier">
-				<img src="img/partenariat/part_image2.png" class="center-block logo" alt="la poste" />
-				</a>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<a href="http://www.ntn-snr.com/group/site/fr-fr/index.cfm">
-				<img src="img/partenariat/part_image3.jpg" class="center-block logo" alt="ndn" />
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 col-sm-4">
-				<a href="http://www.ag2rlamondiale.fr/">	
-				<img src="img/partenariat/AG2R.png" class="center-block logo" alt="AG2R" />
-				</a>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<a href="http://www.bouygues-construction.com/">
-				<img src="img/partenariat/bouygue-construction.jpg" class="center-block logo" alt="bouygue-construction" />
-				</a>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<a href="http://www.cetelem.fr/">
-				<img src="img/partenariat/cetelem.png" class="center-block logo" alt="cetelem" />
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 col-sm-4">
-				<a href="http://www.dell.fr/">	
-				<img src="img/partenariat/Dell.png" class="center-block logo" alt="Dell" />
-				</a>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<a href="https://particuliers.engie.fr/login-page.html">
-				<img src="img/partenariat/engie.jpg" class="center-block logo" alt="engie" />
-				</a>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<a href="http://www.ratp.fr/">
-				<img src="img/partenariat/RATP.png" class="center-block logo" alt="RATP" />
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 col-sm-4">
-				<a href="http://www.total.fr/home.html">
-				<img src="img/partenariat/total.jpeg" class="center-block logo" alt="Total" />
-				</a>
-			</div>
-		</div>
-	</div>
-	<!--Associations-->
-	<div class="col-md-12 col-sm-12">
-		<h1 id="pageAsso">Les associations</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut dapibus mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas gravida arcu at viverra interdum. Etiam facilisis suscipit magna sit amet vulputate. Cras sed arcu eu sapien maximus dictum. Nam in mauris at orci congue luctus eget eu 	lectus. Phasellus semper imperdiet massa nec mollis. Aenean facilisis feugiat pharetra. Suspendisse vitae enim neque. Mauris sodales ipsum quis hendrerit vestibulum. Nunc mattis dignissim ante, eu consectetur diam porttitor non.
-		</p>
-		<div class="row">
-			<div class="col-md-3 col-sm-3">
-				<a href="http://www.cget.gouv.fr/">
-				<img src="img/partenariat/part_image4.png" class="center-block logo" alt="République Francaise" />
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="http://www.finances-pedagogie.fr/">
-				<img src="img/partenariat/part_image11.jpg" class="center-block logo" alt="Finance et Pédagogie" />
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="http://www.fondationface.org/lancement-du-concours-2015-sengager-pour-les-quartiers/">
-				<img src="img/partenariat/part_image9.png" class="center-block logo" alt="S'engager pour les quartiers" />
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="http://www.admical.org/">
-				<img src="img/partenariat/part_image10.jpg" class="center-block logo" alt="admical" />
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			</div>
-				<div class="col-md-3 col-sm-3">
-				<a href="http://www.afmd.fr/">
-				<img src="img/partenariat/afmd.png" class="center-block logo" alt="afmd" />
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="http://www.educationparlesport.com/apels.png">
-				<img src="img/partenariat/apels.png" class="center-block logo" alt="Apels" />
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="https://www.apf.asso.fr/">
-				<img src="img/partenariat/apf.jpg" class="center-block logo" alt="Apf" />
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="http://www.charte-diversite.com/">
-				<img src="img/partenariat/harmonie.jpg" class="center-block logo" alt="Harmonie" />
-				</a>
+			<div class="col-md-12 col-sm-12">
+				<h1 id="pageAsso">Les associations</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut dapibus mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas gravida arcu at viverra interdum. Etiam facilisis suscipit magna sit amet vulputate. Cras sed arcu eu sapien maximus dictum. Nam in mauris at orci congue luctus eget eu 	lectus. Phasellus semper imperdiet massa nec mollis. Aenean facilisis feugiat pharetra. Suspendisse vitae enim neque. Mauris sodales ipsum quis hendrerit vestibulum. Nunc mattis dignissim ante, eu consectetur diam porttitor non.
+				</p>
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+						<a href="http://www.cget.gouv.fr/">
+						<img src="img/partenariat/part_image4.png" class="center-block logo" alt="République Francaise" />
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="http://www.finances-pedagogie.fr/">
+						<img src="img/partenariat/part_image11.jpg" class="center-block logo" alt="Finance et Pédagogie" />
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="http://www.fondationface.org/lancement-du-concours-2015-sengager-pour-les-quartiers/">
+						<img src="img/partenariat/part_image9.png" class="center-block logo" alt="S'engager pour les quartiers" />
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="http://www.admical.org/">
+						<img src="img/partenariat/part_image10.jpg" class="center-block logo" alt="admical" />
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					</div>
+						<div class="col-md-3 col-sm-3">
+						<a href="http://www.afmd.fr/">
+						<img src="img/partenariat/afmd.png" class="center-block logo" alt="afmd" />
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="http://www.educationparlesport.com/apels.png">
+						<img src="img/partenariat/apels.png" class="center-block logo" alt="Apels" />
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="https://www.apf.asso.fr/">
+						<img src="img/partenariat/apf.jpg" class="center-block logo" alt="Apf" />
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="http://www.charte-diversite.com/">
+						<img src="img/partenariat/harmonie.jpg" class="center-block logo" alt="Harmonie" />
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					</div>
+						<div class="col-md-3 col-sm-3">
+						<a href="http://www.cjd.net/">
+						<img src="img/partenariat/cjd.png" class="center-block logo" alt="cjd" />
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="http://www.ladom.fr/">
+						<img src="img/partenariat/ladom.jpg" class="center-block logo" alt="LADOM" />
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="http://www.cnam-auvergne.fr/presentation/presentation-582442.kjsp">
+						<img src="img/partenariat/cnam.jpg" class="center-block logo" alt="Le cnam" />
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="http://www.nqt.fr/">
+						<img src="img/partenariat/nqt.jpg" class="center-block logo" alt="NQT" />
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+						<a href="http://www.unadev.com/">
+						<img src="img/partenariat/unadev.jpg" class="center-block logo" alt="UNADEV" />
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<a href="http://www.udes.fr/actualites/lusgeres-devient-ludes">
+						<img src="img/partenariat/usgeres.jpg" class="center-block logo" alt="USGERES" />
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			</div>
-				<div class="col-md-3 col-sm-3">
-				<a href="http://www.cjd.net/">
-				<img src="img/partenariat/cjd.png" class="center-block logo" alt="cjd" />
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="http://www.ladom.fr/">
-				<img src="img/partenariat/ladom.jpg" class="center-block logo" alt="LADOM" />
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="http://www.cnam-auvergne.fr/presentation/presentation-582442.kjsp">
-				<img src="img/partenariat/cnam.jpg" class="center-block logo" alt="Le cnam" />
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="http://www.nqt.fr/">
-				<img src="img/partenariat/nqt.jpg" class="center-block logo" alt="NQT" />
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3 col-sm-3">
-				<a href="http://www.unadev.com/">
-				<img src="img/partenariat/unadev.jpg" class="center-block logo" alt="UNADEV" />
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<a href="http://www.udes.fr/actualites/lusgeres-devient-ludes">
-				<img src="img/partenariat/usgeres.jpg" class="center-block logo" alt="USGERES" />
-				</a>
-			</div>
-		</div>
-
-	</div>
-	<!--Institutions-->
-	<div class="row institution">
-		<div class="col-md-12 col-sm-12">
-			<h1 id="pageInstitution">Les institutions</h1>
-			<h3><em>De nombreuses institutions soutiennent la réalisation des actions de FACE, considérée comme un véritable acteur en matière de prévention et de lutte contre l'exclusion</em></h3> 
-		</div>
-		<div class="col-md-4 col-sm-4 col-xs-12">
-			<h3>La Commission Européenne</h3>
-			<p>La Commission Européenne finance la fondation via le FSE et le programme Leonardo, pour des projets tel le "Certificat Européen de Compétences Foot & Entreprises" ou plus récemment "serendipité", projet d'innovation sociale pour favoriser l'égalité professionnelle Femme-Homme.</p>
-		</div>
-		<div class="col-md-2 col-sm-2 col-xs-12">
+			<!--Institutions-->
+			<div class="row institution">
+				<div class="col-md-12 col-sm-12">
+					<h1 id="pageInstitution">Les institutions</h1>
+					<h3><em>De nombreuses institutions soutiennent la réalisation des actions de FACE, considérée comme un véritable acteur en matière de prévention et de lutte contre l'exclusion</em></h3> 
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<h3>La Commission Européenne</h3>
+					<p>La Commission Européenne finance la fondation via le FSE et le programme Leonardo, pour des projets tel le "Certificat Européen de Compétences Foot & Entreprises" ou plus récemment "serendipité", projet d'innovation sociale pour favoriser l'égalité professionnelle Femme-Homme.</p>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-12">
 			<a href="http://ec.europa.eu/index_fr.htm">
 			<img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Logo_Commission_Europ%C3%A9enne_FR.png" class="center-block logo"  alt="Commission Européenne" />
 			</a>
@@ -316,10 +318,11 @@
 	<div class="col-md-3 col-sm-3">
 		<h3>NOM Prénom</h3>
 		<p>Espace de texte à la dispositon du donateur.<br />
-						Date d'entrée</p>
+		Date d'entrée</p>
 		<img src="http://external-images.premiere.fr/var/premiere/storage/images/series/news-series/dexter-eli-stone-en-personne-dans-la-saison-5-2357793/34818104-1-fre-FR/Dexter-Eli-Stone-en-personne-dans-la-saison-5.jpg" class="photo" alt="Personne fictif 1" />
+		</div>
+	</section>	
 	</div>
-</section>	
-			
+</div>			
 <!--Pied de page-->								
 <?php include("include/footer.php");?>

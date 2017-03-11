@@ -18,8 +18,7 @@
     if(htmlspecialchars($_POST["code"]) == $_SESSION["code"]){
       include('formulaire.php');
       //session_destroy();
-      $_POST["code"] = "";
-      header("location:contact.php");      
+      $_POST["code"] = "";      
     }else if (htmlspecialchars($_POST["code"]) != "" AND htmlspecialchars($_POST["code"]) != $_SESSION["code"]){
       $connec = "Erreur";
     }
@@ -28,10 +27,9 @@
   include("include/header.php");
 ?>
 
-
       <!--Formulaire de contact-->
 
-      <div class="container">
+      <div class="container decalage">
         <?php if(array_key_exists('errors',$_SESSION)): ?>
         <div class="alert alert-danger">
           <?= implode('<br>', $_SESSION['errors']); ?>
@@ -45,9 +43,15 @@
       </div>
 
       <section id="sectionContact">
-        <form class="form-horizontal col-md-9 col-md-offset-1 col-xs-12" method="post" target="contact.php">
+        <form class="form-horizontal col-md-9 col-md-offset-1 col-xs-12" method="post">
           <h2>Contact</h2>
           <p>Pour une demande d'adhésion ou toute autres questions, veuillez remplir le formulaire. Nous vous recontacterons dans les plus brefs délais.</p>
+          <div class="form-group-lg">
+            <label for="nom" class="col-sm-2 control-label">Entreprise</label>
+            <div class="col-sm-10">
+              <input type="text" name="nom" placeholder="Si vous êtes une entreprise " maxlength="30" class="form-control input-lg">
+            </div>
+          </div>
           <div class="form-group-lg">
             <label for="nom" class="col-sm-2 control-label">Nom *</label>
             <div class="col-sm-10">
@@ -85,12 +89,13 @@
               <textarea name="message" placeholder="Votre message" value="<?php echo isset($_SESSION['inputs']['message'])? $_SESSION['inputs']['message'] : ''; ?>" maxlength="500" rows="9" class="form-control input-lg" id="zoneTexte" required></textarea>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group-lg">
             <?php 
               if(!isset($_POST["code"]) OR $_POST["code"] != $_SESSION["code"]){
             ?>
-              <label for="code">Code de sécurité *</label>
-              <div class="onglet"><span class="prenom glyphicon   glyphicon-ok"></span><input class="prenom1"  type="code" name="code" placeholder="Recopiez le code ci-dessous" required/>
+              <label for="code" class="col-sm-2 control-label">Code de sécurité *</label>
+              <div class="col-sm-10">
+                <input class="prenom1" type="code" name="code" placeholder="Recopiez le code ci-dessous" class="form-control input-lg" id="champCode" required/>
               </div>
               <p id="code"><img src="include/captcha.php" alt="captcha"/></p>
               <p id="champ">*Champs obligatoire</p>

@@ -1,5 +1,5 @@
 <?php include("include/header.php");?>
-
+<div class="container decalage">
 <!--Mentions légales-->
 <section class="col-md-12" id="mention">
 	<article>
@@ -11,7 +11,7 @@
 		<p>Rutrum nec diam in pulvinar</p>
 		<p>Aliquam sit amet ipsum ut elit auctor dictum</p>
 		<p>Le présent site a fait l’objet d’une déclaration à la CNIL, conformément à la loi du 78-17 du 06/01/1978 relative à l’informatique, aux fichiers et aux libertés. La Fondation FACE pourra à toutes fins de preuve conserver et archiver de manière confidentielle les données du client.</p>
-		<p>L’accès ainsi que l’utilisation de son contenu sont soumis aux conditions d’utilisation décrites ci-après. Le fait d’accéder et de naviguer sur le site constitue de la part du visiteur une acceptation sans réserve des stipulations suivantes :<p/>
+		<p>L’accès ainsi que l’utilisation de son contenu sont soumis aux conditions d’utilisation décrites ci-après. Le fait d’accéder et de naviguer sur le site constitue de la part du visiteur une acceptation sans réserve des stipulations suivantes :</p>
 		<p><strong>Propriété intellectuelle</strong></p>
 		<p>Le Site est la propriété exclusive de, seule habilitée à utiliser et exploiter les droits de propriété intellectuelle et droits de la personnalité attachés à ce site, notamment les marques, dessins et modèles, droits d’auteur et droit à l’image, à titre originaire ou par l’effet d’une cession ou d’une licence d’exploitation.</p>
 		<p>L’usage de tout ou partie du site, notamment par téléchargement, reproduction, transmission ou représentation à d’autres fins que pour usage personnel et privé dans un but non commercial est strictement interdit. Pour utiliser les visuels et/ou certains textes présents sur le site, merci d’en faire la demande via le formulaire de contact.</p>
@@ -26,6 +26,6 @@
 		<p>Les présentes conditions sont régies par le droit français. Les juridictions françaises sont seules compétentes pour connaître de tout litige se rapportant directement ou indirectement à l’accès au présent Site ou à son utilisation.</p>
 	</article>
 </section>
-
+</div>
 <!--Pied de page-->
 <?php include("include/footer.php"); ?>

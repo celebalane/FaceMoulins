@@ -17,7 +17,7 @@
     }
     img {
         margin-left:10%;
-        width: 80%;
+        width: 100%;
     }
     video {
         width: 100%;
@@ -27,4 +27,48 @@
 .lightbox__caption p {
     font-size: 18px;
     line-height: 22px;
+}
+
+/*/////////////////////////////CARROUSSEL PHOTO///////////////////////////////*/
+#h2photo {
+    margin-left: 2%;
+}
+
+.carousel-page{
+    margin-left: 10%;
+    display: flex;
+    .img-responsive{
+        width: 20%;
+        height: 20%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-left: 7%;
+    }
+}
+.formatPaysage{
+    padding-top: 10%;
+}
+.glyphicon-chevron-left, .glyphicon-chevron-right{                 /*Flèches*/
+    padding-top: 6%;
+    font-size: 2em;
+    color: #1693a5;
+}
+
+.carousel-indicators{
+    li{
+        border:1px solid #fbb829;
+    }
+    .active {
+    background-color: #fbb829;
+    }
+}
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
+}
+
+.imageCarousel{
+    width: 300%;
 }

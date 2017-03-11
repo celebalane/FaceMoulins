@@ -1,20 +1,19 @@
 /*////////////Bouton Don////////////////////////*/
-#barre{
-	height: 60px;
-	background-color: #1D4B58;
-	border-bottom: 5px solid #E0A377;
-}
 #placementDon{
 	text-align: right;
 }
 #boutonDon {
-	margin-top: 10px;
-	margin-right: 20px;
 	color: white;
 	background-color: #F2F2F2;
 	background-color: transparent;
+	border: 1px solid white;
 	span{
 		color: #E0A377;
 		font-size: 17px;
 	}
+}
+
+#boutonDon:hover{
+	color:#D9D9D9;
+	background-color:#13808e;
 }

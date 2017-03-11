@@ -1,8 +1,8 @@
 <?php include("include/header.php");?>
-
+<div class="container decalage">
 <h1 class="titreSection col-md-12">Histoire de Face</h1>
 <!--Section comportant l'histoire et le palmarès-->
-<section class="col-md-12 presentation">
+<section class="col-md-12 presentation" >
   <!--Histoire-->
 	<article>
 		<p><strong> Tout est parti d’un constat simple : « L’exclusion permanente d’une partie de nos concitoyens est inacceptable ! Entreprises et pouvoirs publics doivent conjointement développer l’innovation sociale pour relever ce défi ».</strong></p>
@@ -80,7 +80,7 @@
     <h3>Café d'en Face</h3>
     <p>Un premier Café d'en face a permis d'engager le dialogue entre le public et des chefs d'entreprises. Un second se tiendra à l'Inter-mitemps à Moulins, le 15 février. Son thème « Demain, ma vie, mon métier ».</p>
   </article>
- </section>
-
+</section>
+</div>
 <!--Pied de page-->
 <?php include("include/footer.php"); ?>

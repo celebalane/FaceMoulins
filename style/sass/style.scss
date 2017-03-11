@@ -32,10 +32,15 @@ body {
 	margin: 0%;                 /*Mise à zéro marges extérieures*/
     background: url(https://s-media-cache-ak0.pinimg.com/736x/82/a6/6c/82a66c6b69a61564494a682e4fb0d704.jpg) no-repeat center fixed; 
     background-size: cover; /*Couleur de fond de la page*/
+    overflow-x: hidden;
 }
 
 .container{                   /*Mise à zéro du padding du container de bootstrap*/
 	padding: 0;
+}
+
+.decalage{
+	margin-top:15%;
 }
 #logo {
 	width: 100%; /*Taille*/
