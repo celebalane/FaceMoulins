@@ -7,8 +7,8 @@
 	<div class="col-md-12">
 		<h1>Nos entreprises adhérentes</h1>
 		<p>La Fondation FACE s'est engagée dès sa création dans un dialogue nourri et une démarche de co construction systématique avec l'ensemble des parties prenantes : c'est cet « ADN » qui préside depuis 1994 à la création des Clubs FACE et de ses autres structures de médiation et d'insertion, toujours nées d'une volonté commune des entreprises, des collectivités et de l'ensemble des acteurs territoriaux.
-						Cette volonté de maillage avec nos partenaires institutionnels, entreprises ou associations, est la clé de la conception et de la réalisation de nos projets, tant les politiques de lutte contre l'exclusion, les discriminations et la pauvreté nécessitent au-delà d'une association systématique des bénéficiaires (salariés, habitants, jeunes en contrats d'alternance, services civiques...etc...) l'implication de tous les acteurs.</p>
-		<h2><strong>Quelques entreprises adhérentes au Club FACE</strong></h2>
+		Cette volonté de maillage avec nos partenaires institutionnels, entreprises ou associations, est la clé de la conception et de la réalisation de nos projets, tant les politiques de lutte contre l'exclusion, les discriminations et la pauvreté nécessitent au-delà d'une association systématique des bénéficiaires (salariés, habitants, jeunes en contrats d'alternance, services civiques...etc...) l'implication de tous les acteurs.</p>
+		<center><h2><strong>Les entreprises adhérentes au Club FACE</strong></h2></center>
 		<div class="row">
 			<div class="col-md-4 col-sm-4">
 				<a href="http://www.carrefour.com/fr">	
@@ -23,6 +23,47 @@
 			<div class="col-md-4 col-sm-4">
 				<a href="http://www.ntn-snr.com/group/site/fr-fr/index.cfm">
 				<img src="img/partenariat/part_image3.jpg" class="center-block logo" alt="ndn" />
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<a href="http://www.ag2rlamondiale.fr/">	
+				<img src="img/partenariat/AG2R.png" class="center-block logo" alt="AG2R" />
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<a href="http://www.bouygues-construction.com/">
+				<img src="img/partenariat/bouygue-construction.jpg" class="center-block logo" alt="bouygue-construction" />
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<a href="http://www.cetelem.fr/">
+				<img src="img/partenariat/cetelem.png" class="center-block logo" alt="cetelem" />
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<a href="http://www.dell.fr/">	
+				<img src="img/partenariat/Dell.png" class="center-block logo" alt="Dell" />
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<a href="https://particuliers.engie.fr/login-page.html">
+				<img src="img/partenariat/engie.jpg" class="center-block logo" alt="engie" />
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<a href="http://www.ratp.fr/">
+				<img src="img/partenariat/RATP.png" class="center-block logo" alt="RATP" />
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<a href="http://www.total.fr/home.html">
+				<img src="img/partenariat/total.jpeg" class="center-block logo" alt="Total" />
 				</a>
 			</div>
 		</div>
@@ -54,6 +95,65 @@
 				</a>
 			</div>
 		</div>
+		<div class="row">
+			</div>
+				<div class="col-md-3 col-sm-3">
+				<a href="http://www.afmd.fr/">
+				<img src="img/partenariat/afmd.png" class="center-block logo" alt="afmd" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<a href="http://www.educationparlesport.com/apels.png">
+				<img src="img/partenariat/apels.png" class="center-block logo" alt="Apels" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<a href="https://www.apf.asso.fr/">
+				<img src="img/partenariat/apf.jpg" class="center-block logo" alt="Apf" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<a href="http://www.charte-diversite.com/">
+				<img src="img/partenariat/harmonie.jpg" class="center-block logo" alt="Harmonie" />
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			</div>
+				<div class="col-md-3 col-sm-3">
+				<a href="http://www.cjd.net/">
+				<img src="img/partenariat/cjd.png" class="center-block logo" alt="cjd" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<a href="http://www.ladom.fr/">
+				<img src="img/partenariat/ladom.jpg" class="center-block logo" alt="LADOM" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<a href="http://www.cnam-auvergne.fr/presentation/presentation-582442.kjsp">
+				<img src="img/partenariat/cnam.jpg" class="center-block logo" alt="Le cnam" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<a href="http://www.nqt.fr/">
+				<img src="img/partenariat/nqt.jpg" class="center-block logo" alt="NQT" />
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-3">
+				<a href="http://www.unadev.com/">
+				<img src="img/partenariat/unadev.jpg" class="center-block logo" alt="UNADEV" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<a href="http://www.udes.fr/actualites/lusgeres-devient-ludes">
+				<img src="img/partenariat/usgeres.jpg" class="center-block logo" alt="USGERES" />
+				</a>
+			</div>
+		</div>
+
 	</div>
 	<!--Institutions-->
 	<div class="row institution">
@@ -173,7 +273,7 @@
 		<div class="col-md-4 col-sm-4 col-xs-12">
 			<h3>Le SGCIV</h3>
 			<p>Dans le cadre de la Convention de partenariat entre FACE et le Ministère de la Ville, le SGCIV soutient l’engagement du Réseau FACE dans les territoires prioritaires.
-							Le Secrétariat Général du Comité Interministériel des Villes soutient ainsi 18 actions mises en œuvre par la Fondation dans 7 champs prioritaires du Ministre de la Ville.</p>
+			Le Secrétariat Général du Comité Interministériel des Villes soutient ainsi 18 actions mises en œuvre par la Fondation dans 7 champs prioritaires du Ministre de la Ville.</p>
 		</div>
 		<div class="col-md-2 col-sm-2 col-xs-12">
 			<a href="http://www.interieur.gouv.fr/Publications/Rapports-de-l-IGA/Amenagement-du-territoire/Rapprochement-entre-le-Secretariat-General-du-Comite-Interministeriel-des-Villes-SG-CIV-et-l-Agence-Nationale-pour-la-Cohesion-Sociale-et-l-Egalite-des-Chances-ACSe-Tome-1-Rapport">
@@ -197,7 +297,16 @@
 		</div>
 		<div class="col-md-2 col-sm-2 col-xs-12">
 			<a href="http://www.interieur.gouv.fr/">
-							<img src="https://www.data.gouv.fr/s/avatars/9f/90b70235c34c2aa5c97cc78d301f5c.jpg" class="center-block logo" alt="Le Ministère de l’intérieur"/>
+			<img src="https://www.data.gouv.fr/s/avatars/9f/90b70235c34c2aa5c97cc78d301f5c.jpg" class="center-block logo" alt="Le Ministère de l’intérieur"/>
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-4 col-xs-12">
+			<h3> Pole Emploi </h3>
+			<p> Lorem ipsum </p>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-12">
+			<a href="http://www.pole-emploi.fr/accueil/">
+			<img src="https://upload.wikimedia.org/wikipedia/fr/c/cd/Logo_P%C3%B4le_Emploi.png" class="center-block logo" alt="Pole emploi"/>
 			</a>
 		</div>
 	</div>
