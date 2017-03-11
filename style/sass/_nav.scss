@@ -1,54 +1,197 @@
-/*////////////Barre de navigation/////////////*/
+/////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// HEADER & NAVBAR ////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
 
-.navbar {
-	margin-top: 5%;
-	background-color: transparent; /*La barre de navigation prend la couleur du background*/
-	border:none;               /*Pas de bordure*/
-	font-size: 1.5em;          /*Taille de la typo*/
+.navbar #top{ /* Zone logo & recherche */
+	background:{
+		image: url(../../img/header_background.png);
+		position: 52% 100%;
+		size: cover;
+	}
+	padding: 15px 35px;
+	@include centreFlex;
+	justify-content: space-between;
 }
 
-.navbar-nav li:hover{            /*Quand on survol un lien de la barre de navigation*/
-	background-color: rgba(18,110,122,0.4);
-	border-bottom: 3px solid #CF844D;
+.navbar #top img{ /* Logo FACE */
+	width: 300px;
+	height: 111px;
 }
 
-.navbar-default .navbar-nav li:hover a{     /*Quand le lien est survolé, la typo devient blanche*/
-	color: white;
+.navbar #top .search{ /* Bloc de recherche */
+	position: relative;
+	width: auto;
+	display: table;
 }
 
-.navbar-default .navbar-nav > .open > a,           /*Quand l'un des liens de la barre de navigation est selectionné*/
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  color: white;
-  background-color: rgba(18,110,122,0.4);
+.navbar #top .search input{ /* Zone de texte / bloc de recherche */
+	background-color: $couleur3;
+	display: table-cell;
+	width: 250px;
+	padding: 8px;
+	color: #333333;
+	line-height: 0px;
+	font-size: 13px;
+	outline: none;
+	@include bordure(2px, $couleur4);
+	border-radius: 5px 0px 0px 5px;
 }
 
-.dropdown-menu {                                 /*Menu déroulant*/
-	background-color: rgba(0,0,0,0.8);           /*Arrière plan avec un peu de transparence*/
+.navbar #top .search span{ /* Bouton recherche / bloc de recherche */
+	display: table-cell;
+	width: 20%;
+	color: $blanc;
+	line-height: 0px;
+	text-align: center;
+	padding: 8px;
+	border-radius: 0px 5px 5px 0px;
+	background-color: $couleur4;
+	cursor: pointer;
 }
 
-.navbar-default .navbar-nav .open .dropdown-menu > li > a { /*Pour que la couleur des liens ne change pas lorsque la souris n'est plus sur le menu séléctionné*/
-    padding-top: 5%;
-    padding-bottom: 5%;
-    color: white;
+.navbar #top .search p#error{ /* Message d'erreur bloc de recherche */
+	display: none;
+	caption-side: bottom;
+	color: $couleur4;
+	font-size: 12px;
+	margin:{
+		top: 5px;
+		bottom: 0px;
+	}
 }
- .caret{
- 	margin-top: 5%;
- 	margin-left: 4px;
- 	color: #6D6D6D;
- }
 
-// /*.dropdown-menu li:hover .sub-menu {                  /*Pour que le menu passe en hover*/
-//    /* visibility: visible;
-// }
+.navbar #bottom{ /* Zone menu & navigation */
+	background-color: #E79063;
+	border-bottom: 3px solid $couleur2;
+	font:{
+		family: 'Fjalla One', sans-serif;
+		size: 18px;
+	}
+	@include boxShadow;
+}
 
-// .dropdown:hover .dropdown-menu {
-//     display: block;
-// }
+.navbar #bottom .container{ /* Boîte des liens */
+	margin-top: 0px;
+}
 
-// #menuGalerie{
-// 	min-width: 110px;
-// }
+.navbar #bottom .container .navbar-nav { /* Sous-boite des liens */
+	width: 100%;
+	text-align: center;
+}
 
-// .sousMenu{
-// 	min-width: 120px;
+.navbar #bottom .container .navbar-nav > li { /* Centrer les li */
+	float: none;
+	display: inline-block;
+}
+
+.navbar #bottom .container .nav #active{ /* Lien actuel */
+	background-color: $couleur2;
+}
+
+.navbar #bottom .container .nav a{ /* Texte des liens */
+	color: $blanc;
+	text-transform: uppercase;
+	transition: 300ms cubic-bezier(0.4, 0, 1, 1);
+	padding: 10px 30px;
+}
+.navbar #bottom .container .nav > li > a:hover { /* Texte des liens au survol */
+	background-color: $couleur1;
+}
+
+.navbar #bottom .container .nav > li > a:focus { /* Texte des liens au clic */
+	background-color: $couleur2;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+	background-color: $couleur1;
+}
+
+.dropdown-menu { /* Menu déroulant */
+	background-color: $couleur2;
+	text-align: center;
+	border: 0px;
+	min-width: auto;
+}
+
+.dropdown-menu li a { /* Texte des liens */
+	color: $blanc;
+	font-size: 16px;
+}
+
+.navbar-nav > li > .dropdown-menu{
+	left: 0;
+	right: 0;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{ /* Texte des liens au survol */
+	background-color: $couleur1;
+}
+
+///////////////////////// MOBILE FIRST /////////////////////////
+
+.navbar #bottom .container .bars{
+	background-color: transparent;
+	@include bordure(1px, $blanc);
+	border-radius: 5px;
+	
+	text-align: center;
+	font-size: 30px;
+	padding:{
+		top: 0px;
+		right: 10px;
+		bottom: 0px;
+	}
+	color: $blanc;
+	margin:{
+		bottom: 10px;
+		top: 10px;
+	}
+	float: right;
+}
+
+.navbar #bottom .container .text{
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: $blanc;
+	top: 5px;
+	margin:{
+		bottom: 0px;
+		top: 0px;
+	}
+	float: left;
+}
+
+/////////////////////// PARAMÈTRES RESPONSIVE ///////////////////
+@media screen and (max-width: 1024px){
+	.navbar #top{
+		background-position: 50% 50%;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.navbar #top{
+		background-position: 47% 50%;
+	}
+
+	.navbar #bottom .container .navbar-nav {
+		text-align: left;
+	}
+
+	.navbar #bottom .container .navbar-nav > li {
+		float: none;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.navbar #top{
+		background-position: 46% 50%;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.navbar #top{
+		padding: 15px 15px;
+	}
+}

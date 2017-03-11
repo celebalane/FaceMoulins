@@ -1,24 +1,190 @@
-footer {                 
-	background-color: rgba(51,93,104,1);
-	margin-top: 5%;
-	padding: 20px 0 0 50px;
-	width: 100%;
-	border-top: 5px solid #E0A377;
-	color: white;
-	a {               /*Lien contenu dans le footer*/
-		color:white;
-		&:hover{
-			color: #aaa9a9;
-			text-decoration: none;
+////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////// FOOTER ///////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+
+#footer {
+	padding: 20px;
+	color: $blanc;
+	background-color: #1F5D74;
+	margin:{
+		bottom: -20px;
+		top: 30px;
+	}
+	p{font-size:10px;}
+	a{color: #E79063;}
+	img{width: 50%;}
+}
+.titreContact{ margin-bottom: 0;}
+.contact{ color: #E79063;}
+#mailDiv{
+	position: relative;
+	width: 210px;
+}
+#mailer{
+	color: $blanc;
+	border-radius: 0;
+	border: none;
+	width: 85%;
+	height: 25px;
+	font-size: 12px;
+	color: #bababa;
+	@include bordure(1px, #bababa);
+	border-radius: 3px 0 0 3px;  
+	background-color: transparent;
+
+}
+#mail:focus { outline: none;}
+#boxEnveloppe{
+	width: 15%;
+	height: 100%;
+	background-color: #133f4f;
+	@include centreFlex;
+	position: absolute;
+	top: 0;
+	right: 0;
+	@include bordure(1px, #bababa);
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+}
+#texteEtoile{
+	margin-top: 20px;
+	font-size: 10px;
+	color: #C0C0C0;
+}
+#footerFooter{
+	background-color: #1D4B58;
+	color: $blanc;
+	line-height: 50px;
+}
+#listFooter li a{
+	color: $blanc;
+	text-decoration: none;
+}
+/* social buttons start */
+
+#content {
+	justify-content: center;
+	margin-left: -3em;
+	.menu2 {
+		text-align:center;
+		padding-top:30px;
+		.primary-menu {
+			list-style-type:none;
+			position:relative;
+			li {
+				display:inline;
+				text-align:center;
+				margin:0 10px;
+				position:relative;
+				a {
+					position:relative;
+					text-decoration:none;
+					font-family: 'Social' !important;
+					font-size:25px;
+					background:#d9d9d9;
+					display:inline-block;
+					width:50px;
+					height:50px;
+					padding-top:0.2em;
+					color:#fff;
+					@include bordure(3px, $blanc);
+					
+					-webkit-border-radius:100px;
+					-moz-border-radius:100px;
+					-o-border-radius:100px;
+					-ms-border-radius:100px;
+					-khtml-border-radius:100px;
+					border-radius:100px;
+					
+					-webkit-box-shadow:0 0 1px 1px #afafaf;
+					-moz-box-shadow:0 0 1px 1px #afafaf;
+					-o-box-shadow: 0 0 1px 1px #afafaf;
+					-ms-box-shadow: 0 0 1px 1px #afafaf;
+					-khtml-box-shadow:0 0 1px 1px #afafaf;
+					box-shadow:0 0 1px 1px #afafaf;
+					
+					-webkit-transition:all 1s;
+					-moz-transition:all 1s;
+					-o-transition:all 1s;
+					-ms-transition:all 1s;
+					-khtml-transition:all 1s;
+					transition:all 1s;
+				}
+			}
 		}
 	}
 }
-#lienMentions{
-	padding-top: 10%;
-	font-size: 10px;
+
+#content .menu2 .primary-menu li.facebook a:hover { background:#00438f;}
+#content .menu2 .primary-menu li.twitter a:hover { background:#00b8df;}
+#content .menu2 .primary-menu li.flickr a:hover { background:#df00bd;}
+#content .menu2 .primary-menu li.rss a:hover { background:#ff7800;}
+#content .menu2 .primary-menu li.mail a:hover { background:#1d1d1d;}
+
+#content .menu2 .primary-menu li{
+	 a:hover {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-khtml-transform: rotate(360deg);
+		transform: rotate(360deg);
+		~ span.social-span {
+			opacity:1;
+		}
+	}
+	span.social-span {
+		z-index: 99;
+		font-family:Arial;
+		font-size:11px;
+		position:absolute;
+		width:100px;
+		top:45px;
+		left:-45%;
+		background: #1F5D74;
+		padding:5px;
+		@include bordure(1px, #B8B8B8);
+		opacity:0;
+		
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+		-o-border-radius:10px;
+		-ms-border-radius:10px;
+		-khtml-border-radius:10px;
+		border-radius:10px;
+		
+		-webkit-transition:opacity 1s ease-in-out;
+		-moz-transition:opacity 1s ease-in-out;
+		-o-transition:opacity 1s ease-in-out;
+		-ms-transition:opacity 1s ease-in-out;
+		-khtml-transition:opacity 1s ease-in-out;
+		transition:opacity 1s ease-in-out;
+		&:after{
+			content:"";
+			position:absolute;
+			border-color:#fff transparent;
+			display:block;
+			top:-7px;
+			left:40%;
+			width:0;
+			border-width:0 7px 7px;
+			border-style:solid;
+		}
+	}
 }
-#mention {                       /*Arrière plan de la section comportant les mentions légales*/
-	padding: 3%;
-	background-color: white;
-	box-shadow: 1px 2px 4px black;
+
+
+/* social buttons fin*/
+////////////////////////RESPONSIVE FOOTER/////////////////////////
+@media screen and (max-width: 768px){
+
+  #footer{ text-align: center;}
+  #mailDiv{ margin: auto;}
+}
+#back_gal{
+	background:{
+		image: url(../../img/back4.jpg);
+		repeat: no-repeat;
+	}
+	overflow: hidden;	
 }

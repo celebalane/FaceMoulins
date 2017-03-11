@@ -50,8 +50,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="#">Presse</a></li>
 							<li><a href="#">Agenda</a></li>
-							<li><a href="#">Fil d'actualité</a></li>
-							<li><a href="#">Réseaux sociaux</a></li>
+							<li><a href="article.php">Articles</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
