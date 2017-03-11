@@ -1,5 +1,5 @@
 <?php include("include/header.php");?>
-
+            
 <!--Galerie-->
 <h1 class="titreSection col-md-12 col-xs-12">Galerie</h1>
 <section class="col-xs-12 col-md-12" id="galerie">
