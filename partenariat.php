@@ -155,8 +155,7 @@
 						</a>
 					</div>
 				</div>
-			</div>
-		</div>
+			
 			<!--Institutions-->
 			<div class="row institution">
 				<div class="col-md-12 col-sm-12">
@@ -286,7 +285,7 @@
 	<div class="row institution">
 		<div class="col-md-4 col-sm-4 col-xs-12">
 			<h3>Le Ministère du Travail, de l’Emploi, de la Formation professionnelle et du Dialogue social</h3>
-			<p>Menbres de droit du Conseil d'Administration</p>
+			<p>Membres de droit du Conseil d'Administration</p>
 		</div> 
 		<div class="col-md-2 col-sm-2 col-xs-12">
 			<a href="http://travail-emploi.gouv.fr/">
@@ -295,7 +294,7 @@
 		</div>
 		<div class="col-md-4 col-sm-4 col-xs-12">
 			<h3>Le Ministère de l’intérieur</h3>
-			<p>Menbre de droit du Conseil d'Administration</p>
+			<p>Membre de droit du Conseil d'Administration</p>
 		</div>
 		<div class="col-md-2 col-sm-2 col-xs-12">
 			<a href="http://www.interieur.gouv.fr/">
@@ -320,9 +319,8 @@
 		<p>Espace de texte à la dispositon du donateur.<br />
 		Date d'entrée</p>
 		<img src="http://external-images.premiere.fr/var/premiere/storage/images/series/news-series/dexter-eli-stone-en-personne-dans-la-saison-5-2357793/34818104-1-fre-FR/Dexter-Eli-Stone-en-personne-dans-la-saison-5.jpg" class="photo" alt="Personne fictif 1" />
-		</div>
-	</section>	
 	</div>
-</div>			
+	</section>	
+</div>		
 <!--Pied de page-->								
 <?php include("include/footer.php");?>
