@@ -120,7 +120,7 @@
           <section id="contactFace">
             <h4 class="text-center">FACE bourbonnais </h4>
             <h5 class="text-center"> Adresse : </h5>
-            <p class="text-center"><span class="glyphicon glyphicon-home"></span></p><p class="text-center"> 1 rue Berthelot Moulins, Auvergne, France </p>
+            <p class="text-center"><i class="fa fa-home" aria-hidden="true"></i></p><p class="text-center"> 1 rue Berthelot Moulins, Auvergne, France </p>
             <h5 class="text-center"> Teléphone : </h5>
             <p class="text-center"> 06 - 89 - 32 - 71 - 09 </p>
           </section>

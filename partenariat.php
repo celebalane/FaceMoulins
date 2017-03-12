@@ -321,6 +321,7 @@
 		<img src="http://external-images.premiere.fr/var/premiere/storage/images/series/news-series/dexter-eli-stone-en-personne-dans-la-saison-5-2357793/34818104-1-fre-FR/Dexter-Eli-Stone-en-personne-dans-la-saison-5.jpg" class="photo" alt="Personne fictif 1" />
 	</div>
 	</section>	
+</div>
 </div>		
 <!--Pied de page-->								
 <?php include("include/footer.php");?>

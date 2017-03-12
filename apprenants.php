@@ -1,5 +1,5 @@
 <?php include("include/header.php");?>
-
+<div class="container decalage">
 <h1 class="col-xs-12 titreSection"><strong>Curriculum vitae des apprenants</strong></h1>
 <section class="col-xs-12" id="sectionApprenant">
   <div class="row">
@@ -452,6 +452,7 @@
       </div><!--fin row-->
     </section>
   </div>
+</div>
 <!--Pied de page-->
 <?php include("include/footer.php"); ?>
 

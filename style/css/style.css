@@ -665,8 +665,8 @@ aside {
   #contactFace p {
     font-size: 0.8em; }
 
-.glyphicon-home {
-  color: white; }
+.fa-home {
+  font-size: 30px; }
 
 #code {
   margin-left: 9%; }
@@ -720,7 +720,6 @@ aside {
     margin-bottom: 40px;
     font-size: 40px; }
   #galerie img {
-    margin-left: 10%;
     width: 100%; }
   #galerie video {
     width: 100%;
@@ -734,38 +733,31 @@ aside {
 #h2photo {
   margin-left: 2%; }
 
-.carousel-page {
-  margin-left: 10%;
-  display: flex; }
-  .carousel-page .img-responsive {
-    width: 20%;
-    height: 20%;
+.carousel-page2 {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+  .carousel-page2 .img-responsive {
     padding-top: 2%;
-    padding-bottom: 2%;
-    margin-left: 7%; }
+    padding-bottom: 2%; }
 
-.formatPaysage {
-  padding-top: 10%; }
-
-.glyphicon-chevron-left, .glyphicon-chevron-right {
-  /*Flèches*/
-  padding-top: 6%;
-  font-size: 2em;
-  color: #1693a5; }
+.carousel-control {
+  color: #1a8194;
+  font-size: 60px; }
 
 .carousel-indicators li {
   border: 1px solid #fbb829; }
 .carousel-indicators .active {
   background-color: #fbb829; }
 
-.carousel-control.left {
+.carousel-control2 .left2 {
+  padding-top: 20%;
   background-image: none; }
 
-.carousel-control.right {
+.carousel-control2 .right2 {
+  padding-top: 20%;
   background-image: none; }
-
-.imageCarousel {
-  width: 300%; }
 
 #fabrik {
   background-color: white;
@@ -844,21 +836,20 @@ aside {
 .formatPaysage {
   padding-top: 10%; }
 
-.glyphicon-chevron-left, .glyphicon-chevron-right {
-  /*Flèches*/
-  padding-top: 6%;
-  font-size: 2em;
-  color: #1693a5; }
-
 .carousel-indicators li {
   border: 1px solid #fbb829; }
 .carousel-indicators .active {
   background-color: #fbb829; }
 
+.carousel-control {
+  font-size: 60px; }
+
 .carousel-control.left {
+  padding-top: 15%;
   background-image: none; }
 
 .carousel-control.right {
+  padding-top: 15%;
   background-image: none; }
 
 /*/////////////////////CV de la page Apprenants//////////////////////////////////////*/
@@ -909,17 +900,12 @@ small {
   .navbar {
     margin-top: -20%; }
 
-  /*/////////////////////Footer//////////////////*/
-  footer {
-    padding: 2% 0 2% 0;
-    text-align: center; }
-
-  #planSite {
-    display: none; }
-
-  #lienMentions {
-    margin: 0;
-    text-align: center; }
+  /*/////////////////////Citation///////////////////////*/
+  blockquote {
+    margin-top: 50%;
+    font-size: 1em; }
+    blockquote h3 {
+      font-size: 1.4em; }
 
   /*/////////////////////Actu///////////////////////*/
   #filActu {
@@ -931,6 +917,9 @@ small {
   .titreSection {
     box-shadow: none;
     text-align: center; }
+
+  .decalage {
+    margin-top: 50%; }
 
   /*/////////////////////Presse///////////////////////*/
   #presse {
@@ -1027,6 +1016,12 @@ small {
     font-size: 12px;
     line-height: 18px; }
 
+  .carousel-control2 {
+    font-size: 40px; }
+
+  .carousel-page2 {
+    margin-top: 5%; }
+
   /*/////////////////////La fabrik///////////////////////*/
   #fabrik {
     box-shadow: none;
@@ -1063,8 +1058,11 @@ small {
   .carousel-caption {
     visibility: hidden; }
 
-  .formatPaysage {
-    margin-top: 4%; }
+  .carousel-control {
+    font-size: 40px; }
+
+  .carousel-page {
+    margin-top: 5%; }
 
   #pagePhoto {
     margin: 0; }

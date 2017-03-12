@@ -81,11 +81,6 @@
 .formatPaysage{
 	padding-top: 10%;
 }
-.glyphicon-chevron-left, .glyphicon-chevron-right{                 /*Flèches*/
-	padding-top: 6%;
-	font-size: 2em;
-	color: #1693a5;
-}
 
 .carousel-indicators{
 	li{
@@ -95,10 +90,17 @@
 	background-color: #fbb829;
 	}
 }
+
+.carousel-control{
+	font-size:60px;
+}
+
 .carousel-control.left {
+	padding-top:15%;
   background-image: none;
 }
 .carousel-control.right {
+	padding-top:15%;
   background-image: none;
 }
 /*/////////////////////CV de la page Apprenants//////////////////////////////////////*/

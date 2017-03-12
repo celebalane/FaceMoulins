@@ -18,21 +18,15 @@
 		margin-top: -20%;
 	}
 
+/*/////////////////////Citation///////////////////////*/
 
-/*/////////////////////Footer//////////////////*/
-	
-	footer {
-		padding: 2% 0 2% 0;
-		text-align: center;
+	blockquote{
+		margin-top: 50%;
+		font-size: 1em;
+		h3{
+			font-size: 1.4em;
+		}
 	}
-
-	#planSite{
-		display: none;
-	}
-	#lienMentions{
-		margin: 0;
-		text-align: center;
-	}	
 	
 /*/////////////////////Actu///////////////////////*/
 	
@@ -49,6 +43,9 @@
 		text-align: center;
 	}
 
+	.decalage{
+		margin-top: 50%;
+	}
 /*/////////////////////Presse///////////////////////*/
 	
 	#presse{
@@ -174,6 +171,13 @@
     	line-height: 18px;
 	}
 
+	.carousel-control2{
+		font-size: 40px;
+	}
+
+	.carousel-page2{
+		margin-top: 5%;
+	}
 /*/////////////////////La fabrik///////////////////////*/
 	
 	#fabrik{
@@ -223,8 +227,12 @@
 		visibility: hidden;
 	}
 
-	.formatPaysage{
-		margin-top: 4%;
+	.carousel-control{
+		font-size: 40px;
+	}
+
+	.carousel-page{
+		margin-top: 5%;
 	}
 
 	#pagePhoto{
