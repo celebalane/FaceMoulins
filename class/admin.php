@@ -1,18 +1,14 @@
 <?php 
+require_once("class/connect.php");
 class Admin {
-	private $baseDD;
-
-	function __construct($dbName, $user, $pass){
-		$this->baseDD = array($dbName, $user, $pass);
-	}
 
 	function connect($pseudo, $pass){
 		if(isset($pseudo) && isset($pass)){
 			$pseudo = htmlspecialchars($pseudo);
 			$pass = htmlspecialchars($pass);
 
-			$bdd = new PDO('mysql:host=localhost;dbname='.$this->baseDD[0].';charset=utf8', $this->baseDD[1], $this->baseDD[2]);
-			$req = $bdd->prepare('SELECT * FROM idUsers LIMIT 1');
+			$bdd = new Connect("faceMoulins", "faceMoulins", "Mysteria666");
+			$req=$bdd->select('*', "idUsers", 1);
 			$req -> execute();
 			while($donnees = $req->fetch()){
 				$admin = $donnees["adminName"];
@@ -24,7 +20,7 @@ class Admin {
 				header("location:index.php");
 			}else{
 				$_SESSION["erreur"] = "Nom d'utilisateur ou mot de passe incorrecte";
-				header("location:connect.php");
+				header("location:apprenants.php");
 			}
 		}
 

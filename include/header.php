@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if(isset($_SESSION["login"])){
+		$_SESSION["connexion"]=true;
+	}
+	isset($_SESSION["connexion"]) ? $connecter ="Se déconnecter" :	$connecter ="Se connecter";
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>

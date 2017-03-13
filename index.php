@@ -1,4 +1,5 @@
-<?php include("include/header.php");?>
+<?php 
+  include("include/header.php");?>
 
 <!--Citation-->
 <div class="container col-md-12">
