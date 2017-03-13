@@ -20,7 +20,7 @@ class Admin {
 				header("location:index.php");
 			}else{
 				$_SESSION["erreur"] = "Nom d'utilisateur ou mot de passe incorrecte";
-				header("location:apprenants.php");
+				header("location:admin.php");
 			}
 		}
 
