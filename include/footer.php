@@ -41,7 +41,7 @@
 						<li><a href="index.php">Accueil</a> |</li>
 						<li><a href="contact.php">Contact</a> |</li>
 						<li><a href="mentions.php">Mentions Légales</a> |</li>
-						<li><a href="admin.php">Se connecter</a></li>
+						<li><a href="admin.php" title="connexion"><?php echo $connecter ?></a></li>
 					</ul>	
 				</footer>
 				<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Cliquer pour revenir en haut" data-toggle="tooltip" data-placement="left"><i class="fa fa-chevron-up"></i></a>

@@ -1,0 +1,88 @@
+$blanc:#FFFFFF;
+$miniLarge:100px;
+$miniHauteu:100px;
+@mixin maxDimension{
+	max-height: 500px;
+	max-width: 500px;
+}
+#container{ display: flex;}
+.connexion{
+	width:400px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	padding-top: 100px;
+	text-align: center;
+	margin:auto;
+
+	form{
+		display: flex;
+		flex-direction: column;
+	}
+}
+#navbar{
+	background-color: #C0C0C0;
+	color: $blanc;
+	height: 1200px;
+}
+#navAdmin li {
+	text-align: center;
+	width: 100%;
+	border: 1px inset black;
+
+	a{
+		color: $blanc;
+		line-height: 50px;
+		text-transform: uppercase;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.admin{
+	margin: 10px;
+}
+#sectionAdmin{
+	padding: 50px;
+}
+#visualisation{
+	margin-top: 100px;
+	text-align: center;
+	width: 50%;
+}
+#paragraphe{
+	min-width: $miniLarge;
+	min-height: $miniHauteu;
+	@include maxDimension;
+}
+#paragrapheVisuel{
+	min-height: $miniHauteu;
+	@include maxDimension;
+	word-wrap: break-word;
+	overflow-y: scroll;
+	background-color: transparent;
+	margin: auto;
+}
+#sectionArticle{
+	display: flex;
+	flex-wrap: wrap;
+}
+#articleAdmin{
+	width: 33%;
+	height: 100%;
+	overflow-y: scroll;
+	border:1px solid black;
+	text-align: center;
+
+	img{
+		width: 100%;
+	}
+
+	article{
+		line-height: 25px;
+	}
+}

@@ -12,94 +12,94 @@
                 <!-- Page 1 -->
                     <div class="item active">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie1.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie1.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie1.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie1.jpg" class="imageCarousel2" data-caption="Inauguration de l'ESPE" /></a>
                         </div>
                     </div>               
                 <!-- Page 2 -->
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie2.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie2.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie2.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie2.jpg" class="imageCarousel2" data-caption="Réunion" /></a>
                    
                         </div>
                     </div>
                 <!-- Page 3 -->
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie3.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie3.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie3.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie3.jpg" class="imageCarousel2" data-caption="Forum" /></a>
                    
                         </div>
                     </div> 
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie4.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie4.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie4.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie4.jpg" class="imageCarousel2" data-caption="Forum" /></a>
                    
                         </div>
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie5.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie5.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie5.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie5.jpg" class="imageCarousel2" data-caption="Xavier Desoultrait" /></a>
                    
                         </div>
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie6.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie6.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie6.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie6.jpg" class="imageCarousel2" data-caption=" Réunion" /></a>
                    
                         </div>
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie7.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie7.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie7.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie7.jpg" class="imageCarousel2" data-caption="Les entretients" /></a>
                         </div>    
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie8.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie8.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie8.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie8.jpg" class="imageCarousel2" data-caption="Afficher café d'en face" /></a>
                         </div>     
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie9.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie9.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie9.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie9.jpg" class="imageCarousel2" data-caption="Face" /></a>
                         </div>
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie10.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie10.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie10.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie10.jpg" class="imageCarousel2" data-caption="Réunion" /></a>
                         </div>    
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie12.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie12.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie12.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie12.jpg" class="imageCarousel2" data-caption="Réunion" /></a>
                         </div>    
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie14.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie14.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie14.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie14.jpg" class="imageCarousel2" data-caption="Réunion" /></a>
                         </div>    
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie16.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie16.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie16.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie16.jpg" class="imageCarousel2" data-caption="Xavier Desoultrait" /></a>
                         </div>    
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie17.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie17.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie17.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie17.jpg" class="imageCarousel2" data-caption="Entretien" /></a>
                         </div>    
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie18.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie18.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie18.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie18.jpg" class="imageCarousel2" data-caption="Entretien" /></a>
                         </div>    
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie19.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie19.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie19.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie19.jpg" class="imageCarousel2" data-caption="Entretien" /></a>
                         </div>    
                     </div>
                     <div class="item ">  
                         <div class="carousel-page2">
-                            <a href="img/galerie/galerie20.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie20.jpg" class="imageCarousel2" /></a>
+                            <a href="img/galerie/galerie20.jpg" rel="lightbox" class="img-responsive2"><img src="img/galerie/galerie20.jpg" class="imageCarousel2" data-caption="Entretien" /></a>
                         </div>    
                     </div>
                 </div>    
