@@ -13,9 +13,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style/css/bootstrap.css">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/css/admin.css">
+		<link rel="stylesheet" type="text/css" href="style/css/admin.css">
 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Gudea" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
@@ -29,7 +29,9 @@
 		if(isset($_POST["login"])){
 				session_start();
 				$bdd = new Admin();
-				$bdd->connect($_POST["login"], $_POST["password"]);
+				$bdd->connectBDD();
+				$bdd->connectAdmin($_POST["login"], $_POST["password"]);
+				$bdd->clearBDD();
 				
 					?>
 					<!-- <div class="row">

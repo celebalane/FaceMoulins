@@ -36,4 +36,14 @@
             $req = $this->bddConnect->prepare("INSERT INTO $where SET $this->valeur");
             $req->execute($array2);
         }
+        public function update($what, $where, $array1, $array2, $limite=0){
+            if($limite==0){
+                for($i=0;$i<count($array1);$i++){
+                     $i==count($array1)-1? $this->valeur.="$array1[$i]": $this->valeur.="$array1[$i], ";
+                }
+                $req = $this->bddConnect->prepare("UPDATE $where SET $what WHERE $array1");
+                $req->execute($array2);
+                return $req;
+            }
+        }
     }
