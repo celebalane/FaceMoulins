@@ -7,7 +7,7 @@ class Admin {
 			$pseudo = htmlspecialchars($pseudo);
 			$pass = htmlspecialchars($pass);
 
-			$bdd = new Connect("faceMoulins", "faceMoulins", "Mysteria666");
+			$bdd = new Connect("faceMoulins", "root", "");
 			$req=$bdd->select('*', "idUsers", 1);
 			$req -> execute();
 			while($donnees = $req->fetch()){

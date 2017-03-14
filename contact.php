@@ -95,7 +95,7 @@
             ?>
               <label for="code" class="col-sm-2 control-label">Code de sécurité *</label>
               <div class="col-sm-10">
-                <input class="prenom1" type="code" name="code" placeholder="Recopiez le code ci-dessous" class="form-control input-lg" id="champCode" required/>
+                <input class="prenom1 form-control input-lg" type="code" name="code" placeholder="Recopiez le code ci-dessous" id="champCode" required/>
               </div>
               <p id="code"><img src="include/captcha.php" alt="captcha"/></p>
               <p id="champ">*Champs obligatoire</p>
