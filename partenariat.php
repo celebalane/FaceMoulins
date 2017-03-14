@@ -11,60 +11,58 @@
 			Cette volonté de maillage avec nos partenaires institutionnels, entreprises ou associations, est la clé de la conception et de la réalisation de nos projets, tant les politiques de lutte contre l'exclusion, les discriminations et la pauvreté nécessitent au-delà d'une association systématique des bénéficiaires (salariés, habitants, jeunes en contrats d'alternance, services civiques...etc...) l'implication de tous les acteurs.</p>
 			<center><h2><strong>Les entreprises adhérentes au Club FACE</strong></h2></center>
 			<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<a href="http://www.carrefour.com/fr">	
-					<img src="img/partenariat/part_image1.jpg" class="center-block logo" alt="carrefour market" />
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<a href="http://www.laposte.fr/particulier">
-					<img src="img/partenariat/part_image2.png" class="center-block logo" alt="la poste" />
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<a href="http://www.ntn-snr.com/group/site/fr-fr/index.cfm">
-					<img src="img/partenariat/part_image3.jpg" class="center-block logo" alt="ndn" />
-					</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-4">
+				<div class="col-md-3 col-sm-3">
 					<a href="http://www.ag2rlamondiale.fr/">	
-					<img src="img/partenariat/AG2R.png" class="center-block logo" alt="AG2R" />
+					<img src="img/partenariat/entreprise/AG2R.png" class="center-block logo" alt="AG2R" />
 					</a>
 				</div>
-				<div class="col-md-4 col-sm-4">
+				<div class="col-md-3 col-sm-3">
 					<a href="http://www.bouygues-construction.com/">
-					<img src="img/partenariat/bouygue-construction.jpg" class="center-block logo" alt="bouygue-construction" />
+					<img src="img/partenariat/entreprise/bouygue-construction.jpg" class="center-block logo" alt="bouygue-construction" />
 					</a>
 				</div>
-				<div class="col-md-4 col-sm-4">
+				<div class="col-md-3 col-sm-3">
+					<a href="http://www.carrefour.com/fr">	
+					<img src="img/partenariat/entreprise/part_image1.jpg" class="center-block logo" alt="carrefour market" />
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-3">
 					<a href="http://www.cetelem.fr/">
-					<img src="img/partenariat/cetelem.png" class="center-block logo" alt="cetelem" />
+					<img src="img/partenariat/entreprise/cetelem.png" class="center-block logo" alt="cetelem" />
 					</a>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 col-sm-4">
+				<div class="col-md-3 col-sm-3">
 					<a href="http://www.dell.fr/">	
-					<img src="img/partenariat/Dell.png" class="center-block logo" alt="Dell" />
+					<img src="img/partenariat/entreprise/Dell.png" class="center-block logo" alt="Dell" />
 					</a>
 				</div>
-				<div class="col-md-4 col-sm-4">
+				<div class="col-md-3 col-sm-3">
 					<a href="https://particuliers.engie.fr/login-page.html">
-					<img src="img/partenariat/engie.jpg" class="center-block logo" alt="engie" />
+					<img src="img/partenariat/entreprise/engie.jpg" class="center-block logo" alt="engie" />
 					</a>
 				</div>
-				<div class="col-md-4 col-sm-4">
-					<a href="http://www.ratp.fr/">
-					<img src="img/partenariat/RATP.png" class="center-block logo" alt="RATP" />
+				<div class="col-md-3 col-sm-3">
+					<a href="http://www.laposte.fr/particulier">
+					<img src="img/partenariat/entreprise/part_image2.png" class="center-block logo" alt="la poste" />
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<a href="http://www.ntn-snr.com/group/site/fr-fr/index.cfm">
+					<img src="img/partenariat/entreprise/part_image3.jpg" class="center-block logo" alt="ndn" />
 					</a>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 col-sm-4">
+				<div class="col-md-3 col-sm-3">
+					<a href="http://www.ratp.fr/">
+					<img src="img/partenariat/entreprise/RATP.png" class="center-block logo" alt="RATP" />
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-3">
 					<a href="http://www.total.fr/home.html">
-					<img src="img/partenariat/total.jpeg" class="center-block logo" alt="Total" />
+					<img src="img/partenariat/entreprise/total.jpeg" class="center-block logo" alt="Total" />
 					</a>
 				</div>
 			</div>

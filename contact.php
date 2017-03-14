@@ -47,9 +47,13 @@
           <h2>Contact</h2>
           <p>Pour une demande d'adhésion ou toute autres questions, veuillez remplir le formulaire. Nous vous recontacterons dans les plus brefs délais.</p>
           <div class="form-group-lg">
-            <label for="nom" class="col-sm-2 control-label">Entreprise</label>
+            <label for="type" class="col-sm-2 control-label">Type</label>
             <div class="col-sm-10">
-              <input type="text" name="nom" placeholder="Si vous êtes une entreprise " maxlength="30" class="form-control input-lg">
+              <select class="form-control" id="type" name="type">
+                <option>Entreprise</option>
+                <option>Particulier</option>
+                <option>Autre</option>
+              </select>
             </div>
           </div>
           <div class="form-group-lg">
@@ -78,7 +82,7 @@
             </div>
           </div>
           <div class="form-group-lg">
-            <label for="sujet" class="col-sm-2 control-label">Sujet *</label>
+            <label for="sujet" class="col-sm-2 control-label" id="sujetLabel">Sujet *</label>
             <div class="col-sm-10">
               <input type="text" name="sujet" value="<?php echo isset($_SESSION['inputs']['sujet'])? $_SESSION['inputs']['sujet'] : ''; ?>" placeholder="ex: Renseignements" maxlength="40" class="form-control input-lg" id="sujet" required>
             </div>
