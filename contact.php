@@ -17,7 +17,7 @@
   if(isset($_POST["code"])){
     if(htmlspecialchars($_POST["code"]) == $_SESSION["code"]){
       include('formulaire.php');
-      //session_destroy();
+      session_destroy();
       $_POST["code"] = "";      
     }else if (htmlspecialchars($_POST["code"]) != "" AND htmlspecialchars($_POST["code"]) != $_SESSION["code"]){
       $connec = "Erreur";
