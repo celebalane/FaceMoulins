@@ -92,27 +92,6 @@ body {
   border-color: #1e5d74;
   border-radius: 5px 0px 0px 5px; }
 
-.navbar #top .search span {
-  /* Bouton recherche / bloc de recherche */
-  display: table-cell;
-  width: 20%;
-  color: #FFFFFF;
-  line-height: 0px;
-  text-align: center;
-  padding: 8px;
-  border-radius: 0px 5px 5px 0px;
-  background-color: #1e5d74;
-  cursor: pointer; }
-
-.navbar #top .search p#error {
-  /* Message d'erreur bloc de recherche */
-  display: none;
-  caption-side: bottom;
-  color: #1e5d74;
-  font-size: 12px;
-  margin-top: 5px;
-  margin-bottom: 0px; }
-
 .navbar #bottom {
   /* Zone menu & navigation */
   background-color: #E79063;
@@ -196,7 +175,7 @@ body {
   color: #FFFFFF;
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-right: 15%;
+  margin-right: 5%;
   float: right; }
 
 .navbar #bottom .container .text {
@@ -229,12 +208,7 @@ body {
 @media screen and (max-width: 425px) {
   .navbar #top {
     padding: 15px 15px;
-    margin-top: 20%; }
-
-  .navbar #top img {
-    /* Logo FACE */
-    width: 50%;
-    height: 50%; } }
+    margin-top: 20%; } }
 /*///////////////////////////////Citation////////////////////////////////////////*/
 blockquote {
   border-left: 0;
@@ -659,7 +633,6 @@ aside {
   background-color: rgba(18, 110, 122, 0.6);
   padding: 2%;
   border-radius: 10px;
-  border: 2px solid orange;
   color: white; }
   #sectionContact form h2 {
     padding-left: 4%;
@@ -674,19 +647,18 @@ aside {
   border-color: #5d5d5d;
   outline: 0;
   box-shadow: inset 0 1px 1px #5d5d5d, 0 0 8px #5d5d5d; }
-#sectionContact .form-horizontal .form-group {
-  margin: 0; }
-#sectionContact .form-group-lg .btn-default {
-  color: #5d5d5d; }
 
 .form-control {
   /*Champs du formulaire*/
   width: 50%;
   margin-bottom: 3%; }
 
+#type {
+  width: 20%; }
+
 #blocMail {
   margin-left: 13.3%;
-  width: 60%; }
+  width: 50%; }
 
 #sujetLabel {
   margin-top: 2%; }
@@ -695,7 +667,7 @@ aside {
   margin-top: 3%; }
 
 #zoneTexte {
-  margin: 3% 0% 3% 2%;
+  margin: 1% 0% 3% 2%;
   border-radius: 8px; }
 
 #labelZone {
@@ -705,7 +677,6 @@ aside {
   background-color: rgba(18, 110, 122, 0.7);
   padding: 10%;
   border-radius: 10px;
-  border: 2px solid orange;
   color: white; }
   #contactFace p {
     font-size: 0.8em; }
@@ -718,7 +689,9 @@ aside {
 
 #champCode {
   margin-bottom: 3%;
-  border-radius: 8px; }
+  border-radius: 8px;
+  width: 30%;
+  font-size: 1.1em; }
 
 #champ {
   margin-left: 9%; }

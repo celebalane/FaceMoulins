@@ -3,7 +3,6 @@
 		background-color: rgba(18,110,122,0.6);
 		padding:2%;
 		border-radius: 10px;
-		border: 2px solid orange;
 		color: white;
 
 		h2 {
@@ -26,20 +25,17 @@
   			box-shadow: inset 0 1px 1px #5d5d5d, 0 0 8px #5d5d5d;
 		}
 	}
-	.form-horizontal .form-group{
-		margin: 0;
-	}
-	.form-group-lg .btn-default {
-		color: #5d5d5d;
-	}
 }
 .form-control {                             /*Champs du formulaire*/
 	width: 50%;
 	margin-bottom: 3%;
 }
+#type{
+	width:20%;
+}
 #blocMail {
 	margin-left: 13.3%;
-	width: 60%;
+	width: 50%;
 }
 #sujetLabel{
 	margin-top:2%;
@@ -48,7 +44,7 @@
 	margin-top:3%;
 }
 #zoneTexte{
-	margin:3% 0% 3% 2%;
+	margin:1% 0% 3% 2%;
 	border-radius: 8px;
 }
 #labelZone{
@@ -58,7 +54,6 @@
 	background-color: rgba(18,110,122,0.7);
 	padding:10%;
 	border-radius: 10px;
-	border: 2px solid orange;
 	color: white;
 	p{
 		font-size: 0.8em;
@@ -76,6 +71,8 @@
 #champCode{
 	margin-bottom:3%;
 	border-radius: 8px;
+	width:30%;
+	font-size:1.1em;
 }
 
 #champ{
