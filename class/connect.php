@@ -13,14 +13,14 @@
         }
 
         public function select($what, $where, $limite=0, $si="0", $condition="1"){
-            if($si==0 AND $limite==0){
+            if($si=="0" AND $limite==0){
                 $req = $this->bddConnect->prepare("SELECT $what FROM $where");
                 $req->execute();
                 return $req;
             }
             elseif($si!="0" AND $limite==0){
-                $req = $this->bddConnect->prepare("SELECT $what FROM $where WHERE $si=$condition");
-                $req->execute();
+                $req = $this->bddConnect->prepare("SELECT $what FROM $where WHERE $si=?");
+                $req->execute(array($condition));
                 return $req;
             }
             elseif($si=="0" AND $limite > 0){
@@ -42,6 +42,16 @@
                      $i==count($array1)-1? $this->valeur.="$array1[$i]": $this->valeur.="$array1[$i], ";
                 }
                 $req = $this->bddConnect->prepare("UPDATE $where SET $what WHERE $array1");
+                $req->execute($array2);
+                return $req;
+            }
+        }
+        public function delete($where, $array1, $array2, $limite=0){
+            if($limite==0){
+                for($i=0;$i<count($array1);$i++){
+                     $i==count($array1)-1? $this->valeur.="$array1[$i]": $this->valeur.="$array1[$i], ";
+                }
+                $req = $this->bddConnect->prepare("DELETE FROM $where WHERE $array1");
                 $req->execute($array2);
                 return $req;
             }

@@ -71,21 +71,28 @@ class Admin {
 
 	}
 
-	public function isPublish($delete, $publish){
-		if(isset($delete) AND isset($publish)){
-			$req= $this->bdd->prepare('UPDATE Articles SET publish=? WHERE id=?');
-			$req->execute(array("none", $publish));
-			header("location:../article.php");
-		}
-		elseif(isset($delete)){
-			$req= $this->bdd->prepare('DELETE FROM Articles WHERE id=?');
-			$req->execute(array($delete));
+	public function isPublish($delete="", $publish=""){
+		if($delete != "" AND $publish != ""){
+			$req= $this->bdd->update('publish=?', 'Articles', 'id=?', array("none", $publish));
 			header("location:ajoutArticle.php");
-		}elseif(isset($publish)){
-			$req=$bdd->prepare('UPDATE Articles SET publish=? WHERE id=?');
-			$req->execute(array("yes", $publish));
-			header("location:../article.php");
 		}
+		elseif($delete != ""){
+			$req= $this->bdd->delete('Articles', 'id=?', array($delete));
+			header("location:ajoutArticle.php");
+		}elseif($publish != ""){
+			$req=$this->bdd->update('publish=?', 'Articles', 'id=?', array("yes", $publish));
+			header("location:ajoutArticle.php");
+		}
+	}
+
+	public function showsArticle(){
+		$req = $this->bdd->select('*', 'Articles', 0, 'publish', 'yes');
+		return $req;
+	}
+
+	public function updateArticle($what, $where, $array1, $array2){
+		$req=$this->bdd->update($what, $where, $array1, $array2);
+		echo '<script>alert("Article modifié avec succès");</script>';
 	}
 
 }
