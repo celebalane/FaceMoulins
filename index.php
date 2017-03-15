@@ -28,9 +28,9 @@
   ?></h1>   
 	<section class="col-md-9 col-xs-12 col-sm-7" id="filActu">
     <!--Article 1-->
-     <?php
+     <?php $i=0;
         while($data = $req->fetch()){
-          echo "<article class='articles'>";
+          echo $i == 1 ? "<article class='articles' id='dernierArticle'>" : "<article class='articles'>";
             echo "<div class='row'>";
               echo "<img src='".$data["img"]."' class='col-md-7 col-xs-1 col-sm-7' alt='reunion' />";
               echo "<div class='col-md-5 col-xs-10 col-sm-12'>";
@@ -38,6 +38,7 @@
               echo "</div>";
             echo "</div>";
           echo "</article>";      
+          $i++;
         }
         ?>
      <!--  <div class="row">
