@@ -4,11 +4,28 @@
 	if($_SESSION["connexion"] != "se déconnecter"){
 		header("location:youShouldNotPass.php");
 	}
-	if(isset($_POST["textarea"])){
-	
+	if(isset($_POST)){
 		$bdd = new Admin();
 		$bdd->connectBDD();
-		$bdd->updateArticle("texte=?", "Articles","id=?", array($_POST["textarea"], $_GET['id']));
+
+		if(isset($_POST["textarea"]) AND $_FILES["fichier"]["name"]!=""){
+			$name = $_FILES["fichier"]["name"];
+			$articleDir = $_SERVER["DOCUMENT_ROOT"]."/FaceMoulins/img/accueil/articles";
+			if(!move_uploaded_file($_FILES["fichier"]["tmp_name"], "$articleDir/$name")){
+				echo "impossible de deplacer le fichier..";
+			}
+			$bdd->updateArticle("texte=?, img=?", "Articles","id=?", array($_POST["textarea"], "img/accueil/articles/$name", $_GET['id']));
+
+		}elseif(isset($_POST["textarea"]) AND $_POST["textarea"] != ""){
+			$bdd->updateArticle("texte=?", "Articles","id=?", array($_POST["textarea"], $_GET['id']));
+
+		}elseif(isset($_FILES["fichier"])){
+			$name = $_FILES["fichier"]["name"];
+			if(!move_uploaded_file($_FILES["fichier"]["tmp_name"], "$articleDir/$name")){
+				echo "impossible de deplacer le fichier..";
+			}
+			$bdd->updateArticle("img=?", "Articles","id=?", array("img/accueil/articles/$name", $_GET['id']));
+		}
 	}
 
 	?>
@@ -23,7 +40,9 @@
 			<h3>Ajouter article</h3>
 			<?= !isset($_GET["texte"])? '<form onsubmit="return false">' : '<form action="ajoutArticle.php?id='.$_GET["id"].'" method="POST" enctype="multipart/form-data">';?>
 				<input class="admin" type="texte" name="texteTitre" id= "TitreArticle" placeholder="Titre de l'article" onfocus="visual();">
+
 				<input class="admin" type="file" name="fichier" id="fichier" accept="image/*" onchange="readURL(this);"/>
+
 				<textarea class="admin" id="paragraphe" name="textarea" placeholder="Texte de l'article" onfocus="visual();"><?php if(isset($_GET["texte"])){echo $_GET['texte'];} ?></textarea>
 				<?php 
 					if(isset($_GET["texte"])){

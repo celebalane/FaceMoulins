@@ -20,7 +20,7 @@
 	while($donnees = $req->fetch()){
 		echo '<div id="articleAdmin">';
 		echo '<h1 class="h1ArticleAdmin">'.$donnees["titre"].'</h1><br/><br/>';
-		echo '<img src="'.$donnees["img"].'" alt="'.$donnees["titre"].'" id="iArticle"/>';
+		echo '<img src="../'.$donnees["img"].'" alt="'.$donnees["titre"].'" id="iArticle"/>';
 		echo '<article id="texteArticles">'.$donnees["texte"].'</article>';
 		echo '<a href="afficheArticle.php?del='.$donnees["id"].'"> Supprimer </a> ';
 		if($donnees["publish"] == "yes")
