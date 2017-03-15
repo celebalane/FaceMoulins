@@ -24,19 +24,6 @@
 	display: table;
 }
 
-.navbar #top .search input{ /* Zone de texte / bloc de recherche */
-	background-color: $couleur3;
-	display: table-cell;
-	width: 250px;
-	padding: 8px;
-	color: #333333;
-	line-height: 0px;
-	font-size: 13px;
-	outline: none;
-	@include bordure(2px, $couleur4);
-	border-radius: 5px 0px 0px 5px;
-}
-
 .navbar #bottom{ /* Zone menu & navigation */
 	background-color: #E79063;
 	border-bottom: 3px solid $couleur2;
@@ -122,7 +109,7 @@
 	margin:{
 		bottom: 10px;
 		top: 10px;
-		right: 5%;
+		right: 15%;
 	}
 	float: right;
 }

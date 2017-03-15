@@ -16,6 +16,9 @@ body {
 .decalage {
   margin-top: 15%; }
 
+.decalage2 {
+  margin-top: 15%; }
+
 #logo {
   width: 100%;
   /*Taille*/ }
@@ -73,24 +76,6 @@ body {
   position: relative;
   width: auto;
   display: table; }
-
-.navbar #top .search input {
-  /* Zone de texte / bloc de recherche */
-  background-color: #f8f8f8;
-  display: table-cell;
-  width: 250px;
-  padding: 8px;
-  color: #333333;
-  line-height: 0px;
-  font-size: 13px;
-  outline: none;
-  border-top: 2px;
-  border-right: 2px;
-  border-bottom: 2px;
-  border-left: 2px;
-  border-style: solid;
-  border-color: #1e5d74;
-  border-radius: 5px 0px 0px 5px; }
 
 .navbar #bottom {
   /* Zone menu & navigation */
@@ -175,7 +160,7 @@ body {
   color: #FFFFFF;
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-right: 5%;
+  margin-right: 15%;
   float: right; }
 
 .navbar #bottom .container .text {
@@ -268,7 +253,8 @@ blockquote {
   border-style: solid;
   border-color: #bababa;
   border-radius: 3px 0 0 3px;
-  background-color: transparent; }
+  background-color: transparent;
+  padding-left: 5%; }
 
 #mail:focus {
   outline: none; }
@@ -292,6 +278,12 @@ blockquote {
   border-color: #bababa;
   border-radius: 0 3px 3px 0;
   cursor: pointer; }
+
+#enveloppe {
+  font-size: 2.2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%; }
 
 #texteEtoile {
   margin-top: 20px;
@@ -786,9 +778,6 @@ aside {
   #fabrik .col-md-9 {
     padding-left: 3%; }
 
-#assemblée {
-  margin-top: 2%; }
-
 #carroussel {
   margin-left: 7.5%;
   padding-bottom: 5%; }
@@ -896,8 +885,9 @@ small {
 .boutonMobile {
   width: 40%;
   display: inline-block;
+  background-color: #1a8194;
   color: white;
-  border-radius: 5%;
+  border-radius: 6%;
   margin-top: 7%;
   margin-right: 7%; }
 
@@ -925,6 +915,9 @@ small {
     blockquote h3 {
       font-size: 1.4em; }
 
+  #decalageAccueil {
+    margin-top: 20%; }
+
   /*/////////////////////Actu///////////////////////*/
   #filActu {
     box-shadow: none;
@@ -937,7 +930,10 @@ small {
     text-align: center; }
 
   .decalage {
-    margin-top: 50%; }
+    margin-top: 70%; }
+
+  .decalage2 {
+    margin-top: 40%; }
 
   /*/////////////////////Presse///////////////////////*/
   #presse {
@@ -968,7 +964,7 @@ small {
     display: none; }
 
   /*/////////////////////Présentation//////////////////*/
-  .presentation {
+  #presentation {
     padding: 5% 5% 30% 5%;
     box-shadow: none; }
 
