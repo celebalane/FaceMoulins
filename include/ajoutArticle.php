@@ -9,12 +9,15 @@
 		$bdd->connectBDD();
 
 		if(isset($_POST["textarea"]) AND $_FILES["fichier"]["name"]!=""){
-			$name = $_FILES["fichier"]["name"];
-			$articleDir = $_SERVER["DOCUMENT_ROOT"]."/FaceMoulins/img/accueil/articles";
+			$name = $_FILES["fichier"]["name"];  //Stockage du nom du fichier
+			$articleDir = $_SERVER["DOCUMENT_ROOT"]."/FaceMoulins/img/accueil/articles"; //stockage de l'adresse absolue du fichier après déplacement
+
+			//si le deplacement ne fonctionne pas alors on affiche une erreur
 			if(!move_uploaded_file($_FILES["fichier"]["tmp_name"], "$articleDir/$name")){
 				echo "impossible de deplacer le fichier..";
+			}else{
+				$bdd->updateArticle("texte=?, img=?", "Articles","id=?", array($_POST["textarea"], "img/accueil/articles/$name", $_GET['id']));
 			}
-			$bdd->updateArticle("texte=?, img=?", "Articles","id=?", array($_POST["textarea"], "img/accueil/articles/$name", $_GET['id']));
 
 		}elseif(isset($_POST["textarea"]) AND $_POST["textarea"] != ""){
 			$bdd->updateArticle("texte=?", "Articles","id=?", array($_POST["textarea"], $_GET['id']));
@@ -23,8 +26,9 @@
 			$name = $_FILES["fichier"]["name"];
 			if(!move_uploaded_file($_FILES["fichier"]["tmp_name"], "$articleDir/$name")){
 				echo "impossible de deplacer le fichier..";
+			}else{
+				$bdd->updateArticle("img=?", "Articles","id=?", array("img/accueil/articles/$name", $_GET['id']));
 			}
-			$bdd->updateArticle("img=?", "Articles","id=?", array("img/accueil/articles/$name", $_GET['id']));
 		}
 	}
 
