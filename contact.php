@@ -29,7 +29,7 @@
 
       <!--Formulaire de contact-->
 
-      <div class="container decalage">
+      <div class="container decalage2">
         <?php if(array_key_exists('errors',$_SESSION)): ?>
         <div class="alert alert-danger">
           <?= implode('<br>', $_SESSION['errors']); ?>

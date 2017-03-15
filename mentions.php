@@ -1,9 +1,9 @@
 <?php include("include/header.php");?>
 <div class="container decalage">
 <!--Mentions légales-->
-<section class="col-md-12 presentation">
+<h1 class="titreSection col-md-12 col-sm-12 col-xs-12"> Mentions légales </h1>
+<section class="col-md-12 col-sm-12 col-xs-12" id="presentation">
 	<article>
-		<h1 class="titreSection"> Mentions légales </h1><br>
 		<p><strong>Informations nominatives</strong></p>
 		<p>Comme l’indique l’ article 34 de la loi « Informatique et Libertés » du 6 janvier 1978, toute personne dispose d’un droit d’accès, de modification, de rectification et de suppression des données qui la concerne.</p>
 		<p>Pour exercer ce droit, adressez-vous à :</p>

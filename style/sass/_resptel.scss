@@ -29,6 +29,9 @@
 		}
 	}
 	
+	#decalageAccueil{
+		margin-top: 20%;
+	}
 /*/////////////////////Actu///////////////////////*/
 	
 	#filActu{
@@ -45,7 +48,11 @@
 	}
 
 	.decalage{
-		margin-top: 50%;
+		margin-top: 70%;
+	}
+
+	.decalage2{
+		margin-top: 40%;
 	}
 /*/////////////////////Presse///////////////////////*/
 	
@@ -87,7 +94,7 @@
 
 /*/////////////////////Présentation//////////////////*/
 	
-	.presentation{
+	#presentation{
 		padding: 5% 5% 30% 5%;
 		box-shadow: none;
 	}

@@ -2,7 +2,7 @@
   include("include/header.php");?>
 
 <!--Citation-->
-<div class="container col-md-12">
+<div class="container col-md-12" id="decalageAccueil">
 	<div class="row-fluid">
 		<blockquote>
 			<h3 class="text-center"> FACE est une association qui lutte contre toutes formes d'exclusion .</h3>
@@ -61,12 +61,12 @@
     <section class="col-md-12 col-sm-12 col-xs-12" id="presse">
       <article class="col-md-4 col-sm-4">
         <a href="http://www.lamontagne.fr/moulins/economie/emploi/2017/01/23/le-club-dentrepreneurs-face-territoire-bourbonnais-a-presente-son-programme-dactions-2017_12253076.html"><img src="img/accueil/presse1.jpg" class="img center-block img-responsive"></a>
-        <h4>Le club Face Territoire bourbonnais a été lancé hier dans les locaux du CNCS</h4>
+        <h4>Le club d’entrepreneurs Face territoire bourbonnais a présenté son programme d’actions 2017</h4>
         <a href="http://www.lamontagne.fr/moulins/economie/emploi/2017/01/23/le-club-dentrepreneurs-face-territoire-bourbonnais-a-presente-son-programme-dactions-2017_12253076.html" class="lien">La Montagne</a>
       </article>
       <article class="col-md-4 col-sm-4">
         <a href="http://www.lamontagne.fr/moulins/social/2015/06/20/le-club-face-territoire-bourbonnais-a-ete-lance-hier-dans-les-locaux-du-cncs_11488852.html"><img src="img/accueil/presse2.jpg" class="img center-block img-responsive"></a>
-        <h4 id="lien2">Le club d’entrepreneurs Face territoire bourbonnais a présenté son programme d’actions 2017<br /></h4>
+        <h4 id="lien2">Le club Face Territoire bourbonnais a été lancé hier dans les locaux du CNCS</h4>
         <a href="http://www.lamontagne.fr/moulins/social/2015/06/20/le-club-face-territoire-bourbonnais-a-ete-lance-hier-dans-les-locaux-du-cncs_11488852.html" class="lien">La Montagne</a>
       </article>
       <article class="col-md-4 col-sm-4">
