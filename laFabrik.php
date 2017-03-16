@@ -1,5 +1,6 @@
 <?php include("include/header.php");?>
-<div class="container decalage">
+<img src="img/fabrik/POUIK.png">
+<div class="container decalage2">
 <h1 class="titreSection col-md-9 col-xs-12">La Fabrik</h1>
 <div id="sectionFabrik">
 	<section class="col-md-9 col-sm-12 col-xs-12" id="fabrik">
