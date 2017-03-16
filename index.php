@@ -1,4 +1,8 @@
 <?php 
+session_start();
+      if(isset($_SESSION['success'])){unset($_SESSION["success"]);}
+      if(isset($_SESSION['errors'])){unset($_SESSION["errors"]);}
+    if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}
   require_once("class/admin.php");
   $bdd = new Admin();
   $bdd->connectBDD();

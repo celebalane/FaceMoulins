@@ -1,6 +1,5 @@
 <?php
 
-session_start();//on démarre la session
 
 // $errors = [];
   $errors = array(); // on crée une vérif de champs
@@ -24,6 +23,9 @@ if(!array_key_exists('mail', $_POST) || $_POST['mail'] == '' || !filter_var($_PO
 if(!array_key_exists('message', $_POST) || $_POST['message'] == '') {
   $errors ['message'] = "vous n'avez pas renseigné votre message";
   }
+if(isset($_POST["message"])){
+  $message ="Je suis un/une <b>".$_POST["type"]."</b><br/>Mon téléphone est le <b>".$_POST["telephone"]."</b><br/>Mon nom est <b>".$_POST["nom"]."</b><br/>Mon prénom est <b>".$_POST["prenom"]."</b><br/><br/>".htmlspecialchars(($_POST["message"]));
+}
 
  function my_mail($user_mail, $name, $lastname, $message_sujet, $message_html){
         require 'PHPMailer/PHPMailerAutoload.php';
@@ -45,8 +47,8 @@ if(!array_key_exists('message', $_POST) || $_POST['message'] == '') {
         $mail->isHTML(true);                                  // Set email format to HTML
 
         $mail->Subject = htmlspecialchars($message_sujet);
-        $mail->Body    = htmlspecialchars($message_html);
-        $mail->AltBody = htmlspecialchars($message_html);
+        $mail->Body    = $message_html;
+        $mail->AltBody = $message_html;
 
         if(!$mail->send()) {
             echo 'Message non envoyé.';
@@ -56,14 +58,17 @@ if(!array_key_exists('message', $_POST) || $_POST['message'] == '') {
 
 //On check les infos transmises lors de la validation
   if(!empty($errors)){ // si erreur on renvoie vers la page précédente
-  $_SESSION['errors'] = $errors;//on stocke les erreurs
-  $_SESSION['inputs'] = $_POST;
-  header('Location: contact.php');
+    $_SESSION['errors'] = $errors;//on stocke les erreurs
+    $_SESSION['inputs'] = $_POST;
+    if(isset($_SESSION['success'])){unset($_SESSION['success']);}
+    header('Location: contact.php');
   }else{
-  $_SESSION['success'] = 1;
-  
-  my_mail($_POST["mail"],$_POST["nom"],$_POST["prenom"],$_POST['sujet'], $_POST['message']);
-  header('Location: contact.php');
+    if(isset($_SESSION['errors'])){unset($_SESSION["errors"]);}
+    if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}
+    $_SESSION['success'] = "Votre message a bien été envoyé !";
+    
+    my_mail($_POST["mail"],$_POST["nom"],$_POST["prenom"],$_POST['sujet'], $message);
+    header('Location: contact.php');
   }
 
 
