@@ -1,11 +1,10 @@
 
     <?php
-    session_start();
      include("include/header.php"); ?>
     <div class="container">
       <div id="decalpresentation"></div>
       <div class="row" id="presentation">
-        <h1 class="col-md-12 boxtitle titresection"><i class="fa fa-info-circle" aria-hidden="true"></i>Présentation</h1>
+        <h1 class="col-md-12 boxtitle titreSection"><i class="fa fa-info-circle" aria-hidden="true"></i>Présentation</h1>
 
         <div class="col-md-12 box">
           <div id="container-roll">
@@ -41,7 +40,7 @@
 
       <div class="row" id="histoire">
         <div class="col-md-7">
-          <h1 class="boxtitle titresection"><i class="fa fa-history" aria-hidden="true"></i>Histoire</h1>
+          <h1 class="boxtitle titreSection"><i class="fa fa-history" aria-hidden="true"></i>Histoire</h1>
           <div class="box">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -52,7 +51,7 @@
           </div>
         </div>  
         <div class="col-md-4 col-md-offset-1">
-          <h1 class="boxtitle titresection"><i class="fa fa-bars" aria-hidden="true"></i>Navigation</h1>
+          <h1 class="boxtitle titreSection"><i class="fa fa-bars" aria-hidden="true"></i>Navigation</h1>
           <div class="box">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -65,7 +64,7 @@
       </div>
 
       <div class="row" id="actions">
-        <h1 class="col-md-12 boxtitle titresection"><i class="fa fa-check-square-o" aria-hidden="true"></i>Nos actions</h1>
+        <h1 class="col-md-12 boxtitle titreSection"><i class="fa fa-check-square-o" aria-hidden="true"></i>Nos actions</h1>
 
         <div class="col-md-12 box">
           <div class="col-md-4">
