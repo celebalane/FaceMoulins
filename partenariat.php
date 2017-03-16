@@ -10,8 +10,31 @@
 			<p>La Fondation FACE s'est engagée dès sa création dans un dialogue nourri et une démarche de co construction systématique avec l'ensemble des parties prenantes : c'est cet « ADN » qui préside depuis 1994 à la création des Clubs FACE et de ses autres structures de médiation et d'insertion, toujours nées d'une volonté commune des entreprises, des collectivités et de l'ensemble des acteurs territoriaux.
 			Cette volonté de maillage avec nos partenaires institutionnels, entreprises ou associations, est la clé de la conception et de la réalisation de nos projets, tant les politiques de lutte contre l'exclusion, les discriminations et la pauvreté nécessitent au-delà d'une association systématique des bénéficiaires (salariés, habitants, jeunes en contrats d'alternance, services civiques...etc...) l'implication de tous les acteurs.</p>
 			<center><h2><strong>Les entreprises adhérentes au Club FACE</strong></h2></center>
-			<div class="row">
-				<div class="col-md-3 col-sm-3">
+			
+
+		<?php
+			$pdo = new PDO('mysql:dbname=faceMoulins;host=localhost;charset=utf8', 'root', '');
+			$statement = $pdo->query('SELECT img, URL_site,type_id FROM imgPartenaires');
+			$entreprise	=  $statement->fetchAll();
+			
+
+			echo '<div class="row">';
+			
+			for ($i=0; $i < count($entreprise) ; $i++) { 
+				
+				if ($entreprise[$i][2]==2) {	// vérif partenaire = entreprise
+				
+				echo	'<div class="col-md-3 col-sm-3">
+							<a href="'.$entreprise[$i][1].'">	
+							<img src="'.$entreprise[$i][0].'" class="center-block logo" alt="AG2R" /></a>
+						</div>';
+				}
+			}
+			echo '</div>';
+
+		?>
+
+		<!--	<div class="col-md-3 col-sm-3">
 					<a href="http://www.ag2rlamondiale.fr/">	
 					<img src="img/partenariat/entreprise/AG2R.png" class="center-block logo" alt="AG2R" />
 					</a>
@@ -66,15 +89,40 @@
 					</a>
 				</div>
 			</div>
-		</div>
+		</div>						-->
 		<!--Associations-->
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
 				<h1 id="pageAsso">Les associations</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut dapibus mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas gravida arcu at viverra interdum. Etiam facilisis suscipit magna sit amet vulputate. Cras sed arcu eu sapien maximus dictum. Nam in mauris at orci congue luctus eget eu 	lectus. Phasellus semper imperdiet massa nec mollis. Aenean facilisis feugiat pharetra. Suspendisse vitae enim neque. Mauris sodales ipsum quis hendrerit vestibulum. Nunc mattis dignissim ante, eu consectetur diam porttitor non.
 				</p>
-				<div class="row">
-					<div class="col-md-3 col-sm-3">
+				
+
+		<?php
+			$pdo = new PDO('mysql:dbname=faceMoulins;host=localhost;charset=utf8', 'root', '');
+			$statement = $pdo->query('SELECT img, URL_site,type_id FROM imgPartenaires');
+			$association	=  $statement->fetchAll();
+			
+			echo '<div class="row">';
+			
+			for ($i=0; $i < count($association) ; $i++) { 
+				
+				if ($association[$i][2]==1) {	// vérif partenaire = entreprise
+				
+				echo	'<div class="col-md-3 col-sm-3">
+							<a href="'.$association[$i][1].'">	
+							<img src="'.$association[$i][0].'" class="center-block logo" alt="AG2R" /></a>
+						</div>';
+				}
+			}
+
+			echo '</div>';
+
+		?>
+
+
+
+	<!--				<div class="col-md-3 col-sm-3">
 						<a href="http://www.cget.gouv.fr/">
 						<img src="img/partenariat/part_image4.png" class="center-block logo" alt="République Francaise" />
 						</a>
@@ -152,7 +200,7 @@
 						<img src="img/partenariat/usgeres.jpg" class="center-block logo" alt="USGERES" />
 						</a>
 					</div>
-				</div>
+				</div>						-->
 			
 			<!--Institutions-->
 			<div class="row institution">
@@ -160,7 +208,63 @@
 					<h1 id="pageInstitution">Les institutions</h1>
 					<h3><em>De nombreuses institutions soutiennent la réalisation des actions de FACE, considérée comme un véritable acteur en matière de prévention et de lutte contre l'exclusion</em></h3> 
 				</div>
-				<div class="col-md-4 col-sm-4 col-xs-12">
+			</div>
+		<?php
+
+			$statement = $pdo->query("
+				SELECT 	Partenaires.type_id,
+						Partenaires.nom, 
+						Partenaires.texte, 
+						imgPartenaires.img,
+						imgPartenaires.URL_site
+				FROM 	Partenaires, imgPartenaires
+				WHERE 	Partenaires.img_id=imgPartenaires.id AND 
+						Partenaires.URL_id=imgPartenaires.id ");
+			$institution =  $statement->fetchAll();
+			
+			//echo '<pre>';
+			//var_dump($institution[0]);
+			//echo '</pre>';
+			
+			
+	for ($i=0; $i < count($institution) ; $i+=2) { //au pas de 2
+				
+		if ($institution[$i][0]==3) {	// vérif partenaire = institution
+			
+			if ($i%2==0) { //si index paire alors ouverture ligne bootstrap (car 2partenaires par ligne)
+				echo '<div class="row institution">';
+			}	
+
+			echo'<div class="col-md-4 col-sm-4 col-xs-12">
+							<h3>'.$institution[$i][1].'</h3>
+							<p>'.$institution[$i][2].'</p>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-12">
+							<a href="'.$institution[$i][4].'">
+							<img src="'.$institution[$i][3].'" class="center-block logo" alt="'.$institution[$i][1].'" /></a>
+						</div>
+						';
+				if (isset($institution[$i+1])) {	//vérif si quelques chose (a cause du $i+1)
+					echo'	<div class="col-md-4 col-sm-4 col-xs-12">
+								<h3>'.$institution[$i+1][1].'</h3>
+								<p>'.$institution[$i+1][2].'</p>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-12">
+								<a href="'.$institution[$i+1][4].'">
+								<img src="'.$institution[$i+1][3].'" class="center-block logo" alt="'.$institution[$i+1][1].'" /></a>
+							</div>';
+				}
+			}
+			if ($i%2==0) {	//fermeture ligne
+			 	echo '</div>';
+			 }
+		}
+
+		?>
+	
+
+
+	<!--			<div class="col-md-4 col-sm-4 col-xs-12">
 					<h3>La Commission Européenne</h3>
 					<p>La Commission Européenne finance la fondation via le FSE et le programme Leonardo, pour des projets tel le "Certificat Européen de Compétences Foot & Entreprises" ou plus récemment "serendipité", projet d'innovation sociale pour favoriser l'égalité professionnelle Femme-Homme.</p>
 				</div>
@@ -308,16 +412,81 @@
 			<img src="https://upload.wikimedia.org/wikipedia/fr/c/cd/Logo_P%C3%B4le_Emploi.png" class="center-block logo" alt="Pole emploi"/>
 			</a>
 		</div>
-	</div>
+	</div>				-->
 	<!--Particuliers-->
 	<h1 id="pageParticulier" class="col-md-12 col-sm-12 col-xs-12">Les Particuliers</h1>
 	<h4>Pour nos donateurs particuliers, si vous souhaitez apparaitre sur cette page, vous pouvez nous contactez <a href="contact.html">ici</a></h4>
+
+	<?php 
+
+			$statement = $pdo->query("
+				SELECT 	Partenaires.type_id,
+						Partenaires.nom, 
+						Partenaires.texte, 
+						imgPartenaires.img,
+						Partenaires.date
+				FROM 	Partenaires, imgPartenaires
+				WHERE 	Partenaires.img_id=imgPartenaires.id ");
+			$particulier =  $statement->fetchAll();
+			
+			//echo '<pre>';
+			//var_dump($particulier[0]);
+			//echo '</pre>';
+
+			echo '<div class="row">';
+			
+			for ($i=0; $i < count($particulier) ; $i++) { 
+				
+				if ($particulier[$i][0]==4) {	// vérif partenaire = entreprise
+				
+				echo	'<div class="col-md-3 col-sm-3">
+							<h3>'.$particulier[$i][1].'</h3>
+							<p>'.$particulier[$i][2].'<br />
+							<strong>date d\'entrée</strong> </br> '.$particulier[$i][4].'</p>
+							<img src="'.$particulier[$i][3].'" class="photo" alt="'.$particulier[$i][1].'" />
+						</div>';
+				}
+			}
+			echo '</div>';
+
+
+
+
+
+	?>
+
+
+	<!--
 	<div class="col-md-3 col-sm-3">
 		<h3>NOM Prénom</h3>
 		<p>Espace de texte à la dispositon du donateur.<br />
 		Date d'entrée</p>
 		<img src="http://external-images.premiere.fr/var/premiere/storage/images/series/news-series/dexter-eli-stone-en-personne-dans-la-saison-5-2357793/34818104-1-fre-FR/Dexter-Eli-Stone-en-personne-dans-la-saison-5.jpg" class="photo" alt="Personne fictif 1" />
 	</div>
+	-->
+
+	<?php
+		//if(isset($_SESSION["connexion"])){
+			$statement = $pdo->query('SELECT id, type FROM typePartenaires');
+			$typePartenaires=  $statement->fetchAll();
+      	echo '
+			<form class="form form-group">
+				<select class="">
+					<option value="">--choix du partenaire--</option>';
+					foreach ($typePartenaires as $value) {
+						echo '<option value="'.$value->id.'">'.$value->type.'</option>';
+					}
+		echo '	</select>
+				<input class="" type="text" placeholder="NOM et Prénom / l\'entreprise">
+				<input class="" type="file">
+				<input class="" type="text" placeholder="description">
+				<input class="btn btn-primary" type="submit" value="OK">
+			</form>';
+   // }
+
+
+
+	?>
 	</section>	
 </div>
 </div>		
