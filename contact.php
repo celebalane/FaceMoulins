@@ -1,5 +1,4 @@
 <?php
-  session_start();
 
   $captcha="";
   $captchaString ="abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -30,12 +29,12 @@
       <!--Formulaire de contact-->
 
       <div class="container decalage2">
-        <?php if(array_key_exists('errors',$_SESSION)): ?>
+        <?php if(isset($_SESSION["errors"]): ?>
         <div class="alert alert-danger">
           <?= implode('<br>', $_SESSION['errors']); ?>
         </div>
         <?php endif; ?>
-        <?php if(array_key_exists('success',$_SESSION)): ?>
+        <?php if(isset($_SESSION["success"])): ?>
         <div class="alert alert-success">
           Votre message a bien été envoyé !
         </div>
