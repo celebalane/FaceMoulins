@@ -608,8 +608,8 @@ aside {
 
 #round {
   animation: round-roll 100s linear infinite;
-  width: 80%;
-  height: 60%; }
+  width: 70%;
+  height: 65%; }
 
 @keyframes round-roll {
   from {
