@@ -14,7 +14,7 @@ body {
   padding: 0; }
 
 .decalage {
-  margin-top: 15%; }                
+  margin-top: 15%; }
 
 .decalage2 {
   margin-top: 15%; }
@@ -26,10 +26,6 @@ body {
 /*////////////Bouton Don////////////////////////*/
 #placementDon {
   text-align: right; }
-
-#btndonnav{
-  display: none;
-}
 
 #boutonDon {
   color: white;
@@ -1177,3 +1173,14 @@ small {
 
   #nomLong {
     margin-left: -10%; } }
+#titre {
+  padding-top: 50px; }
+
+#titre1 {
+  padding-top: 50px; }
+
+#titre2 {
+  padding-top: 50px; }
+
+#titre3 {
+  padding-top: 50px; }

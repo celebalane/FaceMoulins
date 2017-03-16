@@ -49,6 +49,9 @@ body {
 #logo {
 	width: 100%; /*Taille*/
 }
+body{
+	
+}
 
 
 @import '_don.scss';
@@ -62,4 +65,5 @@ body {
 @import '_galerie.scss';
 @import '_fabrik.scss';
 @import '_resptel.scss';
-@import '_resptab.scss';	
+@import '_resptab.scss';
+@import '_action.scss';	
