@@ -7,14 +7,18 @@ class Admin {
 	public function getBDD(){
 		return $this->bdd;
 	}
-	function connectBDD(){
+	public function connectBDD(){
 		$this->bdd = new Connect("faceMoulins", "faceMoulins", "Mysteria666");
 	}
-	function clearBDD(){
+	public function clearBDD(){
 		$this->bdd = NULL;
 	}
 
-	function connectAdmin($pseudo, $pass){
+	public function select($what, $where, $limite=0, $si="0", $condition="1"){
+		return $this->bdd->select($what, $where, $limite=0, $si="0", $condition="1");
+	}
+
+	public function connectAdmin($pseudo, $pass){
 		if(isset($pseudo) && isset($pass)){
 			$pseudo = htmlspecialchars($pseudo);
 			$pass = htmlspecialchars($pass);
@@ -39,7 +43,7 @@ class Admin {
 
 	}
 
-	function createArticle($content){
+	public function createArticle($content){
 		if(isset($content)){
 			$contentArticle = $content;
 			$contentArticle = explode(",", $content);
@@ -92,9 +96,10 @@ class Admin {
 		return $req;
 	}
 
-	public function updateArticle($what, $where, $array1, $array2){
-		$req=$this->bdd->update($what, $where, $array1, $array2);
-		echo '<script>alert("Article modifié avec succès");</script>';
+	public function update($what, $where, $array1, $array2, $limit=0){
+		$req=$this->bdd->update($what, $where, $array1, $array2, $limit);
+		echo $limit=0 ?'<script>alert("Article modifié avec succès");</script>' : "";
+		return $req;
 	}
 
 }

@@ -43,7 +43,7 @@
                 }
                 $req = $this->bddConnect->prepare("UPDATE $where SET $what WHERE $array1");
                 $req->execute($array2);
-                return $req;
+                return $array2;
             }
         }
         public function delete($where, $array1, $array2, $limite=0){

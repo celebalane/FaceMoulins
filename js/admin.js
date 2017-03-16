@@ -93,7 +93,7 @@ function go(page){
 		xhr.send("envoisMailing="+texte);
 	}
 	else if(page=="modifPass"){
-		xhr.open("POST", "include/passAllChange.php", true);
+		xhr.open("POST", "passAllChange.php", true);
 		xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
 		pass1 = document.getElementById("new1").value;
 		pass2 = document.getElementById("new2").value;

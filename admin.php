@@ -86,6 +86,7 @@
 						<input type="password" name="password" class="password" placeholder="Mot de passe" required />
 						<button type="submit">Se connecter</button>
 					</form>	
+					<a href="include/changePassword.php?change=true">Changer de mot de passe </a>
 					<a href="index.php"> Retour sur le site</a>	
 				</div>
 			<?php
