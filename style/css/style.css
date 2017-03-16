@@ -14,7 +14,7 @@ body {
   padding: 0; }
 
 .decalage {
-  margin-top: 15%; }
+  margin-top: 15%; }                
 
 #logo {
   width: 100%;
@@ -23,6 +23,10 @@ body {
 /*////////////Bouton Don////////////////////////*/
 #placementDon {
   text-align: right; }
+
+#btndonnav{
+  display: none;
+}
 
 #boutonDon {
   color: white;

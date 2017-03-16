@@ -91,6 +91,7 @@
 						</ul>
 					</li>
 					<li><a href="contact.php" title="Contact" class="active">Contact</a></li>
+					<li><a href="" title="Don" class="active" id="btndonnav">Faire un don</a></li>
 				</ul>
 			</nav>
 		</div>

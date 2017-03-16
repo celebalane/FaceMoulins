@@ -96,8 +96,10 @@ $(document).on('scroll', function(){
 
 	if ($(this).scrollTop()>115) {
 		$('#top').slideUp();
+		$('#btndonnav').css("display", "inline");
 	}else{
 		$('#top').slideDown();
+		$('#btndonnav').css("display", "none");
 	}	
    		
 });
@@ -304,3 +306,4 @@ if(innerWidth < 480){
 	})
 }
 else{document.getElementById("mailContact").innerHTML = "contact.territoirebourbonnais@fondation.org";}
+
