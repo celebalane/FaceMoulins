@@ -58,15 +58,12 @@
 					</li>
 					<li class="dropdown">
 						<a href="presentation.php" title="Présentation" class="active">Présentation</a>
-<<<<<<< HEAD
 					</li>
 					<li class="dropdown">
 						<li><a href="action.php">Actions</a></li>
-=======
 						<ul class="dropdown-menu">
 							<li><a href="presentation.php#histoire">Histoire</a></li>
 						</ul>
->>>>>>> b6a496d6bbcbb58b4ceafb648cb4f3451609de24
 					</li>
 					<li class="dropdown">
 						<a href="galerie.php" title="Galerie" class="active">Galerie</a>
@@ -93,7 +90,6 @@
 							<li><a href="apprenants.php">Apprenants</a></li>
 						</ul>
 					</li>
-					<li><a href="presentation.php#pagePalmares">Actions</a></li>
 					<li><a href="contact.php" title="Contact" class="active">Contact</a></li>
 				</ul>
 			</nav>
