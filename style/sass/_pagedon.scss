@@ -1,5 +1,5 @@
 /*////////////////////Page Don////////////////////*/
-
+$color_default:#e79063;
 #don {
 	background-color: white; /*Fond de la section Fil d'actu*/
 	padding:0;             
@@ -11,26 +11,38 @@
 			text-align: center;
 			font-weight: 600;
 			font-style: italic;
-			color: #e79063;
+			color: $color_default;
 			font-size: 2.4em;
 		}
 		strong{
-			color: #e79063;
+			color: $color_default;
 			font-style: italic;
 			font-size: 1.5em;
 		}
 		p a{
 			color: rgba(18,110,122,1);
 			&:hover{
-				color: #e79063;
+				color: $color_default;
 				text-decoration: none;
 			}
 		}
+		h3{
+			color: rgba(18,110,122,0.6);
+		}
 		h4{
 			text-align: center;
+			font-weight: 600;
+		}
+		h5{
+			font-weight:600; 
+		}
+		input:focus{
+			border-color: $color_default;
+			box-shadow: inset 0 1px 1px $color_default, 0 0 8px $color_default;
 		}
 	}
 }
+
 
 #bandeauDon{
 	background-color:rgba(18,110,122,0.6);
@@ -40,17 +52,17 @@
 		margin-top: 3%;
 		margin-bottom:5%;
 		font-size: 2em;
-		color: #e79063;
+		color: $color_default;
 		font-weight: 600;
 		&:hover{
-			background-color: #e79063;
+			background-color: $color_default;
 			color: white;
 		}
 	}
 
 	.btn-default{
 		padding:2%;
-		border:3px solid #e79063;
+		border:3px solid $color_default;
 	}
 }
 

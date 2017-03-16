@@ -24,8 +24,8 @@
 				<div class="col-md-6">
 					<p><strong>Calculez votre don après réduction</strong></p>
 					<label for="montantDon">Montant du don</label>
-					<input type="text" name="montantDonParticulier" placeholder="Montant du don" id="montantDon">
-					<p>Après réduction</p>
+					<input type="text" name="montantDonParticulier" placeholder="Montant" id="montantDon" class="form-control">
+					<h5>Après réduction</h5>
 					<div id="resultatParticulier">
 						
 					</div>
@@ -39,8 +39,8 @@
 				<div class="col-md-6">
 					<p><strong>Calculez votre don après réduction</strong></p>
 					<label for="montantDonEntreprise">Montant du don</label>
-					<input type="text" name="montantDonEntreprise" placeholder="Montant du don" id="montantDonEntreprise" class="form-control"">
-					<p>Après réduction</p>
+					<input type="text" name="montantDonEntreprise" placeholder="Montant" id="montantDonEntreprise" class="form-control">
+					<h5>Après réduction</h5>
 					<div id="resultatEntreprise">
 						
 					</div>
