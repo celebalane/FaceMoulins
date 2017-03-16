@@ -14,7 +14,7 @@
             <h4>Andréa<br /> LOPEZ</h4>
               <small>
                 <cite title="Moulins, france">Moulins, France
-                  <i class="glyphicon glyphicon-map-marker"></i>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
                 </cite>
               </small>
               <a href="mailto:andrea-@outlook.com" ><button type="button" class="btn btn-default boutonMobile">MAIL</button></a> 
@@ -34,7 +34,7 @@
             <h4>Anthony<br /> FAVIER</h4>
             <small>
               <cite title="Moulins, France">Vichy, France
-                <i class="glyphicon glyphicon-map-marker"></i>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
               </cite>
             </small>
             <a href="mailto:anthony.favier03@gmail.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
@@ -54,7 +54,7 @@
             <h4>Aude<br /> ECCHER</h4>
             <small>
               <cite title="Moulins, france">Moulins, France
-                <i class="glyphicon glyphicon-map-marker"></i>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
               </cite>
             </small>
             <a href="mailto:audeeccher@gmail.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
@@ -74,7 +74,7 @@
             <h4>Aymeric<br /> LACOSTE</h4>
             <small>
               <cite title="San Francisco, USA">Moulins, France
-                <i class="glyphicon glyphicon-map-marker"></i>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
               </cite>
             </small>
             <a href="mailto:aymeric-lacoste@hotmail.fr"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
@@ -94,7 +94,7 @@
             <h4>Alexandre<br /> LEROUX</h4>
             <small>
               <cite title="Moulins, france">Moulins, France
-                <i class="glyphicon glyphicon-map-marker"></i>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
               </cite>
             </small>
             <a href="mailto:alex03000@live.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
@@ -114,7 +114,7 @@
             <h4>Eddy<br /> HULEU</h4>
             <small>
               <cite title="Moulins, France"> Moulins, France
-                <i class="glyphicon glyphicon-map-marker"></i>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
               </cite>
             </small>
             <a href="mailto:eddy.huleu@live.fr"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
@@ -134,7 +134,7 @@
             <h4>Emilie<br /> LETERME</h4>
             <small>
               <cite title="Moulins, France"> Moulins, France
-                <i class="glyphicon glyphicon-map-marker"></i>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
               </cite>
             </small>
             <a href="mailto:emilie.leterme@gmail.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
@@ -154,7 +154,7 @@
                 <h4>Hasna<br /> CHADDOU</h4>
                 <small>
                   <cite title="Moulins, France"> Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:Hasnachad@gmail.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
@@ -175,7 +175,7 @@
                 <h4>Kevin<br /> MARTINEZ</h4>
                 <small>
                   <cite title="Moulins, France"> Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:msi03@laposte.net"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
@@ -195,7 +195,7 @@
                 <h4>Martin<br /> DAGOSTINO</h4>
                 <small>
                   <cite title="Moulins, France"> Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:martindcontact@gmail.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
@@ -216,7 +216,7 @@
                 <h4>Mickaël<br /> DURAND</h4>
                 <small>
                   <cite title="Moulins, france">Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:micka_8@hotmail.fr"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
@@ -236,7 +236,7 @@
                 <h4>Quentin<br /> GRAU</h4>
                 <small>
                   <cite title="Moulins, France">Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:q.grau00@gmail.com"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
@@ -256,7 +256,7 @@
                 <h4>Quentin<br /> ANSION</h4>
                 <small>
                   <cite title="Moulins, france">Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:ansion.quentin@outlook.fr"><button type="button" class="btn btn-default boutonMobile">MAIL</button></a>
@@ -276,7 +276,7 @@
                 <h4>Régis<br /> TOUPENSE</h4>
                 <small>
                   <cite title="San Francisco, USA">Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:registech@laposte.net"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
@@ -296,7 +296,7 @@
                 <h4>Sébastien<br /> DUTRIPON</h4>
                 <small>
                   <cite title="Moulins, france">Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:seb032@live.fr><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
@@ -317,7 +317,7 @@
                 <h4>Sophie<br /> LE BERRE</h4>
                 <small>
                   <cite title="Moulins, France"> Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:sophie.seb@live.fr"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
@@ -338,7 +338,7 @@
                 <h4>Stéphane<br /> BARILLER</h4>
                 <small>
                   <cite title="Moulins, France"> Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:stephane.b03@mrsnakie.fr"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
@@ -359,7 +359,7 @@
                 <h4>Thomas<br /> MILLIEN</h4>
                 <small>
                   <cite title="Moulins, France"> Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:thomas.face03@gmail.com"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
@@ -380,7 +380,7 @@
                 <h4>Vincent<br />CHAMBONNIER</h4>
                 <small>
                   <cite title="Moulins, France"> Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </cite>
                 </small>
                 <a href="mailto:vincent-du03@hotmail.fr"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
@@ -400,7 +400,7 @@
                 <h4>Vladislav<br /> LEGOSHIN</h4>
                 <small>
                   <cite title="Moulins, France"> Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:vlad03@gmail.com"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
@@ -420,7 +420,7 @@
                 <h4>William<br /> LE GAL</h4>
                 <small>
                    <cite title="Moulins, France"> Moulins, France
-                      <i class="glyphicon glyphicon-map-marker"></i>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </cite>
                 </small>
                 <a href="mailto:william.legal03@gmail.com"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>
@@ -440,7 +440,7 @@
                 <h4>Yves<br /> CHARVIS</h4>
                 <small>
                   <cite title="Moulins, France"> Moulins, France
-                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </cite>
                 </small>
                 <a href="mailto:charvisyves@gmail.com"><button type="button" class="btn btn-default btn-block boutonMobile">MAIL</button></a>

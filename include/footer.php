@@ -8,7 +8,7 @@
 							<div class="menu2">
 								<ul class="primary-menu">
 									<li class="facebook"><a class="social-item" href="https://www.facebook.com/faceterritoirebourbonnais" target="_blank">f</a><span class="social-span">Facebook</span></li>
-									<li class="twitter"><a class="social-item" href="https://twitter.com/mcbourbonnais1?lang=fr" target="_blank">t</a><span class="social-span">Twitter</span></li>
+									<li class="twitter"><a class="social-item" href="#" target="_blank">t</a><span class="social-span">Twitter</span></li>
 									<li class="rss"><a class="social-item" href="#" target="_blank">a</a><span class="social-span">RSS</span></li>
 								</ul>
 							</div>
