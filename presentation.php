@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
     <?php
      include("include/header.php"); ?>
