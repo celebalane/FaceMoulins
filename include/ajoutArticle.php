@@ -8,7 +8,21 @@
 		$bdd = new Admin();
 		$bdd->connectBDD();
 
-		if(isset($_POST["textarea"]) AND $_FILES["fichier"]["name"]!=""){
+		//Securisation $_FILES //
+		if(isset($_FILES['fichier'])){
+			$extension = explode('.', $_FILES['fichier']['name']);
+			$realExtension = new SplFileInfo($_FILES['fichier']["name"]);
+			if($realExtension->getExtension() == $extension[1] AND $extension[1] != "php" AND count($extension) < 3){
+				$goodExtension = true;
+			}else{
+				echo '<script>alert("Pas de script !");</script>';
+				$goodExtension = false;
+			}
+		}
+
+		//Traitement des données pour envois en base //
+		if(isset($_POST["textarea"]) AND $_FILES["fichier"]["name"]!="" AND $goodExtension){
+							
 			$name = $_FILES["fichier"]["name"];  //Stockage du nom du fichier
 			$articleDir = $_SERVER["DOCUMENT_ROOT"]."/FaceMoulins/img/accueil/articles"; //stockage de l'adresse absolue du fichier après déplacement
 
@@ -22,7 +36,7 @@
 		}elseif(isset($_POST["textarea"]) AND $_POST["textarea"] != ""){
 			$bdd->updateArticle("texte=?", "Articles","id=?", array($_POST["textarea"], $_GET['id']));
 
-		}elseif(isset($_FILES["fichier"])){
+		}elseif(isset($_FILES["fichier"]) AND $goodExtension){
 			$name = $_FILES["fichier"]["name"];
 			if(!move_uploaded_file($_FILES["fichier"]["tmp_name"], "$articleDir/$name")){
 				echo "impossible de deplacer le fichier..";
@@ -31,6 +45,7 @@
 			}
 		}
 	}
+	
 
 	?>
 	<!DOCTYPE html>
