@@ -1,4 +1,11 @@
 <?php 
+  require_once("class/admin.php");
+  $bdd = new Admin();
+  $bdd->connectBDD();
+  $req = $bdd->showsArticle();
+
+
+
   include("include/header.php");?>
 
 <!--Citation-->
@@ -13,29 +20,46 @@
 </div>
 <div class="container">
 <!--Liste des articles-->
-  <h1 class="titreSection col-md-9 col-sm-7">Actualités</h1>
+  <h1 class="titreSection col-md-9 col-sm-7">Actualités
+  <?php 
+    if(isset($_SESSION["connexion"])){
+      echo '<a href="include/ajoutArticle.php"><button class="btn btn-primary">Ajouter</button></a>';
+    }
+  ?></h1>   
 	<section class="col-md-9 col-xs-12 col-sm-7" id="filActu">
     <!--Article 1-->
-    <article class="articles">
-      <div class="row">
-        <img src="img/accueil/imgactu1.jpg" class="col-md-7 col-xs-1 col-sm-7" alt="reunion" />
+     <?php $i=0;
+        while($data = $req->fetch()){
+          echo $i == 1 ? "<article class='articles' id='dernierArticle'>" : "<article class='articles'>";
+            echo "<div class='row'>";
+              echo "<img src='".$data["img"]."' class='col-md-7 col-xs-1 col-sm-7' alt='reunion' />";
+              echo "<div class='col-md-5 col-xs-10 col-sm-12'>";
+                echo $data["texte"];
+              echo "</div>";
+            echo "</div>";
+          echo "</article>";      
+          $i++;
+        }
+        ?>
+     <!--  <div class="row">
+        <img src="img/accueil/articles/imgactu1.jpg" class="col-md-7 col-xs-1 col-sm-7" alt="reunion" />
         <div class="col-md-5 col-xs-10 col-sm-12">
           <h3>INFO Assemblée Générale</h3><p>Le club d'entreprises FACE Territoire Bourbonnais vous invite à leur AG du 19 janvier prochain A l’Amphithéâtre de l’ESPE à Moulins (28 rue des Geais) à 16h45.<br /></p>
           <p>Nous vous remercions de bien vouloir vous inscrire par mail (c.berger@fondationface.org)</p>
         </div>
       </div>
-    </article>
+    </article> -->
     <!--Article 2-->
-    <article class="articles" id="dernierArticle">
+    <!-- <article class="articles" id="dernierArticle">
       <div class="row">
-        <img src="img/accueil/galerie2.jpg" class="col-md-7 col-sm-7" alt="inauguration" />
+        <img src="img/accueil/articles/galerie2.jpg" class="col-md-7 col-sm-7" alt="inauguration" />
         <div class="col-md-5 col-xs-10 col-sm-12">
-          <h3>FACE Territoire Bourbonnais vous souhaite une merveilleuse année 2017.</h3><p>Tout comme notre ambassadeur Xavier de Soultrait relevons des défis et soyons ambitieux.</p>
+          <h3>FACE Territoire Bourbonnais vous souhaite une merveilleuse année 2017.</h3><p>Tout comme notre ambassadeur Xavier de Soultrait relevons des défis et soyons ambitieux.</p> -->
           <!--<nav aria-label="..." class="col-xs-offset-5 col-sm-offset-8 col-md-5">
                   <ul class="pager"><li><a href="#">Voir la suite</a></li></ul>
                 </nav>-->
-        </div>
-      </div>
+        <!-- </div>
+      </div> -->
     </article>
 	</section>
 	<!--Sur le coté droit-->
