@@ -8,14 +8,14 @@ session_start();
     <div class="container">
       <div id="decalpresentation"></div>
       <div class="row" id="presentation">
-        <h1 class="col-md-12 boxtitle titreSection"><i class="fa fa-info-circle" aria-hidden="true"></i>Présentation</h1>
+        <h1 class="col-md-12 boxtitle titreSection">Présentation</h1>
 
         <div class="col-md-12 box">
           <div id="container-roll">
             <div class="face-ecr">
               <img id="face-ecr" width="20%" src="img/face_ecrit.png" alt="Objectifs de FACE">
               <div class="round">
-                <img id="round" width="20%" src="img/round.png" alt="Objectifs de FACE">
+                <img id="round" src="img/round.png" alt="Objectifs de FACE">
               </div>
             </div>
             <div class="col-md-6">

@@ -23,6 +23,9 @@ body {
   width: 100%;
   /*Taille*/ }
 
+#btndonnav {
+  display: none; }
+
 /*////////////Bouton Don////////////////////////*/
 #placementDon {
   text-align: right; }
@@ -608,8 +611,8 @@ aside {
 
 #round {
   animation: round-roll 100s linear infinite;
-  width: 70%;
-  height: 65%; }
+  width: 30em;
+  height: 30em; }
 
 @keyframes round-roll {
   from {

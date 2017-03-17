@@ -60,8 +60,8 @@
 }
 #round{		
 	animation: round-roll 100s linear infinite;
-	width: 70%;
-	height: 65%;
+	width: 30em;
+	height: 30em;
 }
 @keyframes round-roll{
 	from {transform: rotate(0deg);}

@@ -27,15 +27,21 @@
       $_SESSION['inputs'] = $_POST;
     }
   } 
+  if(isset($_GET['sujet'])){
+    if($_GET['sujet'] == 3){
+      $select=3;
+    }
+  }
 
   include("include/header.php");
 ?>
       <!--Formulaire de contact-->
 
-      <div class="container decalage2">
+      <div class="container decalage">
         <?php if(isset($_SESSION["errors"])){ ?>
                 <div class="alert alert-danger">
-                  <?= $_SESSION["errors"] ?>
+                  <?= $_SESSION["errors"]; ?>
+
                 </div>
         <?php }elseif(isset($_SESSION["success"])) { ?>
                 <div class="alert alert-success">
@@ -86,7 +92,11 @@
           <div class="form-group-lg">
             <label for="sujet" class="col-sm-2 control-label" id="sujetLabel">Sujet *</label>
             <div class="col-sm-10">
-              <input type="text" name="sujet" value="<?php echo isset($_SESSION['inputs']['sujet'])? $_SESSION['inputs']['sujet'] : ''; ?>" placeholder="ex: Renseignements" maxlength="40" class="form-control input-lg" id="sujet" required>
+              <select class="form-control" id="sujet" name="sujet">
+                <option value="Contact">Contact</option>
+                <option value="Demande de Renseignement">Demande de Renseignement</option>
+                <option value="Faire un Don" <? if(isset($select)){echo "selected";} ?>>Faire un Don</option>
+              </select>
             </div>
           </div>
           <div class="form-group-lg">
