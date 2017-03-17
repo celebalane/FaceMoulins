@@ -66,6 +66,9 @@ body {
   align-items: center;
   justify-content: space-between; }
 
+#btndonnav {
+  display: none; }
+
 .navbar #top img {
   /* Logo FACE */
   width: 300px;
@@ -1173,6 +1176,9 @@ small {
 
   #nomLong {
     margin-left: -10%; } }
+#titreaction {
+  margin-top: 100px; }
+
 #titre {
   padding-top: 50px; }
 
@@ -1188,3 +1194,6 @@ small {
 #btngrdf {
   color: #FF8C00;
   width: 150px; }
+
+p {
+  line-height: 30px; }
