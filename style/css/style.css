@@ -569,6 +569,23 @@ aside {
   display: flex;
   justify-content: center; }
 
+.imgPresentation {
+  float: left;
+  width: 50px;
+  height: 100px;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 100px; }
+
+.cadreChro {
+  text-align: justify;
+  padding-top: 40px;
+  padding-right: 2%;
+  border: 5px solid white;
+  background-color: #e4e8f6;
+  border-radius: 10px 100px 10px 100px;
+  height: 200px; }
+
 #decalpresentation {
   margin-top: 200px; }
 
@@ -595,8 +612,8 @@ aside {
 
 #round {
   animation: round-roll 100s linear infinite;
-  width: 80%;
-  height: 60%; }
+  width: 70%;
+  height: 65%; }
 
 @keyframes round-roll {
   from {
@@ -781,6 +798,9 @@ aside {
   margin-bottom: 2%; }
   #fabrik .col-md-9 {
     padding-left: 3%; }
+
+.decalage2 {
+  margin-top: 70px; }
 
 #carroussel {
   margin-left: 7.5%;
