@@ -8,7 +8,7 @@ class Admin {
 		return $this->bdd;
 	}
 	public function connectBDD(){
-		$this->bdd = new Connect("faceMoulins", "faceMoulins", "Mysteria666");
+		$this->bdd = new Connect("faceMoulins", "root", "");
 	}
 	public function clearBDD(){
 		$this->bdd = NULL;
@@ -92,7 +92,7 @@ class Admin {
 	}
 
 	public function showsArticle(){
-		$req = $this->bdd->select('*', 'Articles', 0, 'publish', 'yes');
+		$req = $this->bdd->select('*', 'Articles', 0, 'publish=? ORDER BY id DESC', 'yes');
 		return $req;
 	}
 

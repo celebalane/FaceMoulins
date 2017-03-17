@@ -19,7 +19,7 @@
                 return $req;
             }
             elseif($si!="0" AND $limite==0){
-                $req = $this->bddConnect->prepare("SELECT $what FROM $where WHERE $si=?");
+                $req = $this->bddConnect->prepare("SELECT $what FROM $where WHERE $si");
                 $req->execute(array($condition));
                 return $req;
             }

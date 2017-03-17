@@ -6,7 +6,7 @@ De plus, il est important pour le client de pouvoir faire connaître la structur
 
 #### Nom de l'entreprise : PourquoiPasNous
 
-#### Equipe :  Emilie*, Vincent, Sébastien, Hasna.
+#### Equipe :  Emilie*, Alexandre, Anthony, Mickaël, Kévin.
 
 **Important**  
 Voir avec le client ses besoins les plus urgents, lui faire prioriser pour mieux déterminer les étapes de notre travail.  
