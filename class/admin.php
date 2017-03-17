@@ -8,7 +8,7 @@ class Admin {
 		return $this->bdd;
 	}
 	public function connectBDD(){
-		$this->bdd = new Connect("faceMoulins", "root", "");
+		$this->bdd = new Connect("faceMoulins", "faceMoulins", "Mysteria666");
 	}
 	public function clearBDD(){
 		$this->bdd = NULL;

@@ -233,6 +233,9 @@ body {
   padding-left: 10%;
   float: left; }
 
+#btndonnav {
+  display: none; }
+
 @media screen and (max-width: 1024px) {
   .navbar #top {
     background-position: 50% 50%; } }

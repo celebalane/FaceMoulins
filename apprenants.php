@@ -1,7 +1,7 @@
 <?php 
-session_start();
-      if(isset($_SESSION['success'])){unset($_SESSION["success"]);}
-      if(isset($_SESSION['errors'])){unset($_SESSION["errors"]);}
+    include("include/header.php");
+    if(isset($_SESSION['success'])){unset($_SESSION["success"]);}
+    if(isset($_SESSION['errors'])){unset($_SESSION["errors"]);}
     if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}
 include("include/header.php");?>
 <div class="container decalage">
