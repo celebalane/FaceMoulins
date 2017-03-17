@@ -1,14 +1,13 @@
-    <?php
-
-session_start();
+<?php
+      include("include/header.php");
       if(isset($_SESSION['success'])){unset($_SESSION["success"]);}
       if(isset($_SESSION['errors'])){unset($_SESSION["errors"]);}
-    if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}
-     include("include/header.php"); ?>
+      if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}
+?>
     <div class="container">
       <div id="decalpresentation"></div>
       <div class="row" id="presentation">
-        <h1 class="col-md-12 boxtitle titreSection"><i class="fa fa-info-circle" aria-hidden="true"></i>Présentation</h1>
+        <h1 class="col-md-12 boxtitle titreSection">Présentation</h1>
 
         <div class="col-md-12 box">
           <div id="container-roll">

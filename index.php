@@ -1,16 +1,14 @@
 <?php 
-session_start();
-      if(isset($_SESSION['success'])){unset($_SESSION["success"]);}
-      if(isset($_SESSION['errors'])){unset($_SESSION["errors"]);}
-    if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}
+  include("include/header.php");
+  if(isset($_SESSION['success'])){unset($_SESSION["success"]);}
+  if(isset($_SESSION['errors'])){unset($_SESSION["errors"]);}
+  if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}
+  
   require_once("class/admin.php");
   $bdd = new Admin();
   $bdd->connectBDD();
   $req = $bdd->showsArticle();
-
-
-
-  include("include/header.php");?>
+?>
 
 <!--Citation-->
 <div class="container col-md-12" id="decalageAccueil">

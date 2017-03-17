@@ -32,7 +32,7 @@
 ?>
       <!--Formulaire de contact-->
 
-      <div class="container decalage2">
+      <div class="container decalage">
         <?php if(isset($_SESSION["errors"])){ ?>
                 <div class="alert alert-danger">
                   <?= $_SESSION["errors"] ?>
