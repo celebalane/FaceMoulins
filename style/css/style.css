@@ -69,6 +69,9 @@ body {
   align-items: center;
   justify-content: space-between; }
 
+#btndonnav {
+  display: none; }
+
 .navbar #top img {
   /* Logo FACE */
   width: 300px;
@@ -176,6 +179,9 @@ body {
   margin-top: 0px;
   padding-left: 10%;
   float: left; }
+
+#btndonnav {
+  display: none; }
 
 @media screen and (max-width: 1024px) {
   .navbar #top {
@@ -1247,3 +1253,24 @@ small {
 
   #nomLong {
     margin-left: -10%; } }
+#titreaction {
+  margin-top: 100px; }
+
+#titre {
+  padding-top: 50px; }
+
+#titre1 {
+  padding-top: 50px; }
+
+#titre2 {
+  padding-top: 50px; }
+
+#titre3 {
+  padding-top: 50px; }
+
+#btngrdf {
+  color: #FF8C00;
+  width: 150px; }
+
+p {
+  line-height: 30px; }

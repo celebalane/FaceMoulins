@@ -1,10 +1,9 @@
-    <?php
-
-session_start();
+<?php
+      include("include/header.php");
       if(isset($_SESSION['success'])){unset($_SESSION["success"]);}
       if(isset($_SESSION['errors'])){unset($_SESSION["errors"]);}
-    if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}
-     include("include/header.php"); ?>
+      if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}
+?>
     <div class="container">
       <div id="decalpresentation"></div>
       <div class="row" id="presentation">

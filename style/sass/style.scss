@@ -48,8 +48,12 @@ body {
 #logo {
 	width: 100%; /*Taille*/
 }
+
 #btndonnav{
 	display: none;
+}
+body{
+
 }
 
 
@@ -65,4 +69,5 @@ body {
 @import '_fabrik.scss';
 @import '_pagedon.scss';
 @import '_resptel.scss';
-@import '_resptab.scss';	
+@import '_resptab.scss';
+@import '_action.scss';	
