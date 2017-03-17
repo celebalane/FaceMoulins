@@ -36,7 +36,7 @@
 		<img src="img/faceimg.png" alt="logo_face" />
 		<div class="hidden-xs hidden-sm">
 			<div id="search">
-        		<a href="#" class="btn btn-default" role="button" id="boutonDon"> Soutenez-nous : Faire un <span>don</span></a>
+        		<a href="don.php" class="btn btn-default" role="button" id="boutonDon"> Soutenez-nous : Faire un <span>don</span></a>
       		</div>
 		</div>
 	</div>
@@ -91,7 +91,7 @@
 						</ul>
 					</li>
 					<li><a href="contact.php" title="Contact" class="active">Contact</a></li>
-					<li><a href="" title="Don" class="active" id="btndonnav">Faire un don</a></li>
+					<li><a href="don.php" title="Don" class="active" id="btndonnav">Faire un don</a></li>
 				</ul>
 			</nav>
 		</div>
