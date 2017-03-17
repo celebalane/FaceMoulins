@@ -12,6 +12,9 @@
 	@include centreFlex;
 	justify-content: space-between;
 }
+#btndonnav{
+	display:none;
+}
 
 .navbar #top img{ /* Logo FACE */
 	width: 300px;
