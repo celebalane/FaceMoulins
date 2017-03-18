@@ -86,7 +86,7 @@
           <div class="form-group-lg">
             <label for="sujet" class="col-sm-2 control-label" id="sujetLabel">Sujet *</label>
             <div class="col-sm-10">
-              <input type="text" name="sujet" value="<?php echo isset($_SESSION['inputs']['sujet'])? $_SESSION['inputs']['sujet'] : ''; ?>" placeholder="ex: Renseignements" maxlength="40" class="form-control input-lg" id="sujet" required>
+              <input type="text" name="sujet" value="<?php echo isset($_SESSION['inputs']['sujet'])? $_SESSION['inputs']['sujet'] : ''; echo isset($_GET['subject'])? $_GET['subject'] : '';?>" placeholder="ex: Renseignements" maxlength="40" class="form-control input-lg" id="sujet" required>
             </div>
           </div>
           <div class="form-group-lg">

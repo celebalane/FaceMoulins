@@ -52,8 +52,8 @@
 			</article>
 		</div>
 		<div class="row" id="bandeauDon">
-			<div class="col-md-12" >
-				<a class="btn btn-default col-md-6 col-md-offset-3" href="contact.php" role="button" name="btnimportant">Faire un don</a>
+			<div class="col-md-12">
+				<a class="btn btn-default col-md-6 col-md-offset-3" href="contact.php?subject=Je souhaite faire un don" role="button" name="btnimportant">Faire un don</a>
 			</div>
 		</div>
 	</section>
