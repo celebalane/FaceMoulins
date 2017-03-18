@@ -3,7 +3,8 @@
 	session_start();
 	$admin ="";
 	$password="";
-	session_destroy(); 
+	  if(isset($_SESSION['login'])){unset($_SESSION["login"]);}
+	  if(isset($_SESSION['password'])){unset($_SESSION["password"]);}
 	if(isset($_GET["bye"])){
 		header("location:index.php");
 	}
@@ -31,51 +32,7 @@
 				$bdd = new Admin();
 				$bdd->connectBDD();
 				$bdd->connectAdmin($_POST["login"], $_POST["password"]);
-				$bdd->clearBDD();
-				
-					?>
-					<!-- <div class="row">
-						<nav id="navbar" class="col-md-3">
-							<ul id="navAdmin" class="list-unstyled">
-								<li><a href="#" id="newsLetter">Newsletter</a></li>
-								<li><a href="#">Partenaire</a></li>
-								<li><a href="#" id="changeImage">Articles</a></li>
-								<li><a href="#" id="ajoutImage">Gallerie</a></li>
-								<li><a href="#" id="adminFabrik">Fabrik</a></li>
-								<li><a href="#" id="changePassword">AdminPassword</a></li>
-								<li><a href="#" id="exits">Se déconnecter</a></li>
-							</ul>
-						</nav>		
-						<section id="sectionAdmin" class="col-md-9 text-center" >
-							<script>
-								$("#changePassword").on("click", function(e){
-									e.preventDefault();
-									go("password");
-								});
-								$("#changeImage").on("click", function(e){
-									e.preventDefault();
-									go("imageArticle");
-								});
-								$("#ajoutImage").on("click", function(e){
-									e.preventDefault();
-									go("ajoutImage");
-								});
-								$("#validArticle").on("click", function(e){
-									e.preventDefault();
-									go("article");
-								});
-								$("#newsLetter").on("click", function(e){
-									e.preventDefault();
-									go("newsLetter");
-								});
-								$("#adminFabrik").on("click", function(e){
-									e.preventDefault();
-									go("adminFabrik");
-								});
-							</script>	
-						</section>
-					</div>	 -->
-			<?php 
+				$bdd->clearBDD();		
 		}
 		else if(!isset($_POST["password"]) OR !isset($_POST["login"]) OR !isset($_SESSION["password"]) OR !isset($_SESSION["login"]) OR $_SESSION["password"] = "" OR $_SESSION["login"] == "" OR $_SESSION["password"] != $password OR $_SESSION["login"] != $admin ){
 				?>
@@ -86,7 +43,10 @@
 						<input type="password" name="password" class="password" placeholder="Mot de passe" required />
 						<button type="submit">Se connecter</button>
 					</form>	
-					<a href="include/changePassword.php?change=true">Changer de mot de passe </a>
+					<?php
+						if(isset($_SESSION['connexion'])){
+							echo '<a href="include/changePassword.php?change=true">Changer de mot de passe </a>';
+						} ?>	
 					<a href="index.php"> Retour sur le site</a>	
 				</div>
 			<?php
@@ -95,6 +55,7 @@
 				{
 					header('location:index.php');
 				} 
+	  		if(isset($_SESSION['connexion'])){unset($_SESSION["connexion"]);}
 			?>		
 
 		<script type="text/javascript" src="js/admin.js"></script>
