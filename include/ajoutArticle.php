@@ -58,7 +58,8 @@
 		<div class= "connexion">
 			<h3>Ajouter article</h3>
 			<?= !isset($_GET["texte"])? '<form onsubmit="return false">' : '<form action="ajoutArticle.php?id='.$_GET["id"].'" method="POST" enctype="multipart/form-data">';?>
-				<!-- <input class="admin" type="texte" name="texteTitre" id= "TitreArticle" placeholder="Titre de l'article" onfocus="visual();"> -->
+
+				<!-- <input class="admin" type="texte" name="texteTitre" id= "TitreArticle" placeholder="Titre de l'article" onfocus="visual();"/> -->
 
 				<input class="admin" type="file" name="fichier" id="fichier" accept="image/*" onchange="readURL(this);"/>
 
@@ -75,7 +76,7 @@
 			<a id="afficheArticle" href="#" onclick="go('afficherArticle');" >Gérer les publications</a>
 		</div>	
 		<div id="visualisation">
-			<h1 id="titre"></h1>
+			<!-- <h1 id="titre"></h1> -->
 			<img id="image" />
 			<p id="paragrapheVisuel"></p>
 		</div>

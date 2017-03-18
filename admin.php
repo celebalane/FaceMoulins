@@ -3,8 +3,8 @@
 	session_start();
 	$admin ="";
 	$password="";
-	if(isset($_SESSION['login'])){unset($_SESSION["login"]);}
-	if(isset($_SESSION['password'])){unset($_SESSION["password"]);} 
+	  if(isset($_SESSION['login'])){unset($_SESSION["login"]);}
+	  if(isset($_SESSION['password'])){unset($_SESSION["password"]);}
 	if(isset($_GET["bye"])){
 		header("location:index.php");
 	}
@@ -32,7 +32,11 @@
 				$bdd = new Admin();
 				$bdd->connectBDD();
 				$bdd->connectAdmin($_POST["login"], $_POST["password"]);
+<<<<<<< HEAD
 				$bdd->clearBDD();
+=======
+				$bdd->clearBDD();		
+>>>>>>> adminClass
 		}
 		else if(!isset($_POST["password"]) OR !isset($_POST["login"]) OR !isset($_SESSION["password"]) OR !isset($_SESSION["login"]) OR $_SESSION["password"] = "" OR $_SESSION["login"] == "" OR $_SESSION["password"] != $password OR $_SESSION["login"] != $admin ){
 				?>
@@ -42,12 +46,20 @@
 						<input type="mail" name="login" class="login" placeholder="Login" required />
 						<input type="password" name="password" class="password" placeholder="Mot de passe" required />
 						<button type="submit">Se connecter</button>
+<<<<<<< HEAD
 					</form>
 					<?php
 						if(isset($_SESSION["connexion"])){	
 							echo '<a href="include/changePassword.php?change=true">Changer de mot de passe </a>';
 						}
 					?>	
+=======
+					</form>	
+					<?php
+						if(isset($_SESSION['connexion'])){
+							echo '<a href="include/changePassword.php?change=true">Changer de mot de passe </a>';
+						} ?>	
+>>>>>>> adminClass
 					<a href="index.php"> Retour sur le site</a>	
 				</div>
 			<?php
@@ -56,6 +68,7 @@
 				{
 					header('location:index.php');
 				} 
+	  		if(isset($_SESSION['connexion'])){unset($_SESSION["connexion"]);}
 			?>		
 
 		<script type="text/javascript" src="js/admin.js"></script>

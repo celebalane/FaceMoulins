@@ -69,7 +69,8 @@ class Admin {
 					$texte .= $contentArticle[2][$i];
 			}
 			if(isset($contentArticle[0]) AND isset($contentArticle[1]) AND isset($contentArticle[2])){
-				$req = $this->bdd->insertInto("Articles", array(/*'titre=?, */'img=?, texte=?'), array(/*$contentArticle[0],*/ $imagecode, $texte));
+
+				$req = $this->bdd->insertInto("Articles", array(/*'titre=?,*/' img=?, texte=?'), array(/*$contentArticle[0],*/ $imagecode, $texte));
 			}
 		}
 
