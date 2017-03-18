@@ -316,7 +316,7 @@
 	</div>
 	<!--Particuliers-->
 	<h1 id="pageParticulier" class="col-md-12 col-sm-12 col-xs-12">Les Particuliers</h1>
-	<h4>Pour nos donateurs particuliers, si vous souhaitez apparaitre sur cette page, vous pouvez nous contactez <a href="contact.html">ici</a></h4>
+	<h4>Pour nos donateurs particuliers, si vous souhaitez apparaitre sur cette page, vous pouvez nous contactez <a href="contact.php">ici</a></h4>
 	<div class="col-md-3 col-sm-3">
 		<h3>NOM Prénom</h3>
 		<p>Espace de texte à la dispositon du donateur.<br />
