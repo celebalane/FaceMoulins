@@ -9,17 +9,47 @@
     $bdd->connectBDD();
     $req = $bdd->getBDD()->select('*', 'EleveFabrik');
 
-    var_dump($_POST);
-    if(isset($_POST["apprenant"])){
+    if(isset($_POST["apprenant"]) AND $_POST["apprenant"] != ""){
       $nom = strtoupper($_POST["apprenant"]);
       $req2 = $bdd->getBDD()->select('*', 'EleveFabrik', 0, 'nom=?', $nom);
     }
     if(isset($_POST["id"])){
-      if($_POST["suppr/modif"] == "suppr"){
-        $bdd->getBDD()->delete("EleveFabrik", "id=?", $_POST['id']);
-      }else{
-        $bdd->getBDD()->update("prenom=?, nom=?, local=?, gitHub=?, img=?", "EleveFabrik", "id=?",  array($_POST["Prenom"], $_POST["Nom"], $_POST["Local"], $_POST["Github"], $_POST["photo"], $_POST['id']));
+      if($_POST["id"] == "ajouter"){
+        //Securisation $_FILES //
+        if(isset($_FILES['photo'])){
+          $extension = explode('.', $_FILES['photo']['name']);
+          $realExtension = new SplFileInfo($_FILES['photo']["name"]);
+          if($realExtension->getExtension() == $extension[1] AND $extension[1] != "php" AND count($extension) < 3){
+            $goodExtension = true;
+          }else{
+            echo '<script>alert("format de l\'image non reconnu");</script>';
+            $goodExtension = false;
+          }
+        }
+        if(isset($_POST["Nom"]) AND isset($_POST["Prenom"]) AND isset($_POST["Local"]) AND isset($_POST["Github"]) AND $goodExtension == true){
+
+          $name = $_FILES["photo"]["name"];  //Stockage du nom du fichier
+          $articleDir = $_SERVER["DOCUMENT_ROOT"]."/FaceMoulins/img/identite"; 
+          
+          if(!move_uploaded_file($_FILES["photo"]["tmp_name"], "$articleDir/$name")){
+            echo "impossible de deplacer le fichier..";
+          }else{
+            $bdd->getBDD()->insertInto("EleveFabrik", "nom=?, prenom=?, mail=?, local=?, gitHub=?, img=?", array(strtoupper($_POST["Nom"]), 
+                                              $_POST["Prenom"],
+                                               $_POST["Mail"],
+                                                $_POST["Local"],
+                                                 $_POST["Github"],
+                                                  "img/identite/".$name));
+          }
+        }
       }
+      if(isset($_POST["suppr/modif"]) AND $_POST["suppr/modif"] == "suppr"){
+        var_dump($_POST);
+        $bdd->getBDD()->delete("EleveFabrik", "id=?", array($_POST['id']));
+      }else{
+        $bdd->getBDD()->update("prenom=?, nom=?, mail=?, local=?, gitHub=?, img=?", "EleveFabrik", "id=?",  array($_POST["Prenom"], strtoupper($_POST["Nom"]), $_POST["Mail"], $_POST["Local"], $_POST["Github"], $_POST["photo"], $_POST['id']));
+      }
+      header("location:apprenants.php");
     }
     ?>
 <div class="container decalage">
@@ -58,30 +88,58 @@
       <input type="text" placeholder="Nom de l'apprenant à modifier" name="apprenant"/>
       <button type="submit">Valider</button>
     </form>
-<?php }else{
-          echo '<form action ="" method="POST" style="width:80%;margin:auto;" >';
+<?php }elseif(isset($_POST["apprenant"]) AND !isset($req2)){
+          echo '<form action ="" method="POST" enctype="multipart/form-data" >';
             echo '<table class="text-center">';
              echo '<tr>';
                   echo '<td><strong>NOM</strong></td>';
                   echo '<td><strong>PRENOM</strong></td>';
+                  echo '<td><strong>MAIL</strong></td>';
+                  echo '<td><strong>LOCALISATION</strong></td>';
+                  echo '<td><strong>GITHUB</strong></td>';
+                  echo '<td><strong>PHOTO</strong></td>';
+                echo '</tr>';
+                echo '<tr>';
+                    echo '<td><input type="text" name="Nom" value="" required /></td>';
+                    echo '<td><input type="text" name="Prenom" value="" required /></td>';
+                    echo '<td><input type="mail" name="Mail" value="" required /></td>';
+                    echo '<td><input type="text" name="Local" value="" required /></td>';
+                    echo '<td><input type="text" name="Github" value="" required /></td>';
+                    echo '<td><input type="file" name="photo" accept="image/*" required /></td>';   
+                    echo '<td><button type="submit" name="id" value="ajouter" >Valider</button></td>';
+                  echo '</tr>'; 
+              echo '</table>';
+          echo '</form>';        
+  }elseif (isset($req2)){
+          echo '<form action ="" method="POST" >';
+            echo '<table class="text-center">';
+             echo '<tr>';
+                  echo '<td><strong>NOM</strong></td>';
+                  echo '<td><strong>PRENOM</strong></td>';
+                  echo '<td><strong>MAIL</strong></td>';
                   echo '<td><strong>LOCALISATION</strong></td>';
                   echo '<td><strong>GITHUB</strong></td>';
                   echo '<td><strong>PHOTO</strong></td>';
                 echo '</tr>';
               while($data = $req2->fetch()){
-                echo '<tr>';
-                  echo '<td><input type="text" name="Nom" value="'.$data["nom"].'" /></td>';
-                  echo '<td><input type="text" name="Prenom" value="'.$data["prenom"].'" /></td>';
-                  echo '<td><input type="text" name="Local" value="'.$data["local"].'" /></td>';
-                  echo '<td><input type="text" name="Github" value="'.$data["gitHub"].'" /></td>';
-                  echo '<td><input type="text" name="photo" value="'.$data["img"].'" /></td>';
-                  echo '<td><select name="suppr/modif">
-                              <option value="suppr" >Supprimer</option>
-                              <option value="modif" >Modifier</option>
-                            </select>
-                        </td>';      
-                  echo '<td><button type="submit" name="id" value="'.$data["id"].'" >Valider</button></td>';
-                echo '</tr>';  
+                if($data["nom"] != ""){
+                  echo '<tr>';
+                    echo '<td><input type="text" name="Nom" value="'.$data["nom"].'" required /></td>';
+                    echo '<td><input type="text" name="Prenom" value="'.$data["prenom"].'" required /></td>';
+                    echo '<td><input type="mail" name="Mail" value="'.$data["mail"].'" required /></td>';
+                    echo '<td><input type="text" name="Local" value="'.$data["local"].'" required /></td>';
+                    echo '<td><input type="text" name="Github" value="'.$data["gitHub"].'" required /></td>';
+                    echo '<td><input type="text" name="photo" value="'.$data["img"].'" required /></td>';
+                    echo '<td><select name="suppr/modif">
+                                <option value="suppr" >Supprimer</option>
+                                <option value="modif" selected >Modifier</option>
+                              </select>
+                          </td>';      
+                    echo '<td><button type="submit" name="id" value="'.$data["id"].'" >Valider</button></td>';
+                  echo '</tr>'; 
+                }else{
+                  echo 'Cet apprenants n\'existe pas';
+                } 
               }
             echo '</table>';  
         echo '</form>';    
