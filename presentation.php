@@ -34,7 +34,7 @@
 
               Ses missions sont de favoriser la mise en action individuelle et collective de la responsabilité sociale/sociétale des entreprises (RSE) ; de mobiliser et coordonner les volontés et initiatives d’engagement social et sociétal des entreprises dans leur territoire ; de développer l’innovation sociale et sociétale avec et pour les entreprises ; d’affirmer la place et le discours des entreprises socialement responsables.</p>
             </div>
-            </div>
+            
             <div>
             <div class="col-md-6 col-xs-12 cadreChro">
             <img src="img/presentation/1993.svg" class="imgPresentation">
