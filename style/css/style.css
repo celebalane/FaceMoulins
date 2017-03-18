@@ -191,7 +191,8 @@ body {
     background-position: 47% 50%; }
 
   .navbar #bottom .container .navbar-nav {
-    text-align: left; }
+    text-align: left;
+    padding-left: 5%; }
 
   .navbar #bottom .container .navbar-nav > li {
     float: none;
@@ -470,6 +471,10 @@ blockquote {
   background-repeat: no-repeat;
   overflow: hidden; }
 
+@media screen and (max-width: 425px) {
+  #listFooter {
+    margin-left: 0%;
+    text-align: center; } }
 /*//////////////////////////////////////////////////////////////////////////////*/
 /*//////////////////////////////SECTIONS////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////////////////////////*/
@@ -650,6 +655,9 @@ aside {
     height: 400px;
     padding-top: 50px;
     line-height: 0.5; } }
+#decalageContact {
+  margin-top: 15%; }
+
 #sectionContact form {
   background-color: rgba(18, 110, 122, 0.6);
   padding: 2%;
@@ -675,7 +683,7 @@ aside {
   margin-bottom: 3%; }
 
 #type {
-  width: 20%; }
+  width: 22%; }
 
 #blocMail {
   margin-left: 13.3%;
@@ -717,6 +725,9 @@ aside {
 #champ {
   margin-left: 9%; }
 
+@media screen and (max-width: 425px) {
+  #decalageContact {
+    margin-top: 50%; } }
 #sectionPartenariat {
   padding: 3%;
   background-color: white;
@@ -977,6 +988,10 @@ small {
     padding: 2%;
     border: 3px solid #e79063; }
 
+@media screen and (max-width: 425px) {
+  #don .row {
+    padding-left: 10%;
+    padding-right: 9%; } }
 @media screen and (max-width: 640px) {
   /*/////////////////////Navigation//////////////////*/
   #boutonDon {
@@ -1256,24 +1271,29 @@ small {
 
   #nomLong {
     margin-left: -10%; } }
-#titreaction {
-  margin-top: 100px; }
-
-#titre {
-  padding-top: 50px; }
-
-#titre1 {
-  padding-top: 50px; }
-
-#titre2 {
-  padding-top: 50px; }
-
-#titre3 {
-  padding-top: 50px; }
-
-#btngrdf {
-  color: #FF8C00;
-  width: 150px; }
-
-p {
+#action h3 {
+  padding-top: 40px;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  color: #e79063;
+  font-size: 2.4em; }
+#action p {
   line-height: 30px; }
+#action video {
+  margin-bottom: 5%; }
+
+#derniereAction {
+  margin-bottom: 5%; }
+
+.btnAction {
+  background-color: #1693A5;
+  color: white;
+  width: 150px; }
+  .btnAction:hover {
+    color: #1693A5; }
+
+@media screen and (max-width: 425px) {
+  #action {
+    padding-left: 4%;
+    padding-right: 3%; } }

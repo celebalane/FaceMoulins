@@ -4,12 +4,11 @@
       if(isset($_SESSION['errors'])){unset($_SESSION["errors"]);}
       if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}
 ?>
-    <div class="container">
-      <div id="decalpresentation"></div>
-      <div class="row" id="presentation">
-        <h1 class="col-md-12 boxtitle titreSection">Présentation</h1>
-
-        <div class="col-md-12 col-xs-12 box">
+  
+    <div class="container" id="decalpresentation">
+      <div class="row" >
+      <h1 class="col-md-12 boxtitle titreSection">Présentation</h1>
+        <div class="col-md-12 col-xs-12 box" id="presentation">
           <div id="container-roll">
             <div class="face-ecr">
               <img id="face-ecr" width="20%" src="img/face_ecrit.png" alt="Objectifs de FACE">

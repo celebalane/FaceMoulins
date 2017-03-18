@@ -37,18 +37,18 @@
 ?>
       <!--Formulaire de contact-->
 
-      <div class="container decalage">
-        <?php if(isset($_SESSION["errors"])){ ?>
-                <div class="alert alert-danger">
-                  <?= $_SESSION["errors"]; ?>
+    <div class="container" id="decalageContact">
+      <?php if(isset($_SESSION["errors"])){ ?>
+          <div class="alert alert-danger">
+            <?= $_SESSION["errors"]; ?>
 
-                </div>
-        <?php }elseif(isset($_SESSION["success"])) { ?>
-                <div class="alert alert-success">
-                  <?= $_SESSION["success"] ?>
-                </div>
-        <?php } ?>
-      </div>
+          </div>
+      <?php }elseif(isset($_SESSION["success"])) { ?>
+          <div class="alert alert-success">
+            <?= $_SESSION["success"] ?>
+          </div>
+      <?php } ?>
+      
 
       <section id="sectionContact">
         <form class="form-horizontal col-md-9 col-md-offset-1 col-xs-12" method="post" action="">
@@ -67,13 +67,13 @@
           <div class="form-group-lg">
             <label for="nom" class="col-sm-2 control-label">Nom *</label>
             <div class="col-sm-10">
-              <input type="text" name="nom" value="<?php echo isset($_SESSION['inputs']['nom'])? $_SESSION['inputs']['nom'] : ''; ?>" placeholder="Ex : Dupond" maxlength="30" class="form-control input-lg" required>
+              <input type="text" name="nom" value="<?php echo isset($_SESSION['inputs']['nom'])? $_SESSION['inputs']['nom'] : ''; ?>" placeholder="Ex : Dupond" maxlength="30" class="form-control input-lg" required />
             </div>
           </div>
           <div class="form-group-lg">
             <label for="prenom" class="col-sm-2 control-label">Prénom *</label>
             <div class="col-sm-10">
-              <input type="text" name="prenom" value="<?php echo isset($_SESSION['inputs']['prenom'])? $_SESSION['inputs']['prenom'] : ''; ?>"  placeholder="Ex : Nicolas" maxlength="30" class="form-control input-lg" required>
+              <input type="text" name="prenom" value="<?php echo isset($_SESSION['inputs']['prenom'])? $_SESSION['inputs']['prenom'] : ''; ?>"  placeholder="Ex : Nicolas" maxlength="30" class="form-control input-lg" required />
             </div>
           </div>
           <div class="form-group-lg">
@@ -86,7 +86,7 @@
             <label for="mail" class="col-sm-2 control-label">Mail *</label>
             <div class="col-sm-10 input-group" id="blocMail">
               <span class="input-group-addon">@</span>
-              <input type="email" name="mail" value="<?php echo isset($_SESSION['inputs']['mail'])? $_SESSION['inputs']['mail'] : ''; ?>" placeholder="Ex : dupond@gmail.com" class="form-control input-lg" required>
+              <input type="email" name="mail" value="<?php echo isset($_SESSION['inputs']['mail'])? $_SESSION['inputs']['mail'] : ''; ?>" placeholder="Ex : dupond@gmail.com" class="form-control input-lg" required />
             </div>
           </div>
           <div class="form-group-lg">
@@ -140,7 +140,6 @@
         </div>
       </section>
     </div>
-    
 <?php
   include("include/footer.php");
 ?>
