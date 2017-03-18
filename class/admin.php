@@ -24,8 +24,6 @@ class Admin {
 			$pass = htmlspecialchars($pass);
 
 			$req= $this->bdd->select('*', "idUsers", 1);
-			$bdd = new Connect("faceMoulins", "root", "");
-			$req=$bdd->select('*', "idUsers", 1);
 			$req -> execute();
 			while($donnees = $req->fetch()){
 				$admin = $donnees["adminName"];

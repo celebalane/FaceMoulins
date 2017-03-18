@@ -6,6 +6,11 @@ $miniHauteu:100px;
 	max-width: 500px;
 }
 #container{ display: flex;}
+
+/*///////////////////////////////////////////////////////////////////
+////////////////////// ADMIN.PHP AJOUTARTICLE.PHP////////////////////////////////////
+///////////////////////////////////////////////////////////////////*/
+
 .connexion{
 	width:400px;
 	height: 400px;
@@ -23,41 +28,13 @@ $miniHauteu:100px;
 		flex-direction: column;
 	}
 }
-#navbar{
-	background-color: #C0C0C0;
-	color: $blanc;
-	height: 1200px;
-}
-#navAdmin li {
-	text-align: center;
-	width: 100%;
-	border: 1px inset black;
 
-	a{
-		color: $blanc;
-		line-height: 50px;
-		text-transform: uppercase;
+/*::::::::::::: ajoutArticle.php ::::::::::::::::::::*/
 
-		&:hover{
-			text-decoration: none;
-		}
-	}
-}
-.admin{
-	margin: 10px;
-}
-#sectionAdmin{
-	padding: 50px;
-}
 #visualisation{
 	margin-top: 100px;
 	text-align: center;
 	width: 50%;
-}
-#paragraphe{
-	min-width: $miniLarge;
-	min-height: $miniHauteu;
-	@include maxDimension;
 }
 #paragrapheVisuel{
 	min-height: $miniHauteu;
@@ -67,10 +44,26 @@ $miniHauteu:100px;
 	background-color: transparent;
 	margin: auto;
 }
+#paragraphe{
+	min-width: $miniLarge;
+	min-height: $miniHauteu;
+	@include maxDimension;
+}
+
+/*/////////////////////////////////////////////////////////////////////////
+///////////////////////// AJOUTE\AFFICHEARTICLE.PHP ///////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+
+#sectionAdmin{
+	padding: 50px;
+}
 #sectionArticle{
 	display: flex;
 	flex-wrap: wrap;
 }
+
+/* ajoutArticle quand clique sur "Gérer les publications" */
+
 #articleAdmin{
 	width: 33%;
 	height: 100%;

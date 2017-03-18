@@ -33,50 +33,6 @@
 				$bdd->connectBDD();
 				$bdd->connectAdmin($_POST["login"], $_POST["password"]);
 				$bdd->clearBDD();
-				
-					?>
-					<!-- <div class="row">
-						<nav id="navbar" class="col-md-3">
-							<ul id="navAdmin" class="list-unstyled">
-								<li><a href="#" id="newsLetter">Newsletter</a></li>
-								<li><a href="#">Partenaire</a></li>
-								<li><a href="#" id="changeImage">Articles</a></li>
-								<li><a href="#" id="ajoutImage">Gallerie</a></li>
-								<li><a href="#" id="adminFabrik">Fabrik</a></li>
-								<li><a href="#" id="changePassword">AdminPassword</a></li>
-								<li><a href="#" id="exits">Se déconnecter</a></li>
-							</ul>
-						</nav>		
-						<section id="sectionAdmin" class="col-md-9 text-center" >
-							<script>
-								$("#changePassword").on("click", function(e){
-									e.preventDefault();
-									go("password");
-								});
-								$("#changeImage").on("click", function(e){
-									e.preventDefault();
-									go("imageArticle");
-								});
-								$("#ajoutImage").on("click", function(e){
-									e.preventDefault();
-									go("ajoutImage");
-								});
-								$("#validArticle").on("click", function(e){
-									e.preventDefault();
-									go("article");
-								});
-								$("#newsLetter").on("click", function(e){
-									e.preventDefault();
-									go("newsLetter");
-								});
-								$("#adminFabrik").on("click", function(e){
-									e.preventDefault();
-									go("adminFabrik");
-								});
-							</script>	
-						</section>
-					</div>	 -->
-			<?php 
 		}
 		else if(!isset($_POST["password"]) OR !isset($_POST["login"]) OR !isset($_SESSION["password"]) OR !isset($_SESSION["login"]) OR $_SESSION["password"] = "" OR $_SESSION["login"] == "" OR $_SESSION["password"] != $password OR $_SESSION["login"] != $admin ){
 				?>
