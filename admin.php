@@ -3,7 +3,8 @@
 	session_start();
 	$admin ="";
 	$password="";
-	session_destroy(); 
+	if(isset($_SESSION['login'])){unset($_SESSION["login"]);}
+	if(isset($_SESSION['password'])){unset($_SESSION["password"]);} 
 	if(isset($_GET["bye"])){
 		header("location:index.php");
 	}
@@ -85,8 +86,12 @@
 						<input type="mail" name="login" class="login" placeholder="Login" required />
 						<input type="password" name="password" class="password" placeholder="Mot de passe" required />
 						<button type="submit">Se connecter</button>
-					</form>	
-					<a href="include/changePassword.php?change=true">Changer de mot de passe </a>
+					</form>
+					<?php
+						if(isset($_SESSION["connexion"])){	
+							echo '<a href="include/changePassword.php?change=true">Changer de mot de passe </a>';
+						}
+					?>	
 					<a href="index.php"> Retour sur le site</a>	
 				</div>
 			<?php
@@ -105,4 +110,6 @@
 		</script>
 	</body>
 </html>
+
+	<?php if(isset($_SESSION['connexion'])){unset($_SESSION["connexion"]);} ?>
 
