@@ -183,6 +183,22 @@ function goXHR(){
 		   	document.getElementById("mailer").value = "Veuillez entrer un adresse mail valide";
 		}
 }
+function go(page){
+	var xhr = getXHR();
+	xhr.onreadystatechange = function(){
+		if(xhr.readyState == 4 && xhr.status == 200){
+			var reponse = xhr.response;
+			document.getElementById("filActu").innerHTML = reponse;
+		}
+	}
+	if(page==0 || page!=0){
+		xhr.open("POST","include/pagesArticle.php", true)
+		xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+		xhr.send("page="+(page));
+	}
+	
+	return false;
+}
 
 ///////////////////draG galery///////////////////
 $(document).ready(function(){

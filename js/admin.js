@@ -73,9 +73,10 @@ function go(page){
 			else
 				texte += para[i];
 		}
-		titre = document.getElementById("TitreArticle").value;
+		// titre = document.getElementById("TitreArticle").value;
 		articleBdd = new Array;
-		articleBdd.push(titre); articleBdd.push(image); articleBdd.push(texte);
+		// articleBdd.push(titre);
+		articleBdd.push(image); articleBdd.push(texte);
 		xhr.send("contentArticle="+articleBdd);
 	}
 	else if(page=="afficherArticle"){
@@ -124,9 +125,9 @@ function go(page){
 		
 }
 function visual(){
-	document.getElementById("TitreArticle").addEventListener("input", function(){
-		document.getElementById("titre").innerHTML = "<h1>"+escapeHtml(document.getElementById("TitreArticle").value)+"</h1>";
-	});
+	// document.getElementById("TitreArticle").addEventListener("input", function(){
+	// 	document.getElementById("titre").innerHTML = "<h1>"+escapeHtml(document.getElementById("TitreArticle").value)+"</h1>";
+	// });
 	document.getElementById("fichier").addEventListener("blur", function(){
 		document.getElementById("image").innerHTML == "<img src='"+document.getElementById("fichier").value+"'/>";
 	});

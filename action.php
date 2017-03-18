@@ -1,4 +1,8 @@
-<?php include("include/header.php");?>
+<?php 
+    include("include/header.php");
+    if(isset($_SESSION['success'])){unset($_SESSION["success"]);}
+    if(isset($_SESSION['errors'])){unset($_SESSION["errors"]);}
+    if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}?>
 
 <div class="container" id="decalpresentation">
 <h1 class="col-md-12 boxtitle titreSection" id="titreaction"><i class="fa fa-info-circle" aria-hidden="true"></i>Action</h1>

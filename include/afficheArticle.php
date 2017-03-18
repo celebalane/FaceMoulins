@@ -14,7 +14,7 @@
 	}elseif(isset($_GET["del"])){
 		$bdd->isPublish($_GET["del"]);
 	}
-	$req = $bdd->getBDD()->select('*', 'Articles');
+	$req = $bdd->getBDD()->select('*', 'Articles ORDER BY id DESC');
 	echo '<a href="ajoutArticle.php"> Retour</a>';
 	echo '<section id="sectionArticle">';
 	while($donnees = $req->fetch()){

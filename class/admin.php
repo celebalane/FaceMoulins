@@ -49,29 +49,29 @@ class Admin {
 			$contentArticle = explode(",", $content);
 			$imagecode="";
 			$texte="";
+			for($i=0; $i<strlen($contentArticle[0]); $i++){
+				if($contentArticle[0][$i] != " "){
+					$imagecode .= $contentArticle[0][$i];
+				}else
+					$imagecode .="+";
+			}
+			$imagecode.=",";
 			for($i=0; $i<strlen($contentArticle[1]); $i++){
 				if($contentArticle[1][$i] != " "){
 					$imagecode .= $contentArticle[1][$i];
 				}else
 					$imagecode .="+";
 			}
-			$imagecode.=",";
-			for($i=0; $i<strlen($contentArticle[2]); $i++){
-				if($contentArticle[2][$i] != " "){
-					$imagecode .= $contentArticle[2][$i];
-				}else
-					$imagecode .="+";
-			}
-			for($i=0;$i<strlen($contentArticle[3]);$i++){
-				if($contentArticle[3][$i] == "@" AND $contentArticle[3][$i+1] == ".")
+			for($i=0;$i<strlen($contentArticle[2]);$i++){
+				if($contentArticle[2][$i] == "@" AND $contentArticle[2][$i+1] == ".")
 					$texte .= ",";
-				elseif($contentArticle[3][$i] == "." AND $contentArticle[3][$i-1] == "@")
+				elseif($contentArticle[2][$i] == "." AND $contentArticle[2][$i-1] == "@")
 					$texte .= " ";
 				else
-					$texte .= $contentArticle[3][$i];
+					$texte .= $contentArticle[2][$i];
 			}
 			if(isset($contentArticle[0]) AND isset($contentArticle[1]) AND isset($contentArticle[2])){
-				$req = $this->bdd->insertInto("Articles", array('titre=?, img=?, texte=?'), array($contentArticle[0], $imagecode, $texte));
+				$req = $this->bdd->insertInto("Articles", array(/*'titre=?, */'img=?, texte=?'), array(/*$contentArticle[0],*/ $imagecode, $texte));
 			}
 		}
 
