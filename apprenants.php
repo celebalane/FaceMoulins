@@ -87,6 +87,7 @@
     <form action="" method="POST" class="text-center">
       <input type="text" placeholder="Nom de l'apprenant à modifier" name="apprenant"/>
       <button type="submit">Valider</button>
+      <p><small>Pour ajouter un apprenant, validez sans renseigner le champs ci-dessus</small></p>
     </form>
 <?php }elseif(isset($_POST["apprenant"]) AND !isset($req2)){
           echo '<form action ="" method="POST" enctype="multipart/form-data" >';
