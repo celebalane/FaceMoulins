@@ -1,0 +1,39 @@
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //-------------------------------------------------------ACTION--------------------------------------------------------//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#action{
+	h3{
+		padding-top: 40px;
+		text-align: center;
+		font-weight: 600;
+		font-style: italic;
+		color: $color_default;
+		font-size: 2.4em;
+	}
+	p{
+	line-height: 30px;
+	}
+	video{
+		margin-bottom:5%;
+	}
+}
+
+#derniereAction{
+	margin-bottom:5%;
+}
+
+.btnAction{
+	background-color:#1693A5;
+	color: white;
+	width: 150px;
+	&:hover{
+		color:#1693A5;
+	}
+}
+
+@media screen and (max-width: 425px){
+	#action{
+		padding-left:4%;
+		padding-right:3%;
+	}
+}

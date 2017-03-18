@@ -12,6 +12,9 @@
 	@include centreFlex;
 	justify-content: space-between;
 }
+#btndonnav{
+	display:none;
+}
 
 .navbar #top img{ /* Logo FACE */
 	width: 300px;
@@ -127,6 +130,9 @@
 	padding-left:10%;
 	float: left;
 }
+#btndonnav{
+	display: none;
+}
 
 /////////////////////// PARAMÈTRES RESPONSIVE ///////////////////
 @media screen and (max-width: 1024px){
@@ -142,6 +148,7 @@
 
 	.navbar #bottom .container .navbar-nav {
 		text-align: left;
+		padding-left:5%;
 	}
 
 	.navbar #bottom .container .navbar-nav > li {

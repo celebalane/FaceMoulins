@@ -197,7 +197,7 @@
 	right: 20px;
 	display:none;
 	line-height: 1.5;
-	border-radius: 100%;
+	border-radius: 200px;
 }
 
 .back-to-top.btn-primary{ /* Style bouton scroll-to-top */
@@ -236,7 +236,10 @@
 ////////////////////////RESPONSIVE FOOTER/////////////////////////
 @media screen and (max-width: 768px){
 
-  #footer{ text-align: center;}
+  #footer{ 
+  	text-align: center;
+
+  }
   #mailDiv{ margin: auto;}
 }
 #back_gal{
@@ -245,4 +248,10 @@
 		repeat: no-repeat;
 	}
 	overflow: hidden;	
+}
+@media screen and (max-width: 425px){
+	#listFooter{
+		margin-left: 0%;
+		text-align:center;
+	}
 }

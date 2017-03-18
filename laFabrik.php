@@ -1,4 +1,9 @@
-<?php include("include/header.php");?>
+<?php 
+	include("include/header.php");
+    if(isset($_SESSION['success'])){unset($_SESSION["success"]);}
+    if(isset($_SESSION['errors'])){unset($_SESSION["errors"]);}
+    if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}
+?>
 <div class="container decalage">
 <h1 class="titreSection col-md-9 col-xs-12">La Fabrik</h1>
 <div id="sectionFabrik">

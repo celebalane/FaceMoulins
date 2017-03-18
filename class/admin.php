@@ -7,21 +7,23 @@ class Admin {
 	public function getBDD(){
 		return $this->bdd;
 	}
-	function connectBDD(){
+	public function connectBDD(){
 		$this->bdd = new Connect("faceMoulins", "root", "");
 	}
-	function clearBDD(){
+	public function clearBDD(){
 		$this->bdd = NULL;
 	}
 
-	function connectAdmin($pseudo, $pass){
+	public function select($what, $where, $limite=0, $si="0", $condition="1"){
+		return $this->bdd->select($what, $where, $limite=0, $si="0", $condition="1");
+	}
+
+	public function connectAdmin($pseudo, $pass){
 		if(isset($pseudo) && isset($pass)){
 			$pseudo = htmlspecialchars($pseudo);
 			$pass = htmlspecialchars($pass);
 
 			$req= $this->bdd->select('*', "idUsers", 1);
-			$bdd = new Connect("faceMoulins", "root", "");
-			$req=$bdd->select('*', "idUsers", 1);
 			$req -> execute();
 			while($donnees = $req->fetch()){
 				$admin = $donnees["adminName"];
@@ -39,35 +41,36 @@ class Admin {
 
 	}
 
-	function createArticle($content){
+	public function createArticle($content){
 		if(isset($content)){
 			$contentArticle = $content;
 			$contentArticle = explode(",", $content);
 			$imagecode="";
 			$texte="";
+			for($i=0; $i<strlen($contentArticle[0]); $i++){
+				if($contentArticle[0][$i] != " "){
+					$imagecode .= $contentArticle[0][$i];
+				}else
+					$imagecode .="+";
+			}
+			$imagecode.=",";
 			for($i=0; $i<strlen($contentArticle[1]); $i++){
 				if($contentArticle[1][$i] != " "){
 					$imagecode .= $contentArticle[1][$i];
 				}else
 					$imagecode .="+";
 			}
-			$imagecode.=",";
-			for($i=0; $i<strlen($contentArticle[2]); $i++){
-				if($contentArticle[2][$i] != " "){
-					$imagecode .= $contentArticle[2][$i];
-				}else
-					$imagecode .="+";
-			}
-			for($i=0;$i<strlen($contentArticle[3]);$i++){
-				if($contentArticle[3][$i] == "@" AND $contentArticle[3][$i+1] == ".")
+			for($i=0;$i<strlen($contentArticle[2]);$i++){
+				if($contentArticle[2][$i] == "@" AND $contentArticle[2][$i+1] == ".")
 					$texte .= ",";
-				elseif($contentArticle[3][$i] == "." AND $contentArticle[3][$i-1] == "@")
+				elseif($contentArticle[2][$i] == "." AND $contentArticle[2][$i-1] == "@")
 					$texte .= " ";
 				else
-					$texte .= $contentArticle[3][$i];
+					$texte .= $contentArticle[2][$i];
 			}
 			if(isset($contentArticle[0]) AND isset($contentArticle[1]) AND isset($contentArticle[2])){
-				$req = $this->bdd->insertInto("Articles", array('titre=?, img=?, texte=?'), array($contentArticle[0], $imagecode, $texte));
+
+				$req = $this->bdd->insertInto("Articles", array(/*'titre=?,*/' img=?, texte=?'), array(/*$contentArticle[0],*/ $imagecode, $texte));
 			}
 		}
 
@@ -88,13 +91,14 @@ class Admin {
 	}
 
 	public function showsArticle(){
-		$req = $this->bdd->select('*', 'Articles', 0, 'publish', 'yes');
+		$req = $this->bdd->select('*', 'Articles', 0, 'publish=? ORDER BY id DESC', 'yes');
 		return $req;
 	}
 
-	public function updateArticle($what, $where, $array1, $array2){
-		$req=$this->bdd->update($what, $where, $array1, $array2);
-		echo '<script>alert("Article modifié avec succès");</script>';
+	public function update($what, $where, $array1, $array2, $limit=0){
+		$req=$this->bdd->update($what, $where, $array1, $array2, $limit);
+		echo $limit=0 ?'<script>alert("Article modifié avec succès");</script>' : "";
+		return $req;
 	}
 
 	public function ajoutEntreprise($entreprise){

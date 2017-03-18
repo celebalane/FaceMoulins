@@ -1,6 +1,5 @@
 <?php
   session_start();
-
   $captcha="";
   $captchaString ="abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   $captchaString = str_split($captchaString);
@@ -8,42 +7,51 @@
   for($i=0; $i<5; $i++){
     $captcha .= $captchaString[$i];
   }
+  if(isset($_SESSION["errors"]) OR isset($_SESSION["success"])){
+    $_SESSION["toEmptySession"]=true;
+  }
   if(!isset($_POST["code"])){
     $_SESSION["code"] = $captcha;
   }
   else if($_POST["code"] != $_SESSION["code"] OR $_POST["code"] == ""){
+      var_dump($_SESSION["code"]);
       $_SESSION["code"] = $captcha;
     }
   if(isset($_POST["code"])){
-    if(htmlspecialchars($_POST["code"]) == $_SESSION["code"]){
+    if(htmlspecialchars($_POST["code"]) == $_SESSION["code"]){ 
+      $_POST["code"] = false;    
       include('formulaire.php');
-      session_destroy();
-      $_POST["code"] = "";      
-    }else if (htmlspecialchars($_POST["code"]) != "" AND htmlspecialchars($_POST["code"]) != $_SESSION["code"]){
-      $connec = "Erreur";
+    }else if (htmlspecialchars($_POST["code"]) != "" AND htmlspecialchars($_POST["code"]) != $_SESSION["code"] AND $_POST["code"] != false){
+      if(isset($_SESSION['success'])){unset($_SESSION["success"]);}
+      $_SESSION["errors"] = "Erreur de caractères pour le capchat";
+      $_SESSION['inputs'] = $_POST;
     }
   } 
+  if(isset($_GET['sujet'])){
+    if($_GET['sujet'] == 3){
+      $select=3;
+    }
+  }
 
   include("include/header.php");
 ?>
-
       <!--Formulaire de contact-->
 
-      <div class="container decalage2">
-        <?php if(array_key_exists('errors',$_SESSION)): ?>
-        <div class="alert alert-danger">
-          <?= implode('<br>', $_SESSION['errors']); ?>
-        </div>
-        <?php endif; ?>
-        <?php if(array_key_exists('success',$_SESSION)): ?>
-        <div class="alert alert-success">
-          Votre message a bien été envoyé !
-        </div>
-      <?php endif; ?>
-      </div>
+    <div class="container" id="decalageContact">
+      <?php if(isset($_SESSION["errors"])){ ?>
+          <div class="alert alert-danger">
+            <?= $_SESSION["errors"]; ?>
+
+          </div>
+      <?php }elseif(isset($_SESSION["success"])) { ?>
+          <div class="alert alert-success">
+            <?= $_SESSION["success"] ?>
+          </div>
+      <?php } ?>
+      
 
       <section id="sectionContact">
-        <form class="form-horizontal col-md-9 col-md-offset-1 col-xs-12" method="post">
+        <form class="form-horizontal col-md-9 col-md-offset-1 col-xs-12" method="post" action="">
           <h2>Contact</h2>
           <p>Pour une demande d'adhésion ou toute autres questions, veuillez remplir le formulaire. Nous vous recontacterons dans les plus brefs délais.</p>
           <div class="form-group-lg">
@@ -59,13 +67,13 @@
           <div class="form-group-lg">
             <label for="nom" class="col-sm-2 control-label">Nom *</label>
             <div class="col-sm-10">
-              <input type="text" name="nom" value="<?php echo isset($_SESSION['inputs']['nom'])? $_SESSION['inputs']['nom'] : ''; ?>" placeholder="Ex : Dupond" maxlength="30" class="form-control input-lg" required>
+              <input type="text" name="nom" value="<?php echo isset($_SESSION['inputs']['nom'])? $_SESSION['inputs']['nom'] : ''; ?>" placeholder="Ex : Dupond" maxlength="30" class="form-control input-lg" required />
             </div>
           </div>
           <div class="form-group-lg">
             <label for="prenom" class="col-sm-2 control-label">Prénom *</label>
             <div class="col-sm-10">
-              <input type="text" name="prenom" value="<?php echo isset($_SESSION['inputs']['prenom'])? $_SESSION['inputs']['prenom'] : ''; ?>"  placeholder="Ex : Nicolas" maxlength="30" class="form-control input-lg" required>
+              <input type="text" name="prenom" value="<?php echo isset($_SESSION['inputs']['prenom'])? $_SESSION['inputs']['prenom'] : ''; ?>"  placeholder="Ex : Nicolas" maxlength="30" class="form-control input-lg" required />
             </div>
           </div>
           <div class="form-group-lg">
@@ -78,19 +86,23 @@
             <label for="mail" class="col-sm-2 control-label">Mail *</label>
             <div class="col-sm-10 input-group" id="blocMail">
               <span class="input-group-addon">@</span>
-              <input type="email" name="mail" value="<?php echo isset($_SESSION['inputs']['mail'])? $_SESSION['inputs']['mail'] : ''; ?>" placeholder="Ex : dupond@gmail.com" class="form-control input-lg" required>
+              <input type="email" name="mail" value="<?php echo isset($_SESSION['inputs']['mail'])? $_SESSION['inputs']['mail'] : ''; ?>" placeholder="Ex : dupond@gmail.com" class="form-control input-lg" required />
             </div>
           </div>
           <div class="form-group-lg">
             <label for="sujet" class="col-sm-2 control-label" id="sujetLabel">Sujet *</label>
             <div class="col-sm-10">
-              <input type="text" name="sujet" value="<?php echo isset($_SESSION['inputs']['sujet'])? $_SESSION['inputs']['sujet'] : ''; ?>" placeholder="ex: Renseignements" maxlength="40" class="form-control input-lg" id="sujet" required>
+              <select class="form-control" id="sujet" name="sujet">
+                <option value="Contact">Contact</option>
+                <option value="Demande de Renseignement">Demande de Renseignement</option>
+                <option value="Faire un Don" <? if(isset($select)){echo "selected";} ?>>Faire un Don</option>
+              </select>
             </div>
           </div>
           <div class="form-group-lg">
             <label for="message" class="col-sm-2 control-label" id="labelZone">Message *</label>
             <div class="col-sm-10 input-group">
-              <textarea name="message" placeholder="Votre message" value="<?php echo isset($_SESSION['inputs']['message'])? $_SESSION['inputs']['message'] : ''; ?>" maxlength="500" rows="9" class="form-control input-lg" id="zoneTexte" required></textarea>
+              <textarea name="message" placeholder="Votre message" maxlength="500" rows="9" class="form-control input-lg" id="zoneTexte" required><?php echo isset($_SESSION['inputs']['message'])? $_SESSION['inputs']['message'] : ''; ?></textarea>
             </div>
           </div>
           <div class="form-group-lg">
@@ -104,9 +116,6 @@
               <p id="code"><img src="include/captcha.php" alt="captcha"/></p>
               <p id="champ">*Champs obligatoire</p>
             <?php 
-              }
-              if(isset($connec)){
-                echo $connec;
               }
             ?>
           </div>
@@ -131,11 +140,6 @@
         </div>
       </section>
     </div>
-    
 <?php
   include("include/footer.php");
-
-  unset($_SESSION['inputs']); // on nettoie les données précédentes
-  unset($_SESSION['success']);
-  unset($_SESSION['errors']);
 ?>

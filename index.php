@@ -1,12 +1,20 @@
 <?php 
+  include("include/header.php");
+  if(isset($_SESSION['success'])){unset($_SESSION["success"]);}
+  if(isset($_SESSION['errors'])){unset($_SESSION["errors"]);}
+  if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}
+  
   require_once("class/admin.php");
   $bdd = new Admin();
   $bdd->connectBDD();
   $req = $bdd->showsArticle();
 
-
-
-  include("include/header.php");?>
+  if(!isset($_GET["page"])){
+    $page=0;
+  }else{
+    $page=$_GET["page"];
+  }
+?>
 
 <!--Citation-->
 <div class="container col-md-12" id="decalageAccueil">
@@ -28,19 +36,34 @@
   ?></h1>   
 	<section class="col-md-9 col-xs-12 col-sm-7" id="filActu">
     <!--Article 1-->
-     <?php $i=0;
+     <?php $i=0; $j=$page;
         while($data = $req->fetch()){
-          echo $i == 1 ? "<article class='articles' id='dernierArticle'>" : "<article class='articles'>";
-            echo "<div class='row'>";
-              echo "<img src='".$data["img"]."' class='col-md-7 col-xs-1 col-sm-7' alt='reunion' />";
-              echo "<div class='col-md-5 col-xs-10 col-sm-12'>";
-                echo $data["texte"];
-              echo "</div>";
-            echo "</div>";
-          echo "</article>";      
-          $i++;
+          if($i >= $page){
+            if($j < ($page + 2)){
+              echo $j == ($page+1) ? "<article class='articles' id='dernierArticle'>" : "<article class='articles'>";
+                echo "<div class='row'>";
+                  echo "<img src='".$data["img"]."' class='col-md-7 col-xs-1 col-sm-7' alt='reunion' />";
+                  echo "<div class='col-md-5 col-xs-10 col-sm-12'>";
+                    echo $data["texte"];
+                  echo "</div>";
+                echo "</div>";
+              echo "</article>"; 
+            } 
+            $j++; 
+          } 
+        $i++;
+      }
+      $i=($i)/2;
+      echo "<div id='pagesArticle'>";
+      for($j=0; $j<$i; $j++){
+        if($j==0){
+          echo "<p onclick='go(".($j).");'>".($j+1)."</p>";
+        }else{
+          echo "<p onclick='go(".($j+1).");'>".($j+1)."</p>";
         }
-        ?>
+      }
+      echo "</div>";
+    ?>
      <!--  <div class="row">
         <img src="img/accueil/articles/imgactu1.jpg" class="col-md-7 col-xs-1 col-sm-7" alt="reunion" />
         <div class="col-md-5 col-xs-10 col-sm-12">
