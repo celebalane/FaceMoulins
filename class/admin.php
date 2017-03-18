@@ -97,4 +97,60 @@ class Admin {
 		echo '<script>alert("Article modifié avec succès");</script>';
 	}
 
+	public function ajoutEntreprise($entreprise){
+		for ($i=0; $i < count($entreprise) ; $i+=4) { 
+			echo '<div class="row">';
+			//pour mettre 4 img par ligne
+			for ($j=0; $j < 4; $j++) { 
+				//vérif si présent dans le tableau à index $i+$j et vérif partenaire = entreprise
+				if(isset($entreprise[$i+$j])){
+					echo	'<div class="col-md-3 col-sm-3">
+									<a href="'.$entreprise[$i+$j][1].'">	
+									<img src="'.$entreprise[$i+$j][0].'" class="center-block logo" alt="AG2R" /></a>
+								</div>';
+				}
+			}
+		echo '</div>';
+		}
+	}
+	public function ajoutInstitution($institution){
+		for ($i=0; $i < count($institution) ; $i+=2) { //au pas de 2
+			echo '<div class="row institution">';	
+			for ($j=0; $j < 2; $j++) { //3 particuliers par ligne
+				if (isset($institution[$i+$j])){
+					if ($institution[$i][0]==3) {// vérif partenaire = institution
+						echo'<div class="col-md-4 col-sm-4 col-xs-12">
+									<h3>'.$institution[$i+$j][1].'</h3>
+									<p>'.$institution[$i+$j][2].'</p>
+								</div>
+								<div class="col-md-2 col-sm-2 col-xs-12">
+									<a href="'.$institution[$i+$j][4].'">
+									<img src="'.$institution[$i+$j][3].'" class="center-block logo" alt="'.$institution[$i+$j][1].'" /></a>
+								</div>
+								';
+					}
+				}
+			}
+		echo '</div>';
+		}
+	}
+	public function ajoutParticulier($particulier){
+		for ($i=0; $i < count($particulier) ; $i+=3) { 
+			echo '<div class="row">';
+			for ($j=0; $j < 3; $j++) { //3 particuliers par ligne
+				if(isset($particulier[$i+$j])){	// vérif partenaire = particulier
+					if ($particulier[$i+$j][0]==4){
+						echo	'<div class="col-md-3 col-sm-3">
+									<h3>'.$particulier[$i+$j][1].'</h3>
+									<p>'.$particulier[$i+$j][2].'<br />
+									<strong>date d\'entrée</strong> </br> '.$particulier[$i+$j][4].'</p>
+									<img src="'.$particulier[$i+$j][3].'" class="photo" alt="'.$particulier[$i+$j][1].'" />
+								</div>';
+					}
+				}
+			}
+		echo '</div>';
+		}
+		
+	}
 }

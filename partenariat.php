@@ -1,8 +1,18 @@
-<?php include("include/header.php");?>
+<?php 
+require_once("class/admin.php");
+
+include("include/header.php");?>
 <div class="container decalage">
 <div class="row">
 	<!--Partenariats-->
-	<h1 class="titreSection col-md-12 col-sm-12">Partenariats</h1>
+	<h1 class="titreSection col-md-12 col-sm-12">Partenariats
+		<?php
+			if(isset($_SESSION["connexion"])){
+				//du css dans le html du php ====> J'AIME!!!!
+				echo '<a href="include/ajoutPartenaire.php"><button class="btn btn-primary" style="box-shadow: 1px 1px 2px black; margin-right:10px; text-shadow:1px 1px 2px black;">Gestion des partenaires</button></a>';
+    		}
+		?>
+	</h1>
 	<section class="col-md-12 col-sm-12" id="sectionPartenariat">
 		<!--Entreprise-->
 		<div class="col-md-12">
@@ -13,24 +23,14 @@
 			
 
 		<?php
-			$pdo = new PDO('mysql:dbname=faceMoulins;host=localhost;charset=utf8', 'root', '');
-			$statement = $pdo->query('SELECT img, URL_site,type_id FROM imgPartenaires');
+			
+			$pdo = new Admin();
+			$pdo->connectBDD();
+			$statement = $pdo->getBDD()->select('img, URL_site,type_id','imgPartenaires',0,'type_id', 1);
 			$entreprise	=  $statement->fetchAll();
-			
 
-			echo '<div class="row">';
-			
-			for ($i=0; $i < count($entreprise) ; $i++) { 
-				
-				if ($entreprise[$i][2]==2) {	// vérif partenaire = entreprise
-				
-				echo	'<div class="col-md-3 col-sm-3">
-							<a href="'.$entreprise[$i][1].'">	
-							<img src="'.$entreprise[$i][0].'" class="center-block logo" alt="AG2R" /></a>
-						</div>';
-				}
-			}
-			echo '</div>';
+			$pdo->ajoutEntreprise($entreprise);
+
 
 		?>
 
@@ -99,24 +99,11 @@
 				
 
 		<?php
-			$pdo = new PDO('mysql:dbname=faceMoulins;host=localhost;charset=utf8', 'root', '');
-			$statement = $pdo->query('SELECT img, URL_site,type_id FROM imgPartenaires');
+		
+			$statement = $pdo->getBDD()->select('img, URL_site,type_id','imgPartenaires',0,'type_id', 2);
 			$association	=  $statement->fetchAll();
-			
-			echo '<div class="row">';
-			
-			for ($i=0; $i < count($association) ; $i++) { 
-				
-				if ($association[$i][2]==1) {	// vérif partenaire = entreprise
-				
-				echo	'<div class="col-md-3 col-sm-3">
-							<a href="'.$association[$i][1].'">	
-							<img src="'.$association[$i][0].'" class="center-block logo" alt="AG2R" /></a>
-						</div>';
-				}
-			}
 
-			echo '</div>';
+			$pdo->ajoutEntreprise($association);
 
 		?>
 
@@ -210,56 +197,21 @@
 				</div>
 			</div>
 		<?php
+			$statement = $pdo->getBDD()->select("
+				Partenaires.type_id,
+				Partenaires.nom, 
+				Partenaires.texte, 
+				imgPartenaires.img,
+				imgPartenaires.URL_site",
+				"Partenaires, imgPartenaires",
+				0,
+				"Partenaires.img_id=imgPartenaires.id AND 
+				Partenaires.URL_id=imgPartenaires.id");
 
-			$statement = $pdo->query("
-				SELECT 	Partenaires.type_id,
-						Partenaires.nom, 
-						Partenaires.texte, 
-						imgPartenaires.img,
-						imgPartenaires.URL_site
-				FROM 	Partenaires, imgPartenaires
-				WHERE 	Partenaires.img_id=imgPartenaires.id AND 
-						Partenaires.URL_id=imgPartenaires.id ");
 			$institution =  $statement->fetchAll();
 			
-			//echo '<pre>';
-			//var_dump($institution[0]);
-			//echo '</pre>';
-			
-			
-	for ($i=0; $i < count($institution) ; $i+=2) { //au pas de 2
-				
-		if ($institution[$i][0]==3) {	// vérif partenaire = institution
-			
-			if ($i%2==0) { //si index paire alors ouverture ligne bootstrap (car 2partenaires par ligne)
-				echo '<div class="row institution">';
-			}	
-
-			echo'<div class="col-md-4 col-sm-4 col-xs-12">
-							<h3>'.$institution[$i][1].'</h3>
-							<p>'.$institution[$i][2].'</p>
-						</div>
-						<div class="col-md-2 col-sm-2 col-xs-12">
-							<a href="'.$institution[$i][4].'">
-							<img src="'.$institution[$i][3].'" class="center-block logo" alt="'.$institution[$i][1].'" /></a>
-						</div>
-						';
-				if (isset($institution[$i+1])) {	//vérif si quelques chose (a cause du $i+1)
-					echo'	<div class="col-md-4 col-sm-4 col-xs-12">
-								<h3>'.$institution[$i+1][1].'</h3>
-								<p>'.$institution[$i+1][2].'</p>
-							</div>
-							<div class="col-md-2 col-sm-2 col-xs-12">
-								<a href="'.$institution[$i+1][4].'">
-								<img src="'.$institution[$i+1][3].'" class="center-block logo" alt="'.$institution[$i+1][1].'" /></a>
-							</div>';
-				}
-			}
-			if ($i%2==0) {	//fermeture ligne
-			 	echo '</div>';
-			 }
-		}
-
+			$pdo->ajoutInstitution($institution);
+	
 		?>
 	
 
@@ -418,41 +370,19 @@
 	<h4>Pour nos donateurs particuliers, si vous souhaitez apparaitre sur cette page, vous pouvez nous contactez <a href="contact.html">ici</a></h4>
 
 	<?php 
+			$statement = $pdo->getBDD()->select("
+				Partenaires.type_id,
+				Partenaires.nom, 
+				Partenaires.texte, 
+				imgPartenaires.img,
+				Partenaires.date",
+				"Partenaires, imgPartenaires",
+				0,
+				"Partenaires.img_id=imgPartenaires.id");
 
-			$statement = $pdo->query("
-				SELECT 	Partenaires.type_id,
-						Partenaires.nom, 
-						Partenaires.texte, 
-						imgPartenaires.img,
-						Partenaires.date
-				FROM 	Partenaires, imgPartenaires
-				WHERE 	Partenaires.img_id=imgPartenaires.id ");
 			$particulier =  $statement->fetchAll();
-			
-			//echo '<pre>';
-			//var_dump($particulier[0]);
-			//echo '</pre>';
 
-			echo '<div class="row">';
-			
-			for ($i=0; $i < count($particulier) ; $i++) { 
-				
-				if ($particulier[$i][0]==4) {	// vérif partenaire = entreprise
-				
-				echo	'<div class="col-md-3 col-sm-3">
-							<h3>'.$particulier[$i][1].'</h3>
-							<p>'.$particulier[$i][2].'<br />
-							<strong>date d\'entrée</strong> </br> '.$particulier[$i][4].'</p>
-							<img src="'.$particulier[$i][3].'" class="photo" alt="'.$particulier[$i][1].'" />
-						</div>';
-				}
-			}
-			echo '</div>';
-
-
-
-
-
+			$pdo->ajoutParticulier($particulier);
 	?>
 
 
@@ -464,28 +394,6 @@
 		<img src="http://external-images.premiere.fr/var/premiere/storage/images/series/news-series/dexter-eli-stone-en-personne-dans-la-saison-5-2357793/34818104-1-fre-FR/Dexter-Eli-Stone-en-personne-dans-la-saison-5.jpg" class="photo" alt="Personne fictif 1" />
 	</div>
 	-->
-
-	<?php
-		//if(isset($_SESSION["connexion"])){
-			$statement = $pdo->query('SELECT id, type FROM typePartenaires');
-			$typePartenaires=  $statement->fetchAll();
-      	echo '
-			<form class="form form-group">
-				<select class="">
-					<option value="">--choix du partenaire--</option>';
-					foreach ($typePartenaires as $value) {
-						echo '<option value="'.$value->id.'">'.$value->type.'</option>';
-					}
-		echo '	</select>
-				<input class="" type="text" placeholder="NOM et Prénom / l\'entreprise">
-				<input class="" type="file">
-				<input class="" type="text" placeholder="description">
-				<input class="btn btn-primary" type="submit" value="OK">
-			</form>';
-   // }
-
-
-
 	?>
 	</section>	
 </div>
