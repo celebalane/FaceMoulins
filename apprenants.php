@@ -88,6 +88,7 @@
       <input type="text" placeholder="Nom de l'apprenant à modifier" name="apprenant"/>
       <button type="submit">Valider</button>
       <p><small>Pour ajouter un apprenant, validez sans renseigner le champs ci-dessus</small></p>
+    <a href="include/adminApprenant.php">Gérer tous les apprenants</a>
     </form>
 <?php }elseif(isset($_POST["apprenant"]) AND !isset($req2)){
           echo '<form action ="" method="POST" enctype="multipart/form-data" >';

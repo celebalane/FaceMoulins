@@ -1,6 +1,5 @@
 <?php
 	require_once("../class/admin.php");
-	require_once("../class/connect.php");
 	session_start();
 	if($_SESSION["connexion"] != "se déconnecter"){
 		header("location:youShouldNotPass.php");
@@ -28,16 +27,19 @@
         }*/
         if(isset($_POST["nom"]) AND isset($_POST["url"]) AND isset($_POST["description"])){
           
-            $bdd->getBDD()->insertInto("Partenaires , imgPartenaires",
-             	"Partenaires.type_id,
-				Partenaires.nom, 
-				Partenaires.texte, 
-				imgPartenaires.URL_site", array(
+            $bdd->getBDD()->insertInto("Partenaires",
+             	array('Partenaires.type_id=?',
+				'Partenaires.nom=?', 
+				'Partenaires.texte=?'), array(
 												$_POST["type"],
 												$_POST["nom"], 
-                                             	$_POST["description"],
-                                              	//$_POST["logo"],
-                                               	$_POST["url"]));
+                                             	$_POST["description"]));
+                                              	// //$_POST["logo"],
+                                               // 	$_POST["url"]));
+            var_dump($_POST["url"]);
+
+            $bdd->getBDD()->insertInto("imgPartenaires", array("URL_site=?"), array($_POST["url"]));
+
             echo "partenaire ajouté";
 
             echo '<pre>';
@@ -90,7 +92,6 @@
 				}
 			?>
 			</select>
- 		</p>	
  		<p><input type="text" name="nom" placeholder="Nom du partenaire" /></p>
  		<p><input type="text" name="url" placeholder="URL du partenaire" /></p>
  		<label for="description">Description du partenaire</label>

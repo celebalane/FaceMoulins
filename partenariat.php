@@ -19,7 +19,7 @@
 	<section class="col-md-12 col-sm-12" id="sectionPartenariat">
 		<!--Entreprise-->
 		<div class="col-md-12">
-			<h1>Nos entreprises adhérentes</h1>
+			<h2>Nos adhérents</h2>
 			<p>La Fondation FACE s'est engagée dès sa création dans un dialogue nourri et une démarche de co construction systématique avec l'ensemble des parties prenantes : c'est cet « ADN » qui préside depuis 1994 à la création des Clubs FACE et de ses autres structures de médiation et d'insertion, toujours nées d'une volonté commune des entreprises, des collectivités et de l'ensemble des acteurs territoriaux.
 			Cette volonté de maillage avec nos partenaires institutionnels, entreprises ou associations, est la clé de la conception et de la réalisation de nos projets, tant les politiques de lutte contre l'exclusion, les discriminations et la pauvreté nécessitent au-delà d'une association systématique des bénéficiaires (salariés, habitants, jeunes en contrats d'alternance, services civiques...etc...) l'implication de tous les acteurs.</p>
 			<center><h2><strong>Les entreprises adhérentes au Club FACE</strong></h2></center>
@@ -39,7 +39,7 @@
 		<!--Associations-->
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<h1 id="pageAsso">Les associations</h1>
+				<h2 id="pageAsso">Les associations</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut dapibus mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas gravida arcu at viverra interdum. Etiam facilisis suscipit magna sit amet vulputate. Cras sed arcu eu sapien maximus dictum. Nam in mauris at orci congue luctus eget eu 	lectus. Phasellus semper imperdiet massa nec mollis. Aenean facilisis feugiat pharetra. Suspendisse vitae enim neque. Mauris sodales ipsum quis hendrerit vestibulum. Nunc mattis dignissim ante, eu consectetur diam porttitor non.
 				</p>
 				
@@ -55,7 +55,7 @@
 			<!--Institutions-->
 			<div class="row institution">
 				<div class="col-md-12 col-sm-12">
-					<h1 id="pageInstitution">Les institutions</h1>
+					<h2 id="pageInstitution">Les institutions</h2>
 					<h3><em>De nombreuses institutions soutiennent la réalisation des actions de FACE, considérée comme un véritable acteur en matière de prévention et de lutte contre l'exclusion</em></h3> 
 				</div>
 			</div>

@@ -77,12 +77,6 @@ body {
   width: 300px;
   height: 111px; }
 
-.navbar #top .search {
-  /* Bloc de recherche */
-  position: relative;
-  width: auto;
-  display: table; }
-
 .navbar #bottom {
   /* Zone menu & navigation */
   background-color: #E79063;
@@ -199,11 +193,9 @@ body {
     display: block; } }
 @media screen and (max-width: 425px) {
   .navbar #top {
-    background-position: 46% 50%; } }
-@media screen and (max-width: 425px) {
-  .navbar #top {
     padding: 15px 15px;
-    margin-top: 20%; } }
+    margin-top: 20%;
+    background-position: 46% 50%; } }
 /*///////////////////////////////Citation////////////////////////////////////////*/
 blockquote {
   border-left: 0;
@@ -654,7 +646,7 @@ aside {
   .cadreChro {
     height: 400px;
     padding-top: 50px;
-    line-height: 0.5; } }
+    line-height: 2; } }
 #decalageContact {
   margin-top: 15%; }
 
@@ -732,15 +724,13 @@ aside {
   padding: 3%;
   background-color: white;
   box-shadow: 6px 10px 18px 4px rgba(0, 0, 0, 0.3); }
-  #sectionPartenariat h1 {
+  #sectionPartenariat h2 {
     text-align: center;
     font-weight: 600;
-    margin-bottom: 5%;
-    background-color: rgba(255, 160, 148, 0.13);
-    border-bottom: 2px solid orange;
-    font-family: 'Abel', sans-serif;
-    color: #794300;
-    padding: 10px 30px 10px 30px; }
+    font-style: italic;
+    color: #e79063;
+    font-size: 2.4em;
+    margin-bottom: 2%; }
   #sectionPartenariat h3 {
     font-size: 25px;
     margin-bottom: 3%; }
@@ -757,18 +747,13 @@ aside {
   /*Fond de la section Fil d'actu*/
   padding: 0 1.1% 0 1.3;
   box-shadow: 6px 10px 18px 4px rgba(0, 0, 0, 0.3); }
-  #galerie h3 {
+  #galerie h2 {
     text-align: center;
-    background-color: #008080;
-    font-size: 30px;
-    color: white;
-    padding: 15px;
-    background-color: rgba(255, 160, 148, 0.2);
-    border-bottom: 3px solid orange;
-    font-family: 'Abel', sans-serif;
-    color: #794300;
-    margin-bottom: 40px;
-    font-size: 40px; }
+    font-weight: 600;
+    font-style: italic;
+    color: #e79063;
+    font-size: 2.4em;
+    margin-bottom: 2%; }
   #galerie img {
     width: 100%; }
   #galerie video {
@@ -817,6 +802,12 @@ aside {
   margin-bottom: 2%; }
   #fabrik .col-md-9 {
     padding-left: 3%; }
+  #fabrik h2 {
+    text-align: left;
+    font-weight: 600;
+    font-style: italic;
+    color: #e79063;
+    font-size: 2.4em; }
 
 .decalage2 {
   margin-top: 70px; }
@@ -842,7 +833,7 @@ aside {
   background-color: #F4F4F5;
   border-radius: 5px; }
   .fabrikArticle h3 {
-    color: #E0A377; }
+    color: rgba(18, 110, 122, 0.6); }
   .fabrikArticle img {
     border: 1px solid #5C949B; }
 
@@ -855,9 +846,6 @@ aside {
     width: 300px;
     height: 200px;
     margin: 5px; }
-
-.fabrikTitre {
-  color: #5C949B; }
 
 .description {
   text-align: center;

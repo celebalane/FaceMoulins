@@ -37,8 +37,10 @@
 		}
 		else if(!isset($_POST["password"]) OR !isset($_POST["login"]) OR !isset($_SESSION["password"]) OR !isset($_SESSION["login"]) OR $_SESSION["password"] = "" OR $_SESSION["login"] == "" OR $_SESSION["password"] != $password OR $_SESSION["login"] != $admin ){
 				?>
-				<div class="connexion text-center">
-					<h3>Veuillez vous connecter pour poursuivre</h3>
+					<button id="retourSite" ><a href="index.php"> Retour sur le site</a></button>
+
+				<div class="connectionAdmin text-center">
+					<h1>Connection</h1>
 					<form method="POST" target="" >
 						<input type="mail" name="login" class="login" placeholder="Login" required />
 						<input type="password" name="password" class="password" placeholder="Mot de passe" required />
@@ -47,9 +49,7 @@
 					<?php
 						if(isset($_SESSION['connexion'])){
 							echo '<a href="include/changePassword.php?change=true">Changer de mot de passe </a>';
-						} ?>	
-
-					<a href="index.php"> Retour sur le site</a>	
+						} ?>
 				</div>
 			<?php
 				}
@@ -70,4 +70,6 @@
 </html>
 
 	<?php if(isset($_SESSION['connexion'])){unset($_SESSION["connexion"]);} ?>
+
+
 

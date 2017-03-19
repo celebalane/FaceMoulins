@@ -93,15 +93,16 @@ document.getElementById('search').addEventListener('input',function(){
 //----------Cache header---------//		
 ///////////////////////////////////		
 $(document).on('scroll', function(){	
-
-	if ($(this).scrollTop()>115) {
-		$('#top').slideUp();
-		$('#btndonnav').css("display", "inline");
-	}else{
-		$('#top').slideDown();
-		$('#btndonnav').css("display", "none");
-	}	
-   		
+	
+		if ($(this).scrollTop()>115) {
+			$('#top').slideUp();
+			$('#btndonnav').css("display", "inline");
+		}else{
+			$('#top').slideDown();
+			$('#btndonnav').css("display", "none");
+		}	
+   	
+   	
 });
 ///////////////////////////////////////
 //----------IMG ou VIDEO------------//

@@ -11,24 +11,85 @@ $miniHauteu:100px;
 ////////////////////// ADMIN.PHP AJOUTARTICLE.PHP////////////////////////////////////
 ///////////////////////////////////////////////////////////////////*/
 
-.connexion{
-	width:400px;
-	height: 400px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	padding-top: 100px;
-	text-align: center;
-	margin:auto;
-
-	form{
-		display: flex;
-		flex-direction: column;
-	}
+.connectionAdmin{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    margin-top: 100px;
+    padding: 16px;
+    background: #F7F7F7;
+    h1 {
+        background: #43D1AF;
+        padding: 20px 0;
+        font-size: 140%;
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+        margin: -16px -16px 16px -16px;
+     
+    }
+}
+.connectionAdmin input{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 10%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
 }
 
+.connectionAdmin input:focus{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.connectionAdmin button[type="submit"], .changeMdp{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;    
+    color: #fff;
+}
+.connectionAdmin input[type="submit"]:hover, input[type="button"]:hover{
+    background: #2EBC99;
+}
+
+#retourSite{
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 10%;
+    padding: 1%;
+    position: fixed;
+    background: #43D1AF;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;    
+    color: #fff;
+    a{
+    	color:$blanc;
+    	text-decoration: none;
+    }
+}
 /*::::::::::::: ajoutArticle.php ::::::::::::::::::::*/
 
 #visualisation{

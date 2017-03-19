@@ -5,7 +5,7 @@
     if(isset($_SESSION['inputs'])){unset($_SESSION["inputs"]);}?>
 
 <div class="container decalage">
-	<h1 class="col-md-12 boxtitle titreSection">Action</h1>
+	<h1 class="col-md-12 boxtitle titreSection">Actions</h1>
 	 		<section class="col-md-12 col-xs-12" id="presentation">
 	          	<!--Palmarès-->
 	          	<article id="action" class="row">
@@ -15,7 +15,7 @@
 	            		<video width="520" height="300" controls="controls" src="video/video3.mp4" class="col-md-6 col-xs-12">Cv Vidéo</video>
 	            		<video width="520" height="300" controls="controls" src="video/video4.mp4" class="col-md-6 col-xs-12">Cv Vidéo</video>
 	            	</div>
-	            	<h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> L'ouverture de la Fabrik du numérique</h3>
+	            	<h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> Ouverture de la Fabrik du numérique</h3>
 	            	<p>Cette formation baptisée la Fabrik est tournée vers le numérique, avec une labellisation « grande école du numérique ». 23 jeunes, et moins jeunes, suivent pendant huit mois (6 mois de formation et 2 mois de stage en entreprise) une formation dispensée par le Moulinois Julien Dugrais et l'association FACE Territoire Bourbonnais.La formation se déroule actuellement dans les locaux de l'ESPE. Pour en savoir plus sur nos apprenants et leur formation veuillez cliquer sur le lien suivant.</p>
 	            	<div class="text-right">
 	             		<a href="laFabrik.php" class="btn btn-default btnAction" role="button"> La Fabrik </a>

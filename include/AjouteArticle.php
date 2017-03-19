@@ -17,5 +17,7 @@
 			echo '<p>'.$donnees["texte"].'</p>';
 			echo '</div>';
 		}
+		echo '<a href="ajoutArticle.php">retour</a>';
 		echo '</section>';
 		$req->closeCursor();
+

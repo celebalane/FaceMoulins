@@ -30,16 +30,24 @@
             }
         }
         public function insertInto($where, $array1, $array2){
-            
-            $req = $this->bddConnect->prepare("INSERT INTO $where SET $array1");
+            for($i=0;$i<count($array1);$i++){
+                $i==count($array1)-1? $this->valeur.="$array1[$i]": $this->valeur.="$array1[$i], ";
+            }
+            $req = $this->bddConnect->prepare("INSERT INTO $where SET $this->valeur");
             $req->execute($array2);
+            $this->valeur = NULL;
         }
         public function update($what, $where, $array1, $array2, $limite=0){
             if($limite==0){
                 for($i=0;$i<count($array1);$i++){
                      $i==count($array1)-1? $this->valeur.="$array1[$i]": $this->valeur.="$array1[$i], ";
                 }
-                $req = $this->bddConnect->prepare("UPDATE $where SET $what WHERE $array1");
+                if($array1 != "false"){
+                    $req = $this->bddConnect->prepare("UPDATE $where SET $what WHERE $array1");
+                }else{
+                    $req = $this->bddConnect->prepare("UPDATE $where SET $what");
+                }
+                
                 $req->execute($array2);
             }
         }

@@ -7,6 +7,13 @@
 	.col-md-9 {
 		padding-left: 3%;
 	}
+	h2{
+		text-align: left;
+		font-weight: 600;
+		font-style: italic;
+		color: $color_default;
+		font-size: 2.4em;
+	}
 }
 .decalage2{
 	margin-top: 70px;
@@ -33,7 +40,7 @@
 	background-color: #F4F4F5;
 	border-radius: 5px;
 	h3{
-		color: #E0A377;
+		color: rgba(18,110,122,0.6);
 	}
 	img{
 		border: 1px solid #5C949B;
@@ -49,9 +56,6 @@
 		height: 200px;
 		margin: 5px;
 	}
-}
-.fabrikTitre{
-	color:  #5C949B;
 }
 .description{
 	text-align: center;

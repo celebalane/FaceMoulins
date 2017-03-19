@@ -14,15 +14,25 @@
   }else{
     $page=$_GET["page"];
   }
+
+  $req2 = $bdd->getBDD()->select("*", "phraseAccroche", 0, "publiée=?", "yes");
+
 ?>
 
 <!--Citation-->
 <div class="container col-md-12" id="decalageAccueil">
 	<div class="row-fluid">
 		<blockquote>
-			<h3 class="text-center"> FACE est une association qui lutte contre toutes formes d'exclusion .</h3>
+      <?php
+        while($data = $req2->fetch()){
+          echo '<h3 class="text-center">'.$data["titre"].'</h3>';
+          echo '<p><em>'.$data["texte"].'</em></p>';
+          echo '<footer class="text-right" id="auteur"> '.$data["auteur"].'</footer>';
+        }
+      ?>
+			<!-- <h3 class="text-center"> FACE est une association qui lutte contre toutes formes d'exclusion .</h3>
 			<p><em>« Sans se substituer à la puissance publique, ni aux associations, la capacité des entreprises à accompagner l’accès à l’emploi, à la formation, aux biens et services essentiels, aux droits…   constitue un formidable levier d’insertion, d’inclusion et d’intégration. »</em></p>
-      <footer class="text-right" id="auteur"> Gérard Mestrallet, Président de la Fondation FACE </footer> 
+      <footer class="text-right" id="auteur"> Gérard Mestrallet, Président de la Fondation FACE </footer> --> 
 		</blockquote>
 	</div>
 </div>
