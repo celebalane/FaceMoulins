@@ -24,8 +24,11 @@
 				<div class="resultat">
 					<div class="col-md-6">
 						<p><strong>Calculez votre don après réduction</strong></p>
+						<form class="form-inline">
 						<label for="montantDon">Montant du don</label>
 						<input type="text" name="montantDonParticulier" placeholder="Montant" id="montantDon" class="form-control">
+						<button>ok</button>
+						</form>
 						<h5>Après réduction</h5>
 						<div id="resultatParticulier">
 
@@ -41,8 +44,11 @@
 				<div class=resultat>
 					<div class="col-md-6">
 						<p><strong>Calculez votre don après réduction</strong></p>
+						<form class="form-inline">
 						<label for="montantDonEntreprise">Montant du don</label>
 						<input type="text" name="montantDonEntreprise" placeholder="Montant" id="montantDonEntreprise" class="form-control">
+						<button>ok</button>
+						</form>
 						<h5>Après réduction</h5>
 						<div id="resultatEntreprise">
 						

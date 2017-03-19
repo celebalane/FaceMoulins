@@ -307,3 +307,19 @@ if(innerWidth < 480){
 }
 else{document.getElementById("mailContact").innerHTML = "contact.territoirebourbonnais@fondation.org";}
 
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //-------------------------------------------------DON-----------------------------------------------------//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+function calculdon(){
+$donparticulier = ;
+$donentreprise = ;
+$pourcentage = 66;
+
+if($donparticulier)
+ 
+echo $donparticulier * (1 - $pourcentage/100); // Pour une réduction
+}
