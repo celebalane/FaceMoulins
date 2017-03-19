@@ -143,11 +143,17 @@ function phraseArt(obj){
 		$("#formArticle").removeAttr("onsubmit");
 		$("#validArticle").removeAttr("onclick");
 		$("#fichier").css("display", "none");
+		$("#afficheArticle").html("gérer les phrases d'accroches");
+		$("#afficheArticle").removeAttr("onclick");
+		$("#afficheArticle").attr("href", "choixPhraseAcc.php");
 	}else{
 		$("#TitreArticle").css("display", "none");
 		$("#paragraphe").attr("placeholder", "texte de l'article");
 		$("#validArticle").attr("onclick", "go('article')");
 		$("#formArticle").attr("onsubmit", "return false");
 		$("#fichier").css("display", "block");
+		$("#afficheArticle").html("Gérer les publications");
+		$("#afficheArticle").attr("href", "#");
+		$("#afficheArticle").attr("onclick", "go('afficherArticle');");
 	}
 }
