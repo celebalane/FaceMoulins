@@ -33,12 +33,13 @@
 
 	<!-- Logo & recherche -->
 	<div id="top">
-		<img src="img/faceimg.png" alt="logo_face" />
+		<img src="img/faceimg.png" alt="logo_face" class="col-xs-12" />
 		<div class="hidden-xs hidden-sm">
 			<div id="search">
         		<a href="don.php" class="btn btn-default" role="button" id="boutonDon"> Soutenez-nous : Faire un <span>don</span></a>
       		</div>
 		</div>
+		
 	</div>
 
 	<!-- Menu / Navigation -->
@@ -90,8 +91,8 @@
 							<li><a href="apprenants.php">Apprenants</a></li>
 						</ul>
 					</li>
-					<li><a href="contact.php" title="Contact" class="active">Contact</a></li>
-					<li><a href="don.php" title="Don" class="active" id="btndonnav">Faire un don</a></li>
+					<li class="dropdown"><a href="contact.php" title="Contact" class="active">Contact</a></li>
+					<li class="dropdown"><a href="don.php" title="Don" class="active" id="btndonnav">Faire un don</a></li>
 				</ul>
 			</nav>
 		</div>

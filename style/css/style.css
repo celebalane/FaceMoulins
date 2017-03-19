@@ -77,12 +77,6 @@ body {
   width: 300px;
   height: 111px; }
 
-.navbar #top .search {
-  /* Bloc de recherche */
-  position: relative;
-  width: auto;
-  display: table; }
-
 .navbar #bottom {
   /* Zone menu & navigation */
   background-color: #E79063;
@@ -199,11 +193,9 @@ body {
     display: block; } }
 @media screen and (max-width: 425px) {
   .navbar #top {
-    background-position: 46% 50%; } }
-@media screen and (max-width: 425px) {
-  .navbar #top {
     padding: 15px 15px;
-    margin-top: 20%; } }
+    margin-top: 20%;
+    background-position: 46% 50%; } }
 /*///////////////////////////////Citation////////////////////////////////////////*/
 blockquote {
   border-left: 0;
