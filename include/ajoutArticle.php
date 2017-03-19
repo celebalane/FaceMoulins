@@ -60,10 +60,13 @@
 			<?= !isset($_GET["texte"])? '<form onsubmit="return false">' : '<form action="ajoutArticle.php?id='.$_GET["id"].'" method="POST" enctype="multipart/form-data">';?>
 
 				<!-- <input class="admin" type="texte" name="texteTitre" id= "TitreArticle" placeholder="Titre de l'article" onfocus="visual();"/> -->
-
-				<input class="admin" type="file" name="fichier" id="fichier" accept="image/*" onchange="readURL(this);"/>
-
-				<textarea class="admin" id="paragraphe" name="textarea" placeholder="Texte de l'article" onfocus="visual();"><?php if(isset($_GET["texte"])){echo $_GET['texte'];} ?></textarea>
+				<p>
+					<input class="admin" type="file" name="fichier" id="fichier" accept="image/*" onchange="readURL(this);"/>
+				</p>
+				<p>
+					<textarea class="admin" id="paragraphe" name="textarea" placeholder="Texte de l'article" onfocus="visual();"><?php if(isset($_GET["texte"])){echo $_GET['texte'];} ?></textarea>
+				</p>
+				<p>	
 				<?php 
 					if(isset($_GET["texte"])){
 						echo '<button class="admin" type="submit" id="validArticle">Mettre à jour</button>';
@@ -72,6 +75,7 @@
 				<?php 
 					}
 				?>	
+				</p>
 			</form>
 			<a id="afficheArticle" href="#" onclick="go('afficherArticle');" >Gérer les publications</a>
 		</div>	
