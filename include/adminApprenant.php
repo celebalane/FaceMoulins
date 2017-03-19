@@ -65,6 +65,7 @@
 </head>
 <body>
 	<div>
+    <a href="../apprenants.php">Retour</a>
 		<h1 class="text-center">Gestion des apprenants</h1>
 		<table>
 			<?php
