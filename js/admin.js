@@ -125,13 +125,35 @@ function go(page){
 		
 }
 function visual(){
-	// document.getElementById("TitreArticle").addEventListener("input", function(){
-	// 	document.getElementById("titre").innerHTML = "<h1>"+escapeHtml(document.getElementById("TitreArticle").value)+"</h1>";
-	// });
-	document.getElementById("fichier").addEventListener("blur", function(){
+	$("#TitreArticle").on("input", function(){
+		document.getElementById("titre").innerHTML = "<h3>"+escapeHtml(document.getElementById("TitreArticle").value)+"</h3>";
+	});
+	$("#fichier").on("blur", function(){
 		document.getElementById("image").innerHTML == "<img src='"+document.getElementById("fichier").value+"'/>";
 	});
-	document.getElementById("paragraphe").addEventListener("input", function(){
+	$("#paragraphe").on("input", function(){
 		document.getElementById("paragrapheVisuel").innerHTML = "<p>"+document.getElementById("paragraphe").value+"</p>";
 	});
+}
+function phraseArt(obj){
+	if(obj.value == "phr"){
+		$("#TitreArticle").css("display", "block");
+		$("#TitreArticle").attr("placeholder", "intitulé de l'accroche")
+		$("#paragraphe").attr("placeholder", "texte de l'accroche");
+		$("#formArticle").removeAttr("onsubmit");
+		$("#validArticle").removeAttr("onclick");
+		$("#fichier").css("display", "none");
+		$("#afficheArticle").html("gérer les phrases d'accroches");
+		$("#afficheArticle").removeAttr("onclick");
+		$("#afficheArticle").attr("href", "choixPhraseAcc.php");
+	}else{
+		$("#TitreArticle").css("display", "none");
+		$("#paragraphe").attr("placeholder", "texte de l'article");
+		$("#validArticle").attr("onclick", "go('article')");
+		$("#formArticle").attr("onsubmit", "return false");
+		$("#fichier").css("display", "block");
+		$("#afficheArticle").html("Gérer les publications");
+		$("#afficheArticle").attr("href", "#");
+		$("#afficheArticle").attr("onclick", "go('afficherArticle');");
+	}
 }

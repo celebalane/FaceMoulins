@@ -76,6 +76,12 @@ class Admin {
 
 	}
 
+	public function createSentence($choix, $titre, $texte){
+		if($choix == "phr"){
+			$this->bdd->insertInto("phraseAccroche", array('titre=?, texte=?'), array($titre, $texte));
+		}
+	}
+
 	public function isPublish($delete="", $publish=""){
 		if($delete != "" AND $publish != ""){
 			$req= $this->bdd->update('publish=?', 'Articles', 'id=?', array("none", $publish));
