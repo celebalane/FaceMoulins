@@ -8,7 +8,7 @@
 <!--Galerie-->
 <h1 class="titreSection col-md-12 col-xs-12">Galerie</h1>
 <section class="col-xs-12 col-md-12" id="galerie">
-    <h3><strong>Photos</strong></h3>
+    <h2><strong>Photos</strong></h2>
     <div class="row">
         <div class="col-md-12 col-xs-12 col-sm-12"  id="pagePhoto">
             <div id="my_carousel" class="carousel slide" data-ride="carousel">
@@ -128,7 +128,7 @@
         </div>
     </div>
         <!--Video-->
-        <h3 id="pageVideo"><strong>Médias</strong></h3>
+        <h2 id="pageVideo"><strong>Médias</strong></h2>
         <div class="row" >
             <div class="col-md-6 col-xs-12">
                 <video controls src="video/video1.mp4" poster="img/galerie/ImageVideo/logoface.png"></video>
@@ -137,7 +137,7 @@
                 <video controls src="video/video2.mp4" poster="img/galerie/ImageVideo/video1.png"> </video>
             </div>
         </div>
-        <h3 id="CVvideo"><strong>CV Video</strong></h3>
+        <h2 id="CVvideo"><strong>CV Video</strong></h2>
         <div class="row">
             <div class="col-md-6 col-xs-12">
                 <video controls src="video/video3.mp4" poster="img/galerie/ImageVideo/regis.jpg"> </video>
