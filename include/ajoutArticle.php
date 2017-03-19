@@ -7,7 +7,6 @@
 	if(isset($_POST)){
 		$bdd = new Admin();
 		$bdd->connectBDD();
-		var_dump($_POST);
 
 		if(isset($_POST["article/Pa"]) AND $_POST["article/Pa"] == "phr"){
 			$bdd->createSentence($_POST["article/Pa"], $_POST["texteTitre"], $_POST["textarea"]);

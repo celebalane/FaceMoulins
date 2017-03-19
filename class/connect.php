@@ -41,7 +41,12 @@
                 for($i=0;$i<count($array1);$i++){
                      $i==count($array1)-1? $this->valeur.="$array1[$i]": $this->valeur.="$array1[$i], ";
                 }
-                $req = $this->bddConnect->prepare("UPDATE $where SET $what WHERE $array1");
+                if($array1 != "false"){
+                    $req = $this->bddConnect->prepare("UPDATE $where SET $what WHERE $array1");
+                }else{
+                    $req = $this->bddConnect->prepare("UPDATE $where SET $what");
+                }
+                
                 $req->execute($array2);
             }
         }
