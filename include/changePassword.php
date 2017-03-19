@@ -5,7 +5,6 @@
 	}
 ?>
 
-<link rel="stylesheet" type="text/css" href="../style/css/admin.css">
 <div class= "connexion" id="container">
 	<h3>Changer le mot de passe administrateur</h3>
 	<form onsubmit="return false;">
