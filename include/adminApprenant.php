@@ -33,7 +33,7 @@
           if(!move_uploaded_file($_FILES["photo"]["tmp_name"], "$articleDir/$name")){
             echo "impossible de deplacer le fichier..";
           }else{
-            $bdd->getBDD()->insertInto("EleveFabrik", "nom=?, prenom=?, mail=?, local=?, gitHub=?, img=?", array(strtoupper($_POST["Nom"]), 
+            $bdd->getBDD()->insertInto("EleveFabrik", array("nom=?", "prenom=?", "mail=?"," local=?", "gitHub=?", "img=?"), array(strtoupper($_POST["Nom"]), 
                                               $_POST["Prenom"],
                                                $_POST["Mail"],
                                                 $_POST["Local"],

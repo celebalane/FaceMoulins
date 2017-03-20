@@ -9,6 +9,7 @@
     $bdd->connectBDD();
     $req = $bdd->getBDD()->select('*', 'EleveFabrik');
 
+
     if(isset($_POST["apprenant"]) AND $_POST["apprenant"] != ""){
       $nom = strtoupper($_POST["apprenant"]);
       $req2 = $bdd->getBDD()->select('*', 'EleveFabrik', 0, 'nom=?', $nom);
@@ -29,12 +30,12 @@
         if(isset($_POST["Nom"]) AND isset($_POST["Prenom"]) AND isset($_POST["Local"]) AND isset($_POST["Github"]) AND $goodExtension == true){
 
           $name = $_FILES["photo"]["name"];  //Stockage du nom du fichier
-          $articleDir = $_SERVER["DOCUMENT_ROOT"]."/FaceMoulins/img/identite"; 
+          $articleDir = "img/identite"; 
           
           if(!move_uploaded_file($_FILES["photo"]["tmp_name"], "$articleDir/$name")){
             echo "impossible de deplacer le fichier..";
           }else{
-            $bdd->getBDD()->insertInto("EleveFabrik", "nom=?, prenom=?, mail=?, local=?, gitHub=?, img=?", array(strtoupper($_POST["Nom"]), 
+            $bdd->getBDD()->insertInto("EleveFabrik", array("nom=?", "prenom=?", "mail=?", "local=?", "gitHub=?", "img=?"), array(strtoupper($_POST["Nom"]), 
                                               $_POST["Prenom"],
                                                $_POST["Mail"],
                                                 $_POST["Local"],
