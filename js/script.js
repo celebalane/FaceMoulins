@@ -312,14 +312,16 @@ else{document.getElementById("mailContact").innerHTML = "contact.territoirebourb
  //-------------------------------------------------DON-----------------------------------------------------//
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+var donparticulier = 'float';
+var reducimpot= 'float';
+var pourcentage = 66;
 
 function calculdon(){
-$donparticulier = ;
-$donentreprise = ;
-$pourcentage = 66;
 
-if($donparticulier)
- 
-echo $donparticulier * (1 - $pourcentage/100); // Pour une réduction
+
+		Math.round(var donparticulier*66/100)/100=var reducimpot;
+		var reducimpot = document.getElementById('resultatParticulier').onclick function calculdon;
+		return var reducimpot;
 }
+  
+

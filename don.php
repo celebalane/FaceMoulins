@@ -30,8 +30,8 @@
 						<button>ok</button>
 						</form>
 						<h5>Après réduction</h5>
-						<div id="resultatParticulier">
-
+						<div>
+						<input type="text" id="resultatParticulier" name="montantDonParticulier" placeholder="Résultat" class="form-control">
 						</div>
 					</div>
 				</div>
@@ -50,8 +50,8 @@
 						<button>ok</button>
 						</form>
 						<h5>Après réduction</h5>
-						<div id="resultatEntreprise">
-						
+						<div>
+						<input type="text" id="resultatEntreprise" name="montantDonParticulier" placeholder="Résultat" class="form-control">
 						</div>
 					</div>
 				</div>
