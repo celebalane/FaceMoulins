@@ -317,10 +317,33 @@ $("#boutton3").on("click", function(){
 ////////////////////// Lien responsive /////////////////////////////
 
 if(innerWidth < 480){
-	document.getElementById("mailContact").innerHTML = "Cliquer pour envoyer un mail";
+	document.getElementById("mailContact").innerHTML = "Cliquer pour envoyer un mail"; 
 	document.getElementById("mailContact").addEventListener("click", function(){
 		alert("contact.territoirebourbonnais@fondation.org");
 	})
 }
 else{document.getElementById("mailContact").innerHTML = "contact.territoirebourbonnais@fondation.org";}
 
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //-------------------------------------------------DON PARTICULIER-----------------------------------------//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function calculdon(){
+var donparticulier = document.getElementById('montantDon').value;
+   var total = (donparticulier-donparticulier*0.66); 
+   document.getElementById('resultatParticulier').value = total;
+}
+
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //-------------------------------------------------DON ENTREPRISE------------------------------------------//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function calculdon2(){
+var donentreprise = document.getElementById('montantDonEntreprise').value;
+   var total2 = (donentreprise-donentreprise*0.60); 
+   document.getElementById('resultatEntreprise').value = total2;
+}
