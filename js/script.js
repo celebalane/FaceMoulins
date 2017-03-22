@@ -300,7 +300,7 @@ $("#boutton3").on("click", function(){
 ////////////////////// Lien responsive /////////////////////////////
 
 if(innerWidth < 480){
-	document.getElementById("mailContact").innerHTML = "Cliquer pour envoyer un mail";
+	document.getElementById("mailContact").innerHTML = "Cliquer pour envoyer un mail"; 
 	document.getElementById("mailContact").addEventListener("click", function(){
 		alert("contact.territoirebourbonnais@fondation.org");
 	})
@@ -309,19 +309,24 @@ else{document.getElementById("mailContact").innerHTML = "contact.territoirebourb
 
 
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////
- //-------------------------------------------------DON-----------------------------------------------------//
+ //-------------------------------------------------DON PARTICULIER-----------------------------------------//
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-var donparticulier = 'float';
-var reducimpot= 'float';
-var pourcentage = 66;
 
 function calculdon(){
-
-
-		Math.round(var donparticulier*66/100)/100=var reducimpot;
-		var reducimpot = document.getElementById('resultatParticulier').onclick function calculdon;
-		return var reducimpot;
+var donparticulier = document.getElementById('montantDon').value;
+   var total = (donparticulier-donparticulier*0.66); 
+   document.getElementById('resultatParticulier').value = total;
 }
-  
 
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //-------------------------------------------------DON ENTREPRISE------------------------------------------//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function calculdon2(){
+var donentreprise = document.getElementById('montantDonEntreprise').value;
+   var total2 = (donentreprise-donentreprise*0.60); 
+   document.getElementById('resultatEntreprise').value = total2;
+}

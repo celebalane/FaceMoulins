@@ -18,16 +18,16 @@
 			<article class="col-md-6">
 				<h4>Particulier</h4>
 				<div class="col-md-6">
-					<p>Vous bénéficiez d’une réduction d’impôt sur le revenu de 66 % dans la limite de 20% de votre revenu imposable (ex : un don de 250 € ne vous coûtera que 100 €). Si le plafond de 20 % des revenus est dépassé et puis c'est tout, texte au hasard le bénéfice de la réduction peut être reporté sur les 5 années suivantes.
+					<p>Vous bénéficiez d’une réduction d’impôt sur le revenu de 66 % dans la limite de 20% de votre revenu imposable (ex : un don de 250 € ne vous coûtera que 85 €). Si le plafond de 20 % des revenus est dépassé et puis c'est tout, texte au hasard le bénéfice de la réduction peut être reporté sur les 5 années suivantes.
 					Si vous êtes assujetti à l’ISF, vous bénéficiez de la réduction de 75 % du montant de votre don, au titre du don à une Fondation reconnue d’utilité publique, plafonné à 50 000 €, selon la loi TEPA du 27 août 2007 (ex : un don de 3 000 € ne vous coûtera que 750 €).</p>
 				</div>
 				<div class="resultat">
 					<div class="col-md-6">
 						<p><strong>Calculez votre don après réduction</strong></p>
-						<form class="form-inline">
-						<label for="montantDon">Montant du don</label>
-						<input type="text" name="montantDonParticulier" placeholder="Montant" id="montantDon" class="form-control">
-						<button>ok</button>
+						<form class="form-inline" onsubmit="return false">
+						<label for="montantDon" >Montant du don</label>
+						<input type="number" name="montantDonParticulier" id="montantDon" placeholder="Montant" class="form-control">
+						<button type="submit" onclick="calculdon()">ok</button>
 						</form>
 						<h5>Après réduction</h5>
 						<div>
@@ -36,6 +36,16 @@
 					</div>
 				</div>
 			</article>
+
+
+
+
+
+
+
+
+
+
 			<article class="col-md-6">
 				<h4>Entreprise</h4>
 				<div class="col-md-6">
@@ -44,10 +54,10 @@
 				<div class=resultat>
 					<div class="col-md-6">
 						<p><strong>Calculez votre don après réduction</strong></p>
-						<form class="form-inline">
+						<form class="form-inline" onsubmit="return false">
 						<label for="montantDonEntreprise">Montant du don</label>
 						<input type="text" name="montantDonEntreprise" placeholder="Montant" id="montantDonEntreprise" class="form-control">
-						<button>ok</button>
+						<button onclick="calculdon2()">ok</button>
 						</form>
 						<h5>Après réduction</h5>
 						<div>
