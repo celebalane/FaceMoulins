@@ -3,6 +3,9 @@ $couleur2:#8b563c;
 $couleur3:#f8f8f8;
 $couleur4:#1e5d74;
 $blanc:#FFFFFF;
+$background_color_section: #F2F2F2;
+$shadows: 6px 10px 18px 4px rgba(0,0,0,0.3);
+$color_default:#e79063;
 
 @mixin centreFlex{
 	display:flex;
@@ -51,9 +54,6 @@ body {
 
 #btndonnav{
 	display: none;
-}
-body{
-
 }
 
 
