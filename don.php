@@ -8,7 +8,7 @@
 	<h1 class="titreSection col-md-12 col-sm-7">Dons</h1>
 	<section class="col-md-12 col-xs-12 col-sm-12" id="don">
 		<div class="row">
-			<h2>Soutenez nos actions</h2>
+			<h2 class="text-center">Soutenez nos actions</h2>
 			<article>
 				<h3>Vos dons nous sont utiles</h3>
 				<p>Vous êtes un citoyen et vous vous sentez concernés par la démarche et les actions de FACE Territoire bourbonnais.<br>

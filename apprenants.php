@@ -141,7 +141,7 @@
                     echo '<td><button type="submit" name="id" value="'.$data["id"].'" >Valider</button></td>';
                   echo '</tr>'; 
                 }else{
-                  echo 'Cet apprenants n\'existe pas';
+                  echo 'Cet apprenant n\'existe pas';
                 } 
               }
             echo '</table>';  
