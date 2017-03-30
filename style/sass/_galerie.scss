@@ -1,21 +1,19 @@
 #galerie {
-    background-color: white; /*Fond de la section Fil d'actu*/
-    padding: 0 3% 0 2%;
-    box-shadow: 6px 10px 18px 4px rgba(0,0,0,0.3);
-    h2 {
-        text-align: center;
-        font-weight: 600;
-        font-style: italic;
-        color: $color_default;
-        font-size: 2.4em;
-        margin-bottom: 2%;
-    }
+    margin-top: 4%;
     img {
-        width: 100%;
-    
+        padding-left: 3%;
+        padding-right: 3%;
+        position:absolute;
+        z-index: 100;
     }
     .row{
-        margin: 1%;
+        margin-bottom: 20%;
+    }
+    .col-md-12{
+        padding: 0;
+    }
+    .col-md-3{
+        padding:0;
     }
 }
 .lightbox__caption p {
@@ -23,30 +21,21 @@
     line-height: 22px;
 }
 
-
-
-
-.rollopaque:hover img {
+img:hover {
     opacity: 0.3;
     filter:alpha(opacity=10); 
-   border:0; 
-   }
-   
-.rollopaque:hover {
-  background-color: rgba(74, 168, 181,1);
-  padding:0;
-}
-
-.rollup{
-    display: none;
-}
-.rollopaque:hover .rollup{
-    display: block;
+    border:0;
     position:absolute;
-    color: white;
-    top: 30%;
-    left: 45%;
+    z-index: 1; 
 }
-.col-md-6{
-    padding:8px;
+.rollopaque img{
+    position:absolute;
+    z-index: 1;
+    top:0; 
+    height: 150px;
+    width: 290px;
+}  
+.rollopaque img:hover {
+  display: block;
+  z-index: 10;
 }
