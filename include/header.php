@@ -31,7 +31,7 @@
 <!-- Header -->
 <header class="navbar navbar-fixed-top">
 
-	<!-- Logo & recherche -->
+	<!-- Logo & don -->
 	<div id="top">
 		<img src="img/faceimg.png" alt="logo_face" class="col-xs-12" />
 		<div class="hidden-xs hidden-sm">
@@ -68,11 +68,6 @@
 					</li>
 					<li class="dropdown">
 						<a href="galerie.php" title="Galerie" class="active">Galerie</a>
-						<ul class="dropdown-menu">
-							<li><a href="galerie.php">Photos</a></li>
-							<li><a href="galerie.php#pageVideo">Médias</a></li>
-							<li><a href="galerie.php#CVvideo">CV vidéo</a></li>
-						</ul>
 					</li>
 					<li class="dropdown">
 						<a href="partenariat.php" title="Partenariat" class="active">Partenariat</a>

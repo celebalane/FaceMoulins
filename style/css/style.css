@@ -729,7 +729,22 @@ aside {
     padding-left: 3%;
     padding-right: 3%;
     position: absolute;
+    clip: rect(0, 290px, 150px, 0);
     z-index: 100; }
+    #galerie img:hover {
+      opacity: 0.3;
+      filter: alpha(opacity=10);
+      border: 0;
+      position: absolute;
+      z-index: 1; }
+  #galerie .rollopaque img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 150px;
+    width: 290px; }
+  #galerie iframe {
+    width: 95%; }
   #galerie .row {
     margin-bottom: 20%; }
   #galerie .col-md-12 {
@@ -741,24 +756,17 @@ aside {
   font-size: 18px;
   line-height: 22px; }
 
-img:hover {
-  opacity: 0.3;
-  filter: alpha(opacity=10);
-  border: 0;
-  position: absolute;
-  z-index: 1; }
-
-.rollopaque img {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  height: 150px;
-  width: 290px; }
-
 .rollopaque img:hover {
   display: block;
   z-index: 10; }
 
+#video {
+  margin-top: -2%; }
+
+@media screen and (max-width: 425px) {
+  #galerie img {
+    position: static;
+    margin-bottom: 4%; } }
 #fabrik {
   background-color: #F2F2F2;
   /*Fond de la section Fil d'actu*/
